@@ -1,3 +1,12 @@
+/*
+ * Dylan Rothbauer
+ * 02/19/24
+ * Standard PlayerController class that handles movement, collisions, etc.
+ * 
+ * CHANGE LOG
+ * Dylan - 02/19/24 - Added onCollisionEnter2D function to get scene transitions working
+ * 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check if collided with a door
         if (collision.gameObject.CompareTag("Door"))
         {
             string doorIdentifier = collision.gameObject.GetComponent<DoorIdentifier>().identifier;
