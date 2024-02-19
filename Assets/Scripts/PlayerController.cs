@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,8 +29,25 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Door"))
+        {
+            string doorIdentifier = collision.gameObject.GetComponent<DoorIdentifier>().identifier;
+
+            switch (doorIdentifier)
+            {
+                case "Door1":
+                    SceneManager.LoadScene("SampleScene");
+                    break;
+                case "Door2":
+                    SceneManager.LoadScene("Mellee_testing_scene");
+                    break;
+                // Add more cases if more doors below
+                default:
+                    break;
+            }
+        }
     }
+
 }
