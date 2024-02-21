@@ -685,10 +685,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1169528120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9cd40efb642ea94db93dad3a8a004e0, type: 3}
+  m_Script: {fileID: 11500000, guid: da18acae39c988a4987c195281a22f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identifier: Door2
+  sceneToGoTo: Mellee_test_scene
 --- !u!1 &1912303695
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,10 +857,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1912303695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9cd40efb642ea94db93dad3a8a004e0, type: 3}
+  m_Script: {fileID: 11500000, guid: da18acae39c988a4987c195281a22f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identifier: Door1
+  sceneToGoTo: SampleScene
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
