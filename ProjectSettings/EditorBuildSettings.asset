@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alpha_SceneTransition.unity
     guid: 1d4573021ce28044e840b10fb661fb42
+  - enabled: 1
+    path: Assets/Scenes/Otto_Scene(PathHate).unity
+    guid: d75c7d95c80cdbd41b7992cb2c250344
+  - enabled: 1
+    path: Assets/Scenes/Mellee_testing_scene.unity
+    guid: dac1deca7f038d9468ed158c5e39cef9
   m_configObjects: {}

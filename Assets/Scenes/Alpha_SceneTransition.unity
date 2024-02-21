@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da18acae39c988a4987c195281a22f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToGoTo: Mellee_test_scene
+  sceneToGoTo: Mellee_testing_scene
 --- !u!1 &1912303695
 GameObject:
   m_ObjectHideFlags: 0
