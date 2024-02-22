@@ -21,12 +21,15 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 3.0f;
 
-    public Vector3 target;
-    public Vector3 worldPos;
-    public float angle;
-    public Vector3 playerPos;
 
-    public GameObject meleeCircle;
+
+    //public Vector3 target;
+    //public Vector3 worldPos;
+    //public float angle;
+    //public Vector3 playerPos;
+    //public GameObject meleeCircle;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,16 +40,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //gets position of mouse and player for melee attack location
-        worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        playerPos = transform.position;
-        target = worldPos - playerPos;
-        //target= target.normalized;
-        angle= (Mathf.Atan(target.y/target.x)*180/Mathf.PI);
+        //worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //playerPos = transform.position;
+        //target = worldPos - playerPos;
+        //target = target.normalized;
+        //angle = (Mathf.Atan(target.y / target.x) * 180 / Mathf.PI);
         //Debug.Log("Trans.pos:" + transform.position);
-        
-        meleeCircle.transform.position = new Vector3(target.x,target.y, 0);
-        meleeCircle.transform.rotation = new Quaternion(0, 0 , angle, 0).normalized;
+
+        //meleeCircle.transform.position = new Vector3(target.x, target.y, 0);
+        //meleeCircle.transform.rotation = new Quaternion(0, 0, angle, 0).normalized;
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");

@@ -16,6 +16,10 @@ public class PlayerAimWeapon : MonoBehaviour
         // needs to pull a reference to the mouses in world position
         Vector3 mousePosition = GetMouseWorldPositon();
 
+        Vector3 aimDirection = (mousePosition - transform.position).normalized;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        Debug.Log(angle);
     }
 
 
