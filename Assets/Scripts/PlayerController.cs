@@ -15,10 +15,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
+    
     public float horizontalInput;
     public float verticalInput;
     public float speed = 3.0f;
+    public Vector3 mousePos;
+    public Vector3 target;
+    public float angle;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        mousePos = Input.mousePosition;
+        target= mousePos - transform.position;
+        angle= Vector2.Angle(mousePos, transform.forward);
+        Debug.Log("Trans.pos:" + transform.position);
+
+
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
