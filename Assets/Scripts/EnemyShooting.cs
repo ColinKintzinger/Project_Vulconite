@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
+    //used to modify the distance aquisition and consistency of the shots
+    public float targetingDistance = 25.0f;
+    public float targetingTimer = 2.0f;
+
     public GameObject bullet;
     public Transform bulletPos;
 
@@ -23,11 +27,11 @@ public class EnemyShooting : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
-        if (distance < 25)
+        if (distance < targetingDistance)
         {
             timer += Time.deltaTime;
 
-            if (timer > 2)
+            if (timer > targetingTimer)
             {
                 timer = 0;
                 shoot();

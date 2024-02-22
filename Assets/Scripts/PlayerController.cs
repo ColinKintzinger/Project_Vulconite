@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 3.0f;
 
-    private Vector3 mousePos;
     public Vector3 target;
     public Vector3 worldPos;
     public float angle;
@@ -39,8 +38,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //gets position of mouse and player for melee attack location
-        mousePos = Input.mousePosition;
-        worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         playerPos = transform.position;
         target = worldPos - playerPos;
         //target= target.normalized;
