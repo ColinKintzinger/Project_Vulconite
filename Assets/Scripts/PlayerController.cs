@@ -6,7 +6,8 @@
  * CHANGE LOG
  * Dylan - 02/19/24 - Added onCollisionEnter2D function to get scene transitions working
  * Dylan - 02/21/24 - Refactored scene transtion to a door script in SceneTransition
- * Colin - 02/21/24 - added variables and some lines of code in the update for finding length between player and curser 
+ * Colin - 02/21/24 - added variables and some lines of code in the update for finding length between player and curser
+ * Zach - 02/23/24 - Added restraints to player movement to prevent it from moving outside a certain range
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -20,7 +21,8 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 3.0f;
-
+    public float xMovement = 10.0f;
+    public float yMovement = 10.0f;
 
 
     //public Vector3 target;
@@ -54,7 +56,24 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        if (transform.position.x < -xMovement)
+        {
+            transform.position = new Vector3(-xMovement, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x > xMovement)
+        {
+            transform.position = new Vector3(xMovement, transform.position.y, transform.position.z);
+        }
+
         transform.Translate(Vector3.up *  verticalInput * Time.deltaTime * speed);
+        if (transform.position.y < -yMovement)
+        {
+            transform.position = new Vector3(transform.position.x, -yMovement, transform.position.z);
+        }
+        if (transform.position.y > yMovement)
+        {
+            transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
+        }
 
     }
 
