@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
+    private float fireDelay = 3.0f;
+    private float timer=0;
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
@@ -16,19 +19,39 @@ public class PlayerAimWeapon : MonoBehaviour
     {
         // needs to pull a reference to the mouses in world position
         meleeAiming();
-        meleAttack();
+        if (timer == 0)
+        {
+            meleAttack();
+        }
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime * 1;
+        }
+
     }
     private void meleAttack()
     {
-        if (Input.GetMouseButton(0))
+        
+        if (Input.GetMouseButton(0) && timer <= 0)
         {
+            showObject();
+            timer = 3;
             Debug.Log("true");
-            meleeLine.gameObject.SetActive(true);
         }
-        else
+
+        //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
+        
+    }
+    private void showObject()
+    {
+        float timer = 1;
+        while (timer > 1)
         {
-            meleeLine.gameObject.SetActive(false);
+            meleeLine.gameObject.SetActive(true);
+            timer -= Time.deltaTime * 1;
         }
+        meleeLine.gameObject.SetActive(false);
+        return; 
     }
     private void meleeAiming()
     {
