@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc1455a07d0fb541a8c176b5980ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meleeLine: {fileID: 2115713277}
 --- !u!1 &827079949
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +367,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115713277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
+  m_PrefabInstance: {fileID: 6855340147268024154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6855340147268024154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,9 +384,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Colin's Cute Quarter Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalPosition.y
@@ -392,19 +402,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -416,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -135
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
