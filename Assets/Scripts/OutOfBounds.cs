@@ -3,6 +3,8 @@
  * 02/23/24
  * Removes objects outside the level
  * 
+ * left/upper/lower/rightBound - The position an object will disappear at the respective coordinate
+ * 
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
  */

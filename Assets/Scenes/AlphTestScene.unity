@@ -642,6 +642,8 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   speed: 7
+  xMovement: 11.75
+  yMovement: 4.5
 --- !u!212 &1226417454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -967,7 +969,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5123842283084500871, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.85
+      value: 13.87
       objectReference: {fileID: 0}
     - target: {fileID: 5123842283084500871, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
       propertyPath: m_LocalPosition.y

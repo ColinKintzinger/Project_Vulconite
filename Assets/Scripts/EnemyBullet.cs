@@ -3,6 +3,8 @@
  * 02/23/24
  * Sends a bullet towards the player's current location
  * 
+ * force - How fast the bullet will fly
+ * 
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
  */

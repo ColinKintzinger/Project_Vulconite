@@ -3,6 +3,11 @@
  * 02/23/24
  * Shoots a bullet at the player.
  * 
+ * targetingDistance - Max distance the enemy will shoot the player at
+ * targetingTimer - How long the enemy will wait until firing another bullet
+ * bullet - The bullet prefab
+ * bulletPos - Where the bullet will respawn at
+ * 
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
  */
