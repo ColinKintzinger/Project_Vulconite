@@ -1,3 +1,11 @@
+/*
+ * Zachary Speckan
+ * 02/23/24
+ * Shoots a bullet at the player.
+ * 
+ * CHANGE LOG
+ * Zach - 02/23/24 - Added comments.
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,14 +31,16 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        // Gets the distance the player is from the enemy
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
+        // Checks if the player is close enough
         if (distance < targetingDistance)
         {
             timer += Time.deltaTime;
 
+            // Checks if enough time has passed
             if (timer > targetingTimer)
             {
                 timer = 0;
@@ -39,6 +49,7 @@ public class EnemyShooting : MonoBehaviour
         }
     }
 
+    // Shoots the bullet
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
