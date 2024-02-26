@@ -7,6 +7,7 @@
  * 
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
+ * 
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ public class OutOfBounds : MonoBehaviour
     public float upperBound = 6;
     public float lowerBound = -6;
     public float rightBound = 25;
+    
 
     // Start is called before the first frame update
     void Start()
