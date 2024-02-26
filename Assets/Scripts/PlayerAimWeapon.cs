@@ -19,9 +19,10 @@ public class PlayerAimWeapon : MonoBehaviour
     {
         // needs to pull a reference to the mouses in world position
         meleeAiming();
-        if (timer == 0)
+        meleAttack();
+        if (Input.GetMouseButton(0) && timer <= 0)
         {
-            meleAttack();
+            timer = 1;
         }
         if (timer > 0)
         {
@@ -32,11 +33,14 @@ public class PlayerAimWeapon : MonoBehaviour
     private void meleAttack()
     {
         
-        if (Input.GetMouseButton(0) && timer <= 0)
+        if (timer>0)
         {
-            showObject();
-            timer = 3;
+            meleeLine.gameObject.SetActive(true);
             Debug.Log("true");
+        }
+        else
+        {
+            meleeLine.gameObject.SetActive(false);
         }
 
         //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
@@ -77,6 +81,13 @@ public class PlayerAimWeapon : MonoBehaviour
     public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera) {
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
 
