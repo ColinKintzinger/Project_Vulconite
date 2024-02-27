@@ -8,6 +8,7 @@
  * Dylan - 02/21/24 - Refactored scene transtion to a door script in SceneTransition
  * Colin - 02/21/24 - added variables and some lines of code in the update for finding length between player and curser
  * Zach - 02/23/24 - Added restraints to player movement to prevent it from moving outside a certain range
+ * Dylan - 02/27/24 - Added a destroy object in collider function to test scene transitions (needed a way to "kill" enemies)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -77,9 +78,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    // testing collision for delagate scene transition
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
 }
