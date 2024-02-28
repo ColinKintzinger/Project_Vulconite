@@ -1,3 +1,11 @@
+/*
+ * Colin Kintzinger
+ * 2/20/2024
+ * Player melee and can also be used for ranged attack through refactoring
+ * 
+ * CHANGE LOG
+ * colin-2/27/24- commented code and refactored to get rid of hard coded values
+ */
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,7 +15,7 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
-    private float fireDelay = 3.0f;
+    public float fireDelay = 1.0f;
     private float timer=0;
     private void Awake()
     {
@@ -20,9 +28,10 @@ public class PlayerAimWeapon : MonoBehaviour
         // needs to pull a reference to the mouses in world position
         meleeAiming();
         meleAttack();
+        //sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0)
         {
-            timer = 1;
+            timer=fireDelay;
         }
         if (timer > 0)
         {
@@ -30,6 +39,7 @@ public class PlayerAimWeapon : MonoBehaviour
         }
 
     }
+    //allows the melee object to apear and then disapear acording to the timer
     private void meleAttack()
     {
         
@@ -46,7 +56,7 @@ public class PlayerAimWeapon : MonoBehaviour
         //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
         
     }
-    private void showObject()
+    /*private void showObject()
     {
         float timer = 1;
         while (timer > 1)
@@ -56,7 +66,8 @@ public class PlayerAimWeapon : MonoBehaviour
         }
         meleeLine.gameObject.SetActive(false);
         return; 
-    }
+    }*/
+    //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
         Vector3 mousePosition = GetMouseWorldPositon();
@@ -66,7 +77,7 @@ public class PlayerAimWeapon : MonoBehaviour
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
         //Debug.Log(angle);
     }
-
+    //these obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon() {
         Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
         vec.z = 0f;
