@@ -9,6 +9,7 @@
  * Colin - 02/21/24 - added variables and some lines of code in the update for finding length between player and curser
  * Zach - 02/23/24 - Added restraints to player movement to prevent it from moving outside a certain range
  * Dylan - 02/27/24 - Added a destroy object in collider function to test scene transitions (needed a way to "kill" enemies)
+ * Dylan - 02/28/24 - Changed Collider to include melee functionality in my scene
  */
 using System.Collections;
 using System.Collections.Generic;

@@ -1,3 +1,11 @@
+/*
+ * Dylan Rothbauer
+ * 02/28/24
+ * A simple script to attach to weapons
+ * 
+ * CHANGE LOG
+ * 02/28/24 - Created script
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
