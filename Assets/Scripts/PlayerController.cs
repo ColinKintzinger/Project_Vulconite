@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     public float xMovement = 10.0f;
     public float yMovement = 10.0f;
+    public GameObject meleeLine;
 
 
     //public Vector3 target;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //meleeCircle= GetComponent<GameObject>();
+       
 
     }
 
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            // take damage
         }
     }
 

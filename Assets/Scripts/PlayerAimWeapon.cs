@@ -17,9 +17,11 @@ public class PlayerAimWeapon : MonoBehaviour
     public GameObject meleeLine;
     public float fireDelay = 1.0f;
     private float timer=0;
+    
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
+
         
     }
 
@@ -93,12 +95,18 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);
         }
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
 }
 
