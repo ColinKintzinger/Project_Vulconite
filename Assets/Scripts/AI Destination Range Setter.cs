@@ -39,7 +39,7 @@ namespace Pathfinding
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update()
 		{
-			Vector3 newTarget = target.position+(transform.position - target.position).normalized * rangeDistance;
+			Vector3 newTarget = target.position + (transform.position - target.position).normalized * rangeDistance;
 			if (target != null && ai != null) ai.destination = newTarget;
 		}
 	}
