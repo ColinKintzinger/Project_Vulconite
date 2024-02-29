@@ -10,6 +10,7 @@
  * 
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
+ * Zach - 02/29/24 - Bullets can predict where the player will be
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -21,11 +22,13 @@ public class EnemyShooting : MonoBehaviour
     public float targetingDistance = 25.0f;
     public float targetingTimer = 2.0f;
 
-    public GameObject bullet;
+    public Rigidbody2D bullet;
     public Transform bulletPos;
 
     private float timer;
     private GameObject player;
+
+    EnemyBullet enemyBullet;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +60,51 @@ public class EnemyShooting : MonoBehaviour
     // Shoots the bullet
     void shoot()
     {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        var instance = Instantiate(bullet, transform.position, Quaternion.identity);
+        if (InterceptionDirection(player.transform.position, transform.position, bullet.velocity, enemyBullet.force, out var direction))
+        {
+            instance.velocity = direction * enemyBullet.force;
+        }
+        else
+        {
+            instance.velocity = (player.transform.position - transform.position).normalized * enemyBullet.force;
+        }
+        
+    }
+
+    public bool InterceptionDirection(Vector2 a, Vector2 b, Vector2 vA, float sB, out Vector2 result)
+    {
+        var aToB = b - a;
+        var dC = aToB.magnitude;
+        var alpha = Vector2.Angle(aToB, vA) * Mathf.Deg2Rad;
+        var sA = vA.magnitude;
+        var r = sA / sB;
+        if (MyMath.SolveQuadratic(1 - r * r, 2 * r * dC * Mathf.Cos(alpha), -(dC * dC), out var root1, out var root2) == 0)
+        {
+            result = Vector2.zero;
+            return false;
+        }
+        var dA = Mathf.Max(root1, root2);
+        var t = dA / sB;
+        var c = a + vA * t;
+        result = (c - b).normalized;
+        return true;
+    }
+}
+
+public class MyMath
+{
+    public static int SolveQuadratic(float a, float b, float c, out float root1, out float root2)
+    {
+        var discriminant = b * b - 4 * a * c;
+        if (discriminant < 0)
+        {
+            root1 = Mathf.Infinity;
+            root2 = -root1;
+            return 0;
+        }
+        root1 = (-b + Mathf.Sqrt(discriminant)) / (2 * a);
+        root2 = (-b - Mathf.Sqrt(discriminant)) / (2 * a);
+        return discriminant > 0 ? 2 : 1;
     }
 }
