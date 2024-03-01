@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetingDistance: 17
   targetingTimer: 2
-  bullet: {fileID: 8622186633332003165, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
+  bullet: {fileID: 7461742813858207759, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
   bulletPos: {fileID: 8822964247327834602}
 --- !u!50 &4902939860010125844
 Rigidbody2D:
