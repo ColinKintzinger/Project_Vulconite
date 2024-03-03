@@ -5,6 +5,7 @@
  * 
  * CHANGE LOG
  * colin-2/27/24- commented code and refactored to get rid of hard coded values
+ * otto-3/3/24 - tried adjusting the attack duration and frequency with the values. did not work.
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -15,7 +16,9 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
-    public float fireDelay = 1.0f;
+    public float fireDelay = 0.02f;
+    //can't modify the attack speed with these values?????
+    public float attackTime = 0.001f;
     private float timer=0;
     
     private void Awake()
@@ -45,7 +48,7 @@ public class PlayerAimWeapon : MonoBehaviour
     private void meleAttack()
     {
         
-        if (timer>0)
+        if (timer>attackTime)
         {
             meleeLine.gameObject.SetActive(true);
             Debug.Log("true");
@@ -103,10 +106,10 @@ public class PlayerAimWeapon : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
+    //public void OnCollisionEnter2D(Collision2D collision)
+    //{
         
-    }
+    //}
 
 }
 
