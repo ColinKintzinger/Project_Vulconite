@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5312981139452948901}
   - component: {fileID: 6050850796693675793}
-  - component: {fileID: 3494619078249927290}
   - component: {fileID: 4902939860010125844}
   - component: {fileID: 3186750097585564587}
+  - component: {fileID: 5722834008980117067}
   m_Layer: 0
   m_Name: Stationary
   m_TagString: Enemy
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5125067562807438264}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.89, y: 1.25, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
@@ -88,22 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3494619078249927290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5125067562807438264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b53e35303f4a12448f1cde5db754d04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetingDistance: 17
-  targetingTimer: 2
-  bullet: {fileID: 7461742813858207759, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
-  bulletPos: {fileID: 8822964247327834602}
 --- !u!50 &4902939860010125844
 Rigidbody2D:
   serializedVersion: 4
@@ -176,6 +160,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5722834008980117067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125067562807438264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf638e6b1d1aa141aef817a7f6d6556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  projectileSpeed: 5
+  target: {fileID: 0}
+  targetingDistance: 25
+  targetingTimer: 2
 --- !u!1 &8318894036912608029
 GameObject:
   m_ObjectHideFlags: 0
