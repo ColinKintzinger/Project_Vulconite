@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76c67a719d0778646b99fcc7e23fa4f7
+guid: a6fd9430ab5072447bb2a9ef0c518268
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_0
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dead6caedd3778a49813e3a6a002c1d6
-      internalID: 779400931
+      spriteID: fbbd307f652fb884da0a0b24ffe8f842
+      internalID: 205296995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_1
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb6e7a89ce6abe4e8620deedc46da31
-      internalID: 1910758201
+      spriteID: 7d094282a79f98743bf5cfe1a5607d78
+      internalID: -1928353716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_2
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3af79fd56f2e8e746b6edfb4ef57a4da
-      internalID: 1364437937
+      spriteID: 48ea1413b62242845b84b101dc2cd409
+      internalID: 1245952483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_3
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be6ab6df1736404d8088a2c82968101
-      internalID: -1298741496
+      spriteID: b56f74aaaae195d408c474d7765f1e6d
+      internalID: 1546688922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_4
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4fae15bfdb0e4b479e8e40b32c3d699
-      internalID: -1079317447
+      spriteID: 9468cccf47217114884d7eace764b601
+      internalID: -78129537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_5
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_5
       rect:
         serializedVersion: 2
         x: 32
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c47da81c1c07547b6297c732009541
-      internalID: -41259988
+      spriteID: e215b24762470f249a2b67712246b219
+      internalID: -1283928601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_6
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_6
       rect:
         serializedVersion: 2
         x: 64
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98671d56c4cff7a4e8207b33ef74ab24
-      internalID: 1038315409
+      spriteID: 0d3d11acf0d2f454b871e2a168bb5b23
+      internalID: 1797346750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_7
+      name: Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_7
       rect:
         serializedVersion: 2
         x: 96
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f105441b69a26146bc77efbd4eb2686
-      internalID: 1941852421
+      spriteID: a5d78c5b0d90c3a4da5d2833c71ac24d
+      internalID: -1563537289
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_0: 779400931
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_1: 1910758201
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_2: 1364437937
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_3: -1298741496
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_4: -1079317447
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_5: -41259988
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_6: 1038315409
-      Alpha_Ranged_Enemy_Enemy_Attack_Back_Erin_Imboden_7: 1941852421
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_0: 205296995
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_1: -1928353716
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_2: 1245952483
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_3: 1546688922
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_4: -78129537
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_5: -1283928601
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_6: 1797346750
+      Alpha_Ranged_Enemy_Idle_Front_Erin_Imboden_7: -1563537289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
