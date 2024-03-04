@@ -16,9 +16,9 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
-    public float fireDelay = 0.02f;
+    public float fireDelay = 1f;
     //can't modify the attack speed with these values?????
-    public float attackTime = 0.001f;
+    public float attackTime = .5f;
     private float timer=0;
     
     private void Awake()
@@ -48,7 +48,7 @@ public class PlayerAimWeapon : MonoBehaviour
     private void meleAttack()
     {
         
-        if (timer>attackTime)
+        if (timer>=attackTime)
         {
             meleeLine.gameObject.SetActive(true);
             Debug.Log("true");
