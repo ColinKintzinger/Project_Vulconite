@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeLine: {fileID: 1685004212}
-  fireDelay: 1
+  fireDelay: 0.75
   attackTime: 0.5
 --- !u!1 &1402840569
 GameObject:

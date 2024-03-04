@@ -5,6 +5,7 @@
  * 
  * CHANGE LOG
  * Dylan - 02/28/24 - Created script and used PlayerController code to restrict it to the scene to not go out of bounds
+ * Dylan/Colin - 03/04/24 - polished code and spacing and commented
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -22,12 +23,12 @@ public class RangedEnemy : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-
         if (distanceToPlayer < fleeDistance)
         {
             Flee();
         }
 
+        // Partialy prevents out of bound glitch (for player too)
         if (transform.position.x < -xDistance)
         {
             transform.position = new Vector3(-xDistance, transform.position.y, transform.position.z);

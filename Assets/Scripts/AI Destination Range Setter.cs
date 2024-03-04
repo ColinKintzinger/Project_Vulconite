@@ -51,6 +51,7 @@ namespace Pathfinding
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update()
 		{
+
 			Vector3 tempOffset = (transform.position - target.position);
 			Vector3 newTarget = target.position + tempOffset.normalized * rangeDistance;
 			if (newTarget.x < sceneBoundX1 || newTarget.x>sceneBoundX2) {

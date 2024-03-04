@@ -7,6 +7,7 @@
  * CHANGE LOG
  * Dylan - 02/21/24 - Added this new script for door functionality instead of player
  * Dylan - 02/27/24 - Added a bool to check if game objects with Enemy tag is dead (to avoid delegates)
+ * Dylan/Colin - 03/04/24 - polished code and spacing added comments
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -20,19 +21,19 @@ public class SceneTransition : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {  
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Checks for current enemies on scene
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             active = true;
         }
     }
-
+    // Checks when player collides with door and enemies are dead
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && active)
