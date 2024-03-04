@@ -535,6 +535,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
+--- !u!50 &808353629 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7461742813858207759, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
+  m_PrefabInstance: {fileID: 2047139668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941239143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,8 +1019,8 @@ Transform:
   m_GameObject: {fileID: 1402840569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 25, y: 50, z: 1}
+  m_LocalPosition: {x: 2.29, y: 0, z: 1}
+  m_LocalScale: {x: 48.49197, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1265,6 +1270,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5722834008980117067, guid: 962e84cbf55a4224889689f6d299a8ec, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1226417457}
+    - target: {fileID: 5722834008980117067, guid: 962e84cbf55a4224889689f6d299a8ec, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 808353629}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
