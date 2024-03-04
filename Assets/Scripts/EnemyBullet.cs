@@ -18,8 +18,6 @@ public class EnemyBullet : MonoBehaviour
     public Rigidbody2D rb;
     public float force;
 
-    EnemyShooting enemyShooting;
-
     // Start is called before the first frame update
     void Start()
     {
