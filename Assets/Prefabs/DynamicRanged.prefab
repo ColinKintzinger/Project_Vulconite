@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8571508865000015114}
   - component: {fileID: 7159625938547474234}
   - component: {fileID: 4721561350843747943}
+  - component: {fileID: 7400295892386249577}
   m_Layer: 0
   m_Name: DynamicRanged
   m_TagString: Untagged
@@ -33,6 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7062725777441525757}
+  - {fileID: 4133922265243888645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8571508865000015114
@@ -119,7 +121,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   rangeDistance: 5
+  sceneBoundX1: -10
+  sceneBoundX2: 10
+  sceneBoundY1: -5
+  sceneBoundY2: 5
   target: {fileID: 0}
+--- !u!114 &7400295892386249577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802145418359317337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b53e35303f4a12448f1cde5db754d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetingDistance: 25
+  targetingTimer: 2
+  bullet: {fileID: 0}
+  bulletPos: {fileID: 4133922265243888645}
 --- !u!1 &6723899210605695114
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +156,7 @@ GameObject:
   - component: {fileID: 7897516186407852021}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,4 +289,35 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!1 &7085206372629986438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4133922265243888645}
+  m_Layer: 0
+  m_Name: CirclePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4133922265243888645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085206372629986438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2462289703595872643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
