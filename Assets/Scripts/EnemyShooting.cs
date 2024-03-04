@@ -11,6 +11,7 @@
  * CHANGE LOG
  * Zach - 02/23/24 - Added comments.
  * Zach - 02/29/24 - Bullets can predict where the player will be
+ * Dylan/Colin - 03/04/24 - changed call from "shoot" to "Shoot" to stay consistant
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -50,13 +51,13 @@ public class EnemyShooting : MonoBehaviour
             if (timer > targetingTimer)
             {
                 timer = 0;
-                shoot();
+                Shoot();
             }
         }
     }
 
     // Shoots the bullet
-    void shoot()
+    void Shoot()
     {
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
