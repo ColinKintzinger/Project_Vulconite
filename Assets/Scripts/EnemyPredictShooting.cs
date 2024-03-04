@@ -5,7 +5,7 @@ using Unity.Mathematics;
 
 public class EnemyPredictShooting : MonoBehaviour
 {
-    public Rigidbody2D projectile;
+    public GameObject projectile;
     public float projectileSpeed;
     public Rigidbody2D target;
 
@@ -16,7 +16,7 @@ public class EnemyPredictShooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log(projectile);
     }
 
     // Update is called once per frame
@@ -42,17 +42,18 @@ public class EnemyPredictShooting : MonoBehaviour
 
     void ShootToKill()
     {
-        Debug.Log("pre-instance");
+        Debug.Log("pre-instance; " + projectile + "; " +  transform.position);
         var instance = Instantiate(projectile, transform.position, quaternion.identity);
+        var projectileVelocity = projectile.GetComponent<Rigidbody2D>().velocity;
         Debug.Log("instance");
-        if (InterceptionDirection(target.transform.position, transform.position, projectile.velocity, projectileSpeed, out var direction))
+        if (InterceptionDirection(target.transform.position, transform.position, projectileVelocity, projectileSpeed, out var direction))
         {
-            instance.velocity = direction * projectileSpeed;
+            projectileVelocity = direction * projectileSpeed;
             Debug.Log("FireIF!!");
         }
         else
         {
-            instance.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
+            projectileVelocity = (target.transform.position - transform.position).normalized * projectileSpeed;
             Debug.Log("FireELSE!!");
         }
 
