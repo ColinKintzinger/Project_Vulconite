@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     public float yMovement = 10.0f;
     public GameObject meleeLine;
 
+    [SerializeField]
+    private PlayerStats playerStats; // Trying out ScriptableObjects
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +60,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
         }
 
+        Debug.Log(playerStats.health);
     }
 
     // Testing collision for delagate scene transition
@@ -65,6 +69,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
+            playerStats.takeDamage(5.0f);
         }
     }
 
