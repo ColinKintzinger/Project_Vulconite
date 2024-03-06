@@ -11,6 +11,7 @@
  * Dylan - 02/27/24 - Added a destroy object in collider function to test scene transitions (needed a way to "kill" enemies)
  * Dylan - 02/28/24 - Changed Collider to include melee functionality in my scene
  * Dylan/Colin - 03/04/24 - polished code and spacing
+ * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
     public float xMovement = 10.0f;
     public float yMovement = 10.0f;
     public GameObject meleeLine;
+
+    [SerializeField]
+    private PlayerStats playerStats; // Trying out ScriptableObjects
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +61,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
         }
 
+        Debug.Log(playerStats.health);
     }
 
     // Testing collision for delagate scene transition
@@ -65,6 +70,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
+            playerStats.takeDamage(5.0f);
         }
     }
 

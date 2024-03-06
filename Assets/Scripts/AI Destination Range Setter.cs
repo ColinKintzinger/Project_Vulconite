@@ -5,7 +5,8 @@ using System.Collections;
  * it by the distance. 
  * CHANGELOG:
  * otto (03/03/24) - Added some conditions to try and keep it from getting stuck in the corners.
- * otto (03/04/24) - 
+ * otto (03/05/24) - Updated the bounds variables to be 2 variables where the scene is centered on <0,0,0>
+ *						additionally added comments to explain this.
  *
  */
 
@@ -25,11 +26,12 @@ namespace Pathfinding
 	public class AIDestinationSetter : VersionedMonoBehaviour
 	{
 		/// <summary>The object that the AI should move to</summary>
-		public float rangeDistance = 5;
-		public float sceneBoundX1 =-10;
-		public float sceneBoundX2 =10;
-		public float sceneBoundY1 = -5;
-		public float sceneBoundY2 = 5;
+		
+		//only works for centered A*.transform.position on <0,0,0>
+		public float sceneX = 20;
+		public float sceneY = 10;
+
+		public float rangeDistance = 5.0f;
 		public Transform target;
 		IAstarAI ai;
 
@@ -57,11 +59,13 @@ namespace Pathfinding
 			//	we want the sprite to be and adds it to the target pos.
 			Vector3 newTarget = target.position + tempOffset.normalized * rangeDistance;
 			//if and else if is designed to remove this from getting stuck in corners and walls.
-			if (newTarget.x < sceneBoundX1 || newTarget.x>sceneBoundX2) {
+			// checks the left and right bounds of the A* map;
+			if (newTarget.x < -(sceneX / 2) || newTarget.x> (sceneX / 2)) {
 				tempOffset.x = tempOffset.y;
 				newTarget = target.position + tempOffset.normalized * rangeDistance;
 			}
-			else if (newTarget.y < sceneBoundY1 || newTarget.y > sceneBoundY2)
+			// checks the top and bottom bounds of the A* map;
+			else if (newTarget.y < -(sceneY / 2) || newTarget.y > (sceneY / 2))
 			{
 				tempOffset.y = tempOffset.x;
 				newTarget = target.position + tempOffset.normalized * rangeDistance;

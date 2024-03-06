@@ -6,6 +6,7 @@
  * CHANGE LOG
  * colin-2/27/24- commented code and refactored to get rid of hard coded values
  * otto-3/3/24 - tried adjusting the attack duration and frequency with the values. did not work.
+ * Dylan - 03/06/24 - Got rid of OnTrigger function, it wasn't doing anything
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -17,23 +18,20 @@ public class PlayerAimWeapon : MonoBehaviour
     private Transform aimTransform;
     public GameObject meleeLine;
     public float fireDelay = 1f;
-    //can't modify the attack speed with these values?????
     public float attackTime = .5f;
     private float timer=0;
     
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
-
-        
     }
 
     private void Update()
     {
-        // needs to pull a reference to the mouses in world position
+        // Needs to pull a reference to the mouses in world position
         meleeAiming();
         meleAttack();
-        //sets the delay so player can't spam the melee attack
+        // Sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0)
         {
             timer=fireDelay;
@@ -44,35 +42,20 @@ public class PlayerAimWeapon : MonoBehaviour
         }
 
     }
-    //allows the melee object to apear and then disapear acording to the timer
+    // Allows the melee object to apear and then disapear acording to the timer
     private void meleAttack()
     {
         
         if (timer>=attackTime)
         {
             meleeLine.gameObject.SetActive(true);
-            Debug.Log("true");
         }
         else
         {
             meleeLine.gameObject.SetActive(false);
         }
-
-        //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
         
     }
-    /*private void showObject()
-    {
-        float timer = 1;
-        while (timer > 1)
-        {
-            meleeLine.gameObject.SetActive(true);
-            timer -= Time.deltaTime * 1;
-        }
-        meleeLine.gameObject.SetActive(false);
-        return; 
-    }*/
-    //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
         Vector3 mousePosition = GetMouseWorldPositon();
@@ -80,9 +63,8 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
-        //Debug.Log(angle);
     }
-    //these obtain the mouse position in the world position for tracking on the map 
+    // These obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon() {
         Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
         vec.z = 0f;
@@ -98,18 +80,6 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
-
-    //public void OnCollisionEnter2D(Collision2D collision)
-    //{
-        
-    //}
 
 }
 
