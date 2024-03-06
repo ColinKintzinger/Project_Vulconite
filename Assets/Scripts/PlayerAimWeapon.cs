@@ -6,6 +6,7 @@
  * CHANGE LOG
  * colin-2/27/24- commented code and refactored to get rid of hard coded values
  * otto-3/3/24 - tried adjusting the attack duration and frequency with the values. did not work.
+ * Dylan - 03/06/24 - Got rid of OnTrigger function, it wasn't doing anything
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -24,8 +25,6 @@ public class PlayerAimWeapon : MonoBehaviour
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
-
-        
     }
 
     private void Update()
@@ -98,17 +97,12 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
-
-    //public void OnCollisionEnter2D(Collision2D collision)
+    //public void OnTriggerEnter2D(Collider2D other)
     //{
-        
+    //    if(other.gameObject.CompareTag("Enemy"))
+    //    {
+    //        Destroy(other.gameObject);
+    //    }
     //}
 
 }
