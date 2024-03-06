@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  force: 10.12
+  force: 15.74
 --- !u!114 &8093749263652917048
 MonoBehaviour:
   m_ObjectHideFlags: 0
