@@ -1,14 +1,3 @@
-/*
- * Zachary Speckan
- * 03/06/24
- * Shoots a bullet at the player's future position.
- * 
- * targetingDistance - Max distance the enemy will shoot the player at
- * targetingTimer - How long the enemy will wait until firing another bullet
- * 
- * CHANGE LOG
- * Zach - 03/06/24 - Added comments and made predictive aiming work properly.
- */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +7,7 @@ public class EnemyPredictShooting : MonoBehaviour
 {
     public GameObject projectile;
     public float projectileSpeed;
-    public GameObject target;
+    public Rigidbody2D target;
 
     public float targetingDistance = 25.0f;
     public float targetingTimer = 2.0f;
@@ -51,46 +40,45 @@ public class EnemyPredictShooting : MonoBehaviour
         }
     }
 
-    //Shoots towards the player's future position.
     void ShootToKill()
     {
+        Debug.Log("pre-instance; " + projectile + "; " +  transform.position);
         var instance = Instantiate(projectile, transform.position, quaternion.identity);
-        var targetVelocity = target.GetComponent<Rigidbody2D>().velocity;
-        var projectileBody = instance.GetComponent<EnemyBullet>();
-        if (InterceptionDirection(target.transform.position, transform.position, targetVelocity, projectileSpeed, out var direction))
+        var projectileVelocity = projectile.GetComponent<Rigidbody2D>().velocity;
+        Debug.Log("instance");
+        if (InterceptionDirection(target.transform.position, transform.position, projectileVelocity, projectileSpeed, out var direction))
         {
-            projectileBody.setVelocity(direction * projectileSpeed);
+            projectileVelocity = direction * projectileSpeed;
+            Debug.Log("FireIF!!");
         }
         else
         {
-            projectileBody.setVelocity((target.transform.position - transform.position).normalized * projectileSpeed);
+            projectileVelocity = (target.transform.position - transform.position).normalized * projectileSpeed;
+            Debug.Log("FireELSE!!");
         }
 
     }
 
-    //Predicts the path the player will take.
-    public bool InterceptionDirection(Vector2 playerPosition, Vector2 enemyPosition, Vector2 playerVelocity, float bulletSpeed, out Vector2 result)
+    public bool InterceptionDirection(Vector2 a, Vector2 b, Vector2 vA, float sB, out Vector2 result)
     {
-        var distanceBetween = enemyPosition - playerPosition;
-        var magDistanceBetween = distanceBetween.magnitude;
-        var angleTurned = Vector2.Angle(distanceBetween, playerVelocity) * Mathf.Deg2Rad;
-        var magPlayerVelo = playerVelocity.magnitude;
-        var velocityRatio = magPlayerVelo / bulletSpeed;
-        if (MyMath.SolveQuadratic(1 - velocityRatio * velocityRatio, 2 * velocityRatio * magDistanceBetween * Mathf.Cos(angleTurned), -(magDistanceBetween * magDistanceBetween), out var root1, out var root2) == 0)
+        var aToB = b - a;
+        var dC = aToB.magnitude;
+        var alpha = Vector2.Angle(aToB, vA) * Mathf.Deg2Rad;
+        var sA = vA.magnitude;
+        var r = sA / sB;
+        if (MyMath.SolveQuadratic(1 - r * r, 2 * r * dC * Mathf.Cos(alpha), -(dC * dC), out var root1, out var root2) == 0)
         {
-            Debug.Log("Didn't work.");
             result = Vector2.zero;
             return false;
         }
-        var bulletDistance = Mathf.Max(root1, root2);
-        var t = bulletDistance / bulletSpeed;
-        var c = playerPosition + playerVelocity * t;
-        result = (c - enemyPosition).normalized;
+        var dA = Mathf.Max(root1, root2);
+        var t = dA / sB;
+        var c = a + vA * t;
+        result = (c - b).normalized;
         return true;
     }
 }
 
-//Solves quadratic equation.
 public class MyMath
 {
     public static int SolveQuadratic(float a, float b, float c, out float root1, out float root2)
