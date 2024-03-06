@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4517266809314607937}
   - component: {fileID: 7713463865432073194}
   m_Layer: 0
-  m_Name: Colin's Cute Quarter Circle
+  m_Name: TestingMeleeCircle
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
