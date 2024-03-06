@@ -11,6 +11,7 @@
  * Dylan - 02/27/24 - Added a destroy object in collider function to test scene transitions (needed a way to "kill" enemies)
  * Dylan - 02/28/24 - Changed Collider to include melee functionality in my scene
  * Dylan/Colin - 03/04/24 - polished code and spacing
+ * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  */
 using System.Collections;
 using System.Collections.Generic;
