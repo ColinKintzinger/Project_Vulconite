@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce4876ea91cd84fbc1d5b94d796d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBound: -10
-  upperBound: 7
-  lowerBound: -7
-  rightBound: 10
+  leftBound: -15.4
+  upperBound: 5.5
+  lowerBound: -5.5
+  rightBound: 15.4
