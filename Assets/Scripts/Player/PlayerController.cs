@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
         }
 
-        Debug.Log(playerStats.health);
+        //Debug.Log(playerStats.health);
     }
 
     // Testing collision for delagate scene transition
