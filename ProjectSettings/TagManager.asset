@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Door
   - Enemy
+  - LootBox
+  - Weapon
+  - Charm
   layers:
   - Default
   - TransparentFX

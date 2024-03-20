@@ -70,7 +70,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
-            playerStats.takeDamage(5.0f);
+            playerStats.TakeDamage(5.0f);
+
+        } else if (collision.gameObject.CompareTag("Charm"))
+        {
+            playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
+            Destroy(collision.gameObject);
         }
     }
 
