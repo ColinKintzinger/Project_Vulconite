@@ -14,7 +14,7 @@ public class Charm : MonoBehaviour
 {
     string charmName;
 
-    // Stats.... apply them to PlayerStats scriptable object
+   
 
     // Start is called before the first frame update
     void Start()
