@@ -494,6 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionCount: 0
   collisionCountThreshold: 3
+  charmTest: {fileID: 7594266446672816944, guid: 909be190badc2b440b7e4d6dad2b7597, type: 3}
   charmPrefabs: []
 --- !u!1 &2130654368
 GameObject:
