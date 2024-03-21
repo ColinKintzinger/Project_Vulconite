@@ -5,9 +5,11 @@
  * 
  * CHANGE LOG
  * Dylan - 03/20/24 - Added a structure for different charms. Not yet functional
+ * Dylan - 03/21/24 - Added more structure | Got feedback from Turner, inheritance looks like the way to go
  */
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Charm : MonoBehaviour
@@ -28,17 +30,29 @@ public class Charm : MonoBehaviour
 
     }
 
+    public virtual void applyBuff()
+    {
+        // A virtual fuction for children to override as needed
+    }
+
 }
 
 public class DamageCharm : Charm
 {
     public int damageBuff;
 
-
+    public override void applyBuff()
+    {
+        //base.applyBuff();
+    }
 }
 
-public class SpeedBuffCharm : Charm
+public class SpeedCharm : Charm
 {
     public float speedBuff;
 
+    public override void applyBuff()
+    {
+        //base.applyBuff();
+    }
 }
