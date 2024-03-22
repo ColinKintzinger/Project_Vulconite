@@ -11,7 +11,7 @@ public class MovePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        float sausage = 43.5;
     }
 
     // Update is called once per frame
