@@ -33,6 +33,7 @@ public class Charm : MonoBehaviour
     public virtual void ApplyBuff(PlayerStats playerStats)
     {
         // A virtual fuction for children to override as needed
+        
     }
 
 }
