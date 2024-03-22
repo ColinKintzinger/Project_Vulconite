@@ -14,7 +14,7 @@ using UnityEngine;
 
 public class Charm : MonoBehaviour
 {
-    string charmName;
+    public string charmName;
 
    
 
@@ -30,7 +30,7 @@ public class Charm : MonoBehaviour
 
     }
 
-    public virtual void applyBuff()
+    public virtual void ApplyBuff(PlayerStats playerStats)
     {
         // A virtual fuction for children to override as needed
     }
@@ -41,7 +41,7 @@ public class DamageCharm : Charm
 {
     public int damageBuff;
 
-    public override void applyBuff()
+    public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
     }
@@ -51,7 +51,7 @@ public class SpeedCharm : Charm
 {
     public float speedBuff;
 
-    public override void applyBuff()
+    public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
     }

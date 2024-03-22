@@ -19,6 +19,6 @@ public class PlayerStats : ScriptableObject
 
         collectedCharms.Add(charm);
         Debug.Log("CHARM COLLECTED!");
-        //Debug.Log("Charm type: " +  charm);
+        charm.ApplyBuff(this);
     }
 }
