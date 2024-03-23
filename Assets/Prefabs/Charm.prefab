@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3294662805917810865}
   - component: {fileID: -7970102891115058928}
   - component: {fileID: 8231647857428234844}
+  - component: {fileID: -5455190864032310010}
   m_Layer: 0
   m_Name: Charm
   m_TagString: Charm
@@ -158,3 +159,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &-5455190864032310010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594266446672816944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831ceb10e701ab440b23a5535244d793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charmName: 

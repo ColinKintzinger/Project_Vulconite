@@ -15,9 +15,10 @@ public class PlayerStats : ScriptableObject
 
     public void EquipCharm(Charm charm)
     {
-        // Switch statement to determine stat buffs based on name of charm prefab? --- will follow up soon -- might be able to use inheritance
+        // Switch statement to check charm names and apply buff -- will follow up -- might do inheritance
 
         collectedCharms.Add(charm);
         Debug.Log("CHARM COLLECTED!");
+        charm.ApplyBuff(this);
     }
 }

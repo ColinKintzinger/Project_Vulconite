@@ -454,7 +454,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fe81df9ddf1cec489562af8c8965b95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -494,6 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionCount: 0
   collisionCountThreshold: 3
+  charmTest: {fileID: 7594266446672816944, guid: 909be190badc2b440b7e4d6dad2b7597, type: 3}
   charmPrefabs: []
 --- !u!1 &2130654368
 GameObject:
