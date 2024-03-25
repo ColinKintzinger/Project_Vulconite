@@ -17,6 +17,7 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
+    public GameObject bullet;
     public float fireDelay = 1f;
     //can't modify the attack speed with these values?????
     public float attackTime = .5f;
@@ -32,6 +33,7 @@ public class PlayerAimWeapon : MonoBehaviour
         // needs to pull a reference to the mouses in world position
         meleeAiming();
         meleAttack();
+        rangedAttack();
         //sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0)
         {
@@ -60,17 +62,13 @@ public class PlayerAimWeapon : MonoBehaviour
         //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
         
     }
-    /*private void showObject()
+   private void rangedAttack()
     {
-        float timer = 1;
-        while (timer > 1)
+        if (timer >= attackTime)
         {
-            meleeLine.gameObject.SetActive(true);
-            timer -= Time.deltaTime * 1;
+            Instantiate(bullet, transform.position, Quaternion.identity);
         }
-        meleeLine.gameObject.SetActive(false);
-        return; 
-    }*/
+    }
     //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
