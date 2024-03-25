@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Alpha/Mellee_testing_scene.unity
     guid: dac1deca7f038d9468ed158c5e39cef9
+  - enabled: 1
+    path: Assets/Scenes/LootRoom1.unity
+    guid: 67f7f88cc8ea06c43a8d78c9ebaee9ee
   m_configObjects: {}
