@@ -28,5 +28,6 @@ public class DamageCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
             //base.applyBuff();
+            
     }
 }
