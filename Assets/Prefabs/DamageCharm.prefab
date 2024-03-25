@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8304899586359997988}
   - component: {fileID: 2313915676916543872}
   - component: {fileID: 2167572243116896520}
+  - component: {fileID: 7152576106559667172}
   m_Layer: 0
   m_Name: DamageCharm
   m_TagString: Charm
@@ -158,3 +159,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1782966, y: 0.19991961}
   m_EdgeRadius: 0
+--- !u!114 &7152576106559667172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231526499602556927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d176068b8be0e4e82e23b51871ec8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charmName: Damage Charm
+  damageBuff: 0

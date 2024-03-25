@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1377982483698810450}
   - component: {fileID: 5627026749896912624}
   - component: {fileID: 7410635392849206854}
-  - component: {fileID: 1256058460578400304}
+  - component: {fileID: 1598583029335941753}
   m_Layer: 0
   m_Name: SpeedCharm
   m_TagString: Charm
@@ -159,7 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1666098, y: 0.2037282}
   m_EdgeRadius: 0
---- !u!114 &1256058460578400304
+--- !u!114 &1598583029335941753
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2006423490730176266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831ceb10e701ab440b23a5535244d793, type: 3}
+  m_Script: {fileID: 11500000, guid: aaa9c95b94bffd448b4fb982993b3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charmName: Speed Charm
+  speedBuff: 0

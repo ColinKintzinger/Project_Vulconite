@@ -15,7 +15,6 @@ public class PlayerStats : ScriptableObject
 
     public void EquipCharm(Charm charm)
     {
-        // Switch statement to check charm names and apply buff -- will follow up -- might do inheritance
 
         collectedCharms.Add(charm);
         Debug.Log("CHARM COLLECTED!");
