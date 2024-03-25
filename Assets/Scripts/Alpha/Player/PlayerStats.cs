@@ -8,7 +8,7 @@ public class PlayerStats : ScriptableObject
     public int maxHealth;
     public float speed;
     public float maxSpeed;
-    public int damage;
+    public int damage = 1;
     
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
