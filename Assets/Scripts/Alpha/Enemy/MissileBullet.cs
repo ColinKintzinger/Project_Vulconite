@@ -31,9 +31,9 @@ public class MissileBullet : MonoBehaviour
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         float bullAngle = transform.eulerAngles.z;
         float angleDiff = (angle - bullAngle)%180;
-        if ((angle - bullAngle) / 180 == 0) { negativeAngle = false; }
+        if (angle <= 0) { negativeAngle = false; }
         else { negativeAngle = true; }
-        Debug.Log(angleDiff);
+        Debug.Log("Angle=" + angle +"bullAngle=" + bullAngle + "Bool negativeAngle="+ negativeAngle);
         if (!negativeAngle) {
             if (angleDiff > maxRotation)
             {
