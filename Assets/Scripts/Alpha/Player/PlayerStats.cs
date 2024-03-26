@@ -4,18 +4,23 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats")]
 public class PlayerStats : ScriptableObject
 {
-    public float health = 100f;
+    public int health = 10;
+    public int maxHealth;
+    public float speed;
+    public float maxSpeed;
+    public int damage = 1;
+    
+
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
 
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
     }
 
     public void EquipCharm(Charm charm)
     {
-        // Switch statement to check charm names and apply buff -- will follow up -- might do inheritance
 
         collectedCharms.Add(charm);
         Debug.Log("CHARM COLLECTED!");

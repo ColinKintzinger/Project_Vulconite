@@ -1,18 +1,18 @@
 /*
  * Dylan Rothbauer
- * 02/28/24
- * A simple script to attach to weapons
+ * 03/25/24
+ * Speed charm script for unity to be happy
  * 
  * CHANGE LOG
- * 02/28/24 - Created script
+ * Dylan - 03/25/24 - Created script
  */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponAttack : MonoBehaviour
+public class SpeedCharm : Charm
 {
-    
+    public float speedBuff;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +26,9 @@ public class WeaponAttack : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public override void ApplyBuff(PlayerStats playerStats)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(collision.gameObject);
-        }
+        //base.applyBuff();
     }
+
 }

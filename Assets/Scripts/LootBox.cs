@@ -14,7 +14,7 @@ public class LootBox : MonoBehaviour
 {
     public int collisionCount = 0;
     public int collisionCountThreshold = 3;
-    public GameObject charmTest;
+    //public GameObject charmTest;
     public GameObject[] charmPrefabs;
 
     // Start is called before the first frame update
@@ -46,11 +46,11 @@ public class LootBox : MonoBehaviour
 
     public void RevealCharm()
     {
-        //int randomIndex = Random.Range(0, charmPrefabs.Length);
-        //GameObject charmPrefab = charmPrefabs[randomIndex];
-        //Instantiate(charmPrefab, transform.position, Quaternion.identity);
+        int randomIndex = Random.Range(0, charmPrefabs.Length);
+        GameObject charmPrefab = charmPrefabs[randomIndex];
+        Instantiate(charmPrefab, transform.position, Quaternion.identity);
 
-        Instantiate(charmTest, transform.position, Quaternion.identity);
+        //Instantiate(charmTest, transform.position, Quaternion.identity);
         collisionCount = 0;
     }
 

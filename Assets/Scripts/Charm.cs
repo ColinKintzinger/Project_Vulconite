@@ -37,23 +37,3 @@ public class Charm : MonoBehaviour
     }
 
 }
-
-public class DamageCharm : Charm
-{
-    public int damageBuff;
-
-    public override void ApplyBuff(PlayerStats playerStats)
-    {
-        //base.applyBuff();
-    }
-}
-
-public class SpeedCharm : Charm
-{
-    public float speedBuff;
-
-    public override void ApplyBuff(PlayerStats playerStats)
-    {
-        //base.applyBuff();
-    }
-}
