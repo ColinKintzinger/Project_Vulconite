@@ -14,6 +14,7 @@ public class MissileBullet : MonoBehaviour
 {
     public float speed = 5;
     public float maxRotation = .2f;
+    private int debugVal = 0;
     public bool negativeAngle;
     // Start is called before the first frame update
     void Start()
@@ -31,21 +32,25 @@ public class MissileBullet : MonoBehaviour
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         float bullAngle = transform.eulerAngles.z;
         float angleDiff = (angle - bullAngle)%180;
+
         if (angle <= 0) { negativeAngle = false; }
         else { negativeAngle = true; }
-        Debug.Log("Angle=" + angle +"bullAngle=" + bullAngle + "Bool negativeAngle="+ negativeAngle);
+        Debug.Log("Angle=" + angle +"   bullAngle=" + bullAngle + "   Bool negativeAngle="+ negativeAngle + "  Angle Diff="+angleDiff+"   debugVal="+ debugVal);
         if (!negativeAngle) {
             if (angleDiff > maxRotation)
             {
+                debugVal = 1;
                 transform.eulerAngles += new Vector3(0, 0, (maxRotation));
             }
             else if (angleDiff < -maxRotation)
             {
+                debugVal = 2;
                 transform.eulerAngles += new Vector3(0, 0, (-maxRotation));
             }
             else
             {
-                transform.eulerAngles += new Vector3(0, 0, (angleDiff));
+                debugVal = 3;
+                transform.eulerAngles += new Vector3(0, 0, (-angleDiff));
             }
         }
         //NEED TO FIX THE CODE IN THE IF STATEMENT
@@ -53,14 +58,17 @@ public class MissileBullet : MonoBehaviour
         {
             if (angleDiff > -maxRotation)
             {
+                debugVal = 4;
                 transform.eulerAngles += new Vector3(0, 0, (maxRotation));
             }
             else if (angleDiff < maxRotation)
             {
+                debugVal = 5;
                 transform.eulerAngles += new Vector3(0, 0, (-maxRotation));
             }
             else
             {
+                debugVal = 5;
                 transform.eulerAngles += new Vector3(0, 0, (angleDiff));
             }
         }
