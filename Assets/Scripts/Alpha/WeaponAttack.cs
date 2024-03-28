@@ -12,6 +12,8 @@ using UnityEngine;
 
 public class WeaponAttack : MonoBehaviour
 {
+    public PlayerStats playerStats;
+    
     
 
     // Start is called before the first frame update
@@ -30,7 +32,16 @@ public class WeaponAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                Debug.Log("EnemyHealth component retrieved!");
+                enemyHealth.TakeDamage(playerStats.damage);
+            } else
+            {
+                Debug.Log("EnemyHealth component NOT retrieved!");
+            }
+            //Destroy(collision.gameObject);
         }
     }
 }
