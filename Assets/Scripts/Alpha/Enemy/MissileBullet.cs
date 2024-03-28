@@ -35,9 +35,9 @@ public class MissileBullet : MonoBehaviour
 
         if (angle <= 0) { negativeAngle = false; }
         else { negativeAngle = true; }
-        Debug.Log("Angle=" + angle +"   bullAngle=" + bullAngle + "   Bool negativeAngle="+ negativeAngle + "  Angle Diff="+angleDiff+"   debugVal="+ debugVal);
+        Debug.Log("Angle=" + angle + "   bullAngle=" + bullAngle + "   Bool negativeAngle="+ negativeAngle + "  Angle Diff=" + angleDiff+"   debugVal=" + debugVal);
         if (!negativeAngle) {
-            if (angleDiff > maxRotation)
+            if (angleDiff+180 > maxRotation)
             {
                 debugVal = 1;
                 transform.eulerAngles += new Vector3(0, 0, (maxRotation));
