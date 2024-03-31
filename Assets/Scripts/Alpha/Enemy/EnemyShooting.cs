@@ -40,7 +40,7 @@ public class EnemyShooting : MonoBehaviour
     {
         // Gets the distance the player is from the enemy
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         // Checks if the player is close enough
         if (distance < targetingDistance)
