@@ -24,7 +24,7 @@ public class EnemyPredictShooting : MonoBehaviour
     {
         // Gets the distance the player is from the enemy
         float distance = Vector2.Distance(transform.position, target.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         // Checks if the player is close enough
         if (distance < targetingDistance)
@@ -42,19 +42,19 @@ public class EnemyPredictShooting : MonoBehaviour
 
     void ShootToKill()
     {
-        Debug.Log("pre-instance; " + projectile + "; " +  transform.position);
+        //Debug.Log("pre-instance; " + projectile + "; " +  transform.position);
         var instance = Instantiate(projectile, transform.position, quaternion.identity);
         var projectileVelocity = projectile.GetComponent<Rigidbody2D>().velocity;
-        Debug.Log("instance");
+        //Debug.Log("instance");
         if (InterceptionDirection(target.transform.position, transform.position, projectileVelocity, projectileSpeed, out var direction))
         {
             projectileVelocity = direction * projectileSpeed;
-            Debug.Log("FireIF!!");
+            //Debug.Log("FireIF!!");
         }
         else
         {
             projectileVelocity = (target.transform.position - transform.position).normalized * projectileSpeed;
-            Debug.Log("FireELSE!!");
+            //Debug.Log("FireELSE!!");
         }
 
     }

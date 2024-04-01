@@ -42,24 +42,9 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-        if (transform.position.x < -xMovement)
-        {
-            transform.position = new Vector3(-xMovement, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > xMovement)
-        {
-            transform.position = new Vector3(xMovement, transform.position.y, transform.position.z);
-        }
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
-        transform.Translate(Vector3.up *  verticalInput * Time.deltaTime * speed);
-        if (transform.position.y < -yMovement)
-        {
-            transform.position = new Vector3(transform.position.x, -yMovement, transform.position.z);
-        }
-        if (transform.position.y > yMovement)
-        {
-            transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
-        }
+        
 
         //Debug.Log(playerStats.health);
     }
@@ -67,6 +52,7 @@ public class PlayerController : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("PLAYER COLLISION DETECTED");
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
