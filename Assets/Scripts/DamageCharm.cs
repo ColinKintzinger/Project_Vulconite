@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class DamageCharm : Charm
 {
-    public int damageBuff;
+    public int damageBuff = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,8 @@ public class DamageCharm : Charm
     }
     public override void ApplyBuff(PlayerStats playerStats)
     {
-            //base.applyBuff();
+        //base.applyBuff();
+        playerStats.damage += damageBuff;
             
     }
 }

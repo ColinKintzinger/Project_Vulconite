@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class SpeedCharm : Charm
 {
-    public float speedBuff;
+    public float speedBuff = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,7 @@ public class SpeedCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
+        playerStats.speed += speedBuff;
     }
 
 }
