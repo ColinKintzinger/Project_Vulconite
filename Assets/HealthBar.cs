@@ -24,6 +24,5 @@ public class HealthBar : MonoBehaviour
         transform.localScale = new Vector3(currentHealth * scaleAdjustment,transform.localScale.y, 0f) ;
         float positionXAdjustment = (currentHealth * scaleAdjustment - startingHealth * scaleAdjustment) / 2;
         transform.localPosition = new Vector3(basePosition+positionXAdjustment, 0, 1);
-        Debug.Log(positionXAdjustment);
     }
 }
