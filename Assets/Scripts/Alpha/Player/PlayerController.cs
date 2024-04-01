@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("PLAYER COLLISION DETECTED");
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
