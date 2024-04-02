@@ -1,3 +1,17 @@
+/*
+ * Zachary Speckan
+ * 03/06/24
+ * Shooting a more accurate bullet at the player
+ * 
+ * projectile - The projectile object
+ * projectileSpeed - The speed of the projectile
+ * target - The player
+ * 
+ * targetingDistance - Max distance the enemy will shoot the player at
+ * targetingTimer - How long the enemy will wait until firing another bullet
+ * timer - How much time has passed since the last bullet was fired
+ * 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,7 +46,7 @@ public class EnemyPredictShooting : MonoBehaviour
             timer += Time.deltaTime;
 
             // Checks if enough time has passed
-            if (timer > targetingTimer)
+            if (timer > targetingTimer && gameObject.tag != "Boss")
             {
                 timer = 0;
                 ShootToKill();
@@ -40,7 +54,7 @@ public class EnemyPredictShooting : MonoBehaviour
         }
     }
 
-    void ShootToKill()
+    public void ShootToKill()
     {
         Debug.Log("pre-instance; " + projectile + "; " +  transform.position);
         var instance = Instantiate(projectile, transform.position, quaternion.identity);

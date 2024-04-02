@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 3625954588756434347}
   - component: {fileID: 554529882170394605}
   - component: {fileID: 6423420631806633602}
+  - component: {fileID: 3551017776133557381}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -224,8 +225,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.14150935, g: 0.21444318, b: 0.8490566, a: 1}
+  m_Sprite: {fileID: -286465618, guid: 9e6fd3971a399454f887f12b5d22388b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -250,7 +251,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   speed: 7
-  xMovement: 18
+  xMovement: 15.4
   yMovement: 5.5
   meleeLine: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
   playerStats: {fileID: 11400000, guid: 3cd012de8ba8bc24193cef88ca9061c8, type: 2}
@@ -317,7 +318,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -341,6 +342,27 @@ MonoBehaviour:
   meleeLine: {fileID: 447675782563765371}
   fireDelay: 0.75
   attackTime: 0.5
+--- !u!95 &3551017776133557381
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270781994743990378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6854e05063b52ec40a8c2bee58c95732, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1531084330264724220
 PrefabInstance:
   m_ObjectHideFlags: 0
