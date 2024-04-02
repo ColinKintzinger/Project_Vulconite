@@ -12,7 +12,6 @@ using UnityEngine;
 
 public class DamageCharm : Charm
 {
-    public int damageBuff = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +27,8 @@ public class DamageCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
-        playerStats.damage += damageBuff;
-            
+        int randomDamageBuff = Random.Range(1, 4);
+        playerStats.damage += randomDamageBuff;
+        Debug.Log("Damage Charm Collected! Damage increased by " + randomDamageBuff);
     }
 }
