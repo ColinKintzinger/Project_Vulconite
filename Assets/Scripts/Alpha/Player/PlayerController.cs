@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
     // Testing collision for delagate scene transition
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
@@ -76,6 +77,21 @@ public class PlayerController : MonoBehaviour
         {
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.name == "Ranged")
+        {
+            gameObject.AddComponent<Range>();
+            //GetComponent<Range>().Start(); 
+            Destroy(collision.gameObject);
+            Destroy(GameObject.Find("Melee"));
+            Debug.Log(true);
+        }
+        else if (collision.gameObject.name == "Melee")
+        {
+            gameObject.AddComponent<Melee>();
+            Destroy(collision.gameObject);
+            Destroy(GameObject.Find("Ranged"));
+            Debug.Log(true);
         }
     }
 

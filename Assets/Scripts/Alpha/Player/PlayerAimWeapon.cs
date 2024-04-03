@@ -27,11 +27,13 @@ public class PlayerAimWeapon : MonoBehaviour
     public float attackTime = .5f;
     private float timer=0;
 
+    public PlayerStats playerStats;
     
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
         bulletSpawn = transform.Find("Aim");
+        
         
     }
 
@@ -53,6 +55,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
     }
     //allows the melee object to apear and then disapear acording to the timer
+
     private void meleAttack()
     {
         
@@ -67,10 +70,11 @@ public class PlayerAimWeapon : MonoBehaviour
         }  
     }
 
-    //ranged attack method 
+    //ranged attack method ``
    private void rangedAttack()
     {
-        GameObject bulletInst = Instantiate(bullet, bulletSpawn.position, Quaternion.Euler(0,0,angle-90));
+        
+            GameObject bulletInst = Instantiate(bullet, bulletSpawn.position, Quaternion.Euler(0, 0, angle - 90));
         
     }
     //allows the player object to get the angle for the positioning of the melee object 
@@ -81,7 +85,7 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
         angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
-        Debug.Log(angle); 
+       // Debug.Log(angle);  
     }
     //these obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon() {

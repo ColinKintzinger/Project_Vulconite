@@ -6,7 +6,7 @@ public class PlayerStats : ScriptableObject
 {
     public float health = 100f;
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
-
+    public Weapon attackWeapon;
 
     public void TakeDamage(float damage)
     {
@@ -20,4 +20,6 @@ public class PlayerStats : ScriptableObject
         collectedCharms.Add(charm);
         Debug.Log("CHARM COLLECTED!");
     }
+    
+    
 }

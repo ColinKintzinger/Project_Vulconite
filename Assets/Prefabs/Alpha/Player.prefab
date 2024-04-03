@@ -339,8 +339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeLine: {fileID: 447675782563765371}
+  bullet: {fileID: 0}
+  bulletSpawn: {fileID: 0}
   fireDelay: 0.75
   attackTime: 0.5
+  playerStats: {fileID: 0}
 --- !u!1001 &1531084330264724220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,6 +355,10 @@ PrefabInstance:
     - target: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_Name
       value: Colin's Cute Quarter Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
       propertyPath: m_LocalPosition.x

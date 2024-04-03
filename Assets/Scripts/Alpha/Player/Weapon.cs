@@ -1,0 +1,75 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Weapon : MonoBehaviour
+{
+    protected Transform aimTransform;
+    protected Transform bulletSpawn;
+
+    public float fireDelay = 1f;
+    public float attackTime = .5f;
+    public float timer = 0;
+    protected float angle;
+
+    public PlayerStats attackWeapon;
+    // Start is called before the first frame update
+    protected void Start()
+    {
+        aimTransform = transform.Find("Aim");
+        bulletSpawn = transform.Find("Aim");
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        meleeAiming(); 
+        if (Input.GetMouseButton(0) && timer <= 0)
+        {
+            timer = fireDelay;
+            Attack();
+        }
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime * 1;
+            //Debug.Log(timer);
+        }
+    }
+    public virtual void Attack()
+    {
+
+    }
+    private void meleeAiming()
+    {
+        Vector3 mousePosition = GetMouseWorldPositon();
+
+        Vector3 aimDirection = (mousePosition - transform.position).normalized;
+        angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        Debug.Log(aimTransform);
+        Debug.Log(angle);
+        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        // Debug.Log(angle);  
+    }
+    public static Vector3 GetMouseWorldPositon()
+    {
+        Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+        vec.z = 0f;
+        return vec;
+    }
+    public static Vector3 GetMouseWorldPositionWithZ()
+    {
+        return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+    }
+    public static Vector3 GetMouseWorldPositionWithZ(Camera worldCamera)
+    {
+        return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
+    }
+    public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
+    {
+        Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+        return worldPosition;
+    }
+}
+
