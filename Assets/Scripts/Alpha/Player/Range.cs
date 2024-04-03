@@ -1,20 +1,33 @@
+/*
+ * Colin Kintzinger
+ * 04/02/24
+ * Weapon parent class for the combat system.
+ * 
+ * CHANGE LOG
+ * colin-4/02/24-Finished up on the code and added comments
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
+//derrived class from parent
 public class Range : Weapon
 {
     public GameObject bullet;
     protected void Start()
     {
-        
+        //calls the start function from the parent class
         base.Start();
+
+        //sets the variables to the script component 
         bullet = Resources.Load("Triangle", typeof(GameObject)) as GameObject;
         attackWeapon = Resources.Load("PlayerStats" )as PlayerStats ;
     }
+    //instantiates ranged bullet
     public override void Attack()
     {
+        
         GameObject bulletInst = Instantiate(bullet, bulletSpawn.position, Quaternion.Euler(0, 0, angle - 90));
 
     }

@@ -1,3 +1,12 @@
+/*
+ * Colin Kintzinger
+ * 04/02/24
+ * Weapon parent class for the combat system.
+ * 
+ * CHANGE LOG
+ * colin-4/02/24-Finished up on the code and added comments
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +34,8 @@ public class Weapon : MonoBehaviour
     void Update()
     {
 
-        meleeAiming(); 
+        meleeAiming();
+        //sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0)
         {
             timer = fireDelay;
@@ -37,10 +47,12 @@ public class Weapon : MonoBehaviour
             //Debug.Log(timer);
         }
     }
+    //virtual method for attacking
     public virtual void Attack()
     {
 
     }
+    //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
         Vector3 mousePosition = GetMouseWorldPositon();
@@ -52,6 +64,7 @@ public class Weapon : MonoBehaviour
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
         // Debug.Log(angle);  
     }
+    //these obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon()
     {
         Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);

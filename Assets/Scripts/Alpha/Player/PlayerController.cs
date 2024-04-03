@@ -12,6 +12,7 @@
  * Dylan - 02/28/24 - Changed Collider to include melee functionality in my scene
  * Dylan/Colin - 03/04/24 - polished code and spacing
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
+ * Colin - 04/02/24 - added more to the on collision for melee/range choice
  */
 using System.Collections;
 using System.Collections.Generic;
