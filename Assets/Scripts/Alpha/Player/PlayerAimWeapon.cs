@@ -17,14 +17,24 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     public GameObject meleeLine;
+
+    public GameObject bullet;
+    public Transform bulletSpawn;
+    private float angle;
+
     public float fireDelay = 1f;
     //can't modify the attack speed with these values?????
     public float attackTime = .5f;
     private float timer=0;
+
+    public PlayerStats playerStats;
     
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
+        bulletSpawn = transform.Find("Aim");
+        
+        
     }
 
     private void Update()
@@ -36,6 +46,7 @@ public class PlayerAimWeapon : MonoBehaviour
         if (Input.GetMouseButton(0) && timer <= 0)
         {
             timer=fireDelay;
+            rangedAttack();
         }
         if (timer > 0)
         {
@@ -44,6 +55,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
     }
     //allows the melee object to apear and then disapear acording to the timer
+
     private void meleAttack()
     {
         
@@ -55,31 +67,25 @@ public class PlayerAimWeapon : MonoBehaviour
         else
         {
             meleeLine.gameObject.SetActive(false);
-        }
+        }  
+    }
 
-        //if (lastFiredMelee>0) { lastFiredMelee -= Time.deltaTime*1; }
+    //ranged attack method ``
+   private void rangedAttack()
+    {
+        
+            GameObject bulletInst = Instantiate(bullet, bulletSpawn.position, Quaternion.Euler(0, 0, angle - 90));
         
     }
-    /*private void showObject()
-    {
-        float timer = 1;
-        while (timer > 1)
-        {
-            meleeLine.gameObject.SetActive(true);
-            timer -= Time.deltaTime * 1;
-        }
-        meleeLine.gameObject.SetActive(false);
-        return; 
-    }*/
     //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
         Vector3 mousePosition = GetMouseWorldPositon();
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
-        //Debug.Log(angle);
+       // Debug.Log(angle);  
     }
     //these obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon() {
