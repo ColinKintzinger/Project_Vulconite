@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private PlayerStats playerStats; // Trying out ScriptableObjects
 
+    private int damageToPlayer = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
-            playerStats.TakeDamage(5.0f);
+            playerStats.TakeDamage(damageToPlayer);
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
