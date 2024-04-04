@@ -34,5 +34,12 @@ public class playerRangedBullet : MonoBehaviour
         }
         lifeTime -= Time.deltaTime * 1;
     }
-    
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
