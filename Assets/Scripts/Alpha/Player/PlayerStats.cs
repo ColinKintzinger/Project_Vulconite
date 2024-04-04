@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats")]
@@ -10,7 +12,6 @@ public class PlayerStats : ScriptableObject
     public float speed;
     public float maxSpeed;
     public int damage = 1;
-    
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
     public Weapon attackWeapon;
@@ -19,6 +20,7 @@ public class PlayerStats : ScriptableObject
     public void TakeDamage(int damage)
     {
         health -= damage;
+
         if (health <= 0)
         {
             SceneManager.LoadScene("LoseScene");
@@ -33,6 +35,6 @@ public class PlayerStats : ScriptableObject
         Debug.Log("CHARM COLLECTED!");
         charm.ApplyBuff(this);
     }
-    
-    
+
+
 }

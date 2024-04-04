@@ -28,8 +28,7 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //currentHealth = playerStats.health;
-        Debug.Log(playerStats);
+        currentHealth = playerStats.health;
         transform.localScale = new Vector3(currentHealth * scaleAdjustment,transform.localScale.y, 0f) ;
         float positionXAdjustment = (currentHealth * scaleAdjustment - startingHealth * scaleAdjustment) / 2;
         transform.localPosition = new Vector3(basePosition+positionXAdjustment, 0, 1);

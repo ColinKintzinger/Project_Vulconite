@@ -401,6 +401,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
+--- !u!212 &487974750 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2032001018405948638, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+  m_PrefabInstance: {fileID: 4696043407823170593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &512092037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8375,9 +8380,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8800704705054050162, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cd012de8ba8bc24193cef88ca9061c8, type: 2}
+    - target: {fileID: 8800704705054050162, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
       propertyPath: startingHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8800704705054050162, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: healthBarSpriteRenderer
+      value: 
+      objectReference: {fileID: 487974750}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
