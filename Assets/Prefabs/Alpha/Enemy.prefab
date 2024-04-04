@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2356750326470463746}
   - component: {fileID: 5475575981684830557}
   - component: {fileID: 2849748277712553271}
-  - component: {fileID: -5529819818229666032}
+  - component: {fileID: -3673649730391032594}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
---- !u!212 &-5529819818229666032
+--- !u!212 &-3673649730391032594
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,12 +347,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -939434793, guid: 75169b2abd65252418554f12679d53fa, type: 3}
+  m_Sprite: {fileID: 607469888, guid: de05568f9f1979f43b4687cb1b41512b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.96875, y: 0.9375}
+  m_Size: {x: 0.96875, y: 0.96875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Testing collision for delagate scene transition
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         
         if (collision.gameObject.CompareTag("Enemy"))

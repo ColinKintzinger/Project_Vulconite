@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0111f769e44dd90499f06450f159695a, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  health: 96
-  maxHealth: 0
-  speed: 0
+  health: 10
+  maxHealth: 10
+  speed: 0.2682117
   maxSpeed: 0
   damage: 1
   collectedCharms:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
