@@ -1,15 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Media;
 using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
+    [SerializeField]
     public PlayerStats playerStats;
 
-    public float startingHealth = 100;
-    public float currentHealth = 100;
-    
+
+    public float startingHealth = 10;
+
+    private float currentHealth = playerStats.health;
     private GameObject healthContainer;
     private float scaleAdjustment;
     private float basePosition;
@@ -24,6 +26,7 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentHealth = playerStats.health;
         transform.localScale = new Vector3(currentHealth * scaleAdjustment,transform.localScale.y, 0f) ;
         float positionXAdjustment = (currentHealth * scaleAdjustment - startingHealth * scaleAdjustment) / 2;
         transform.localPosition = new Vector3(basePosition+positionXAdjustment, 0, 1);
