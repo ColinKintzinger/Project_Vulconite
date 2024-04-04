@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField]
-    public PlayerStats playerStats;
+    //[SerializeField]
+    //public PlayerStats playerStats;
 
 
     public float startingHealth = 10;
 
-    private float currentHealth = playerStats.health;
+    private float currentHealth = 10; //playerStats.health;
     private GameObject healthContainer;
     private float scaleAdjustment;
     private float basePosition;
@@ -26,7 +26,7 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentHealth = playerStats.health;
+        //currentHealth = playerStats.health;
         transform.localScale = new Vector3(currentHealth * scaleAdjustment,transform.localScale.y, 0f) ;
         float positionXAdjustment = (currentHealth * scaleAdjustment - startingHealth * scaleAdjustment) / 2;
         transform.localPosition = new Vector3(basePosition+positionXAdjustment, 0, 1);
