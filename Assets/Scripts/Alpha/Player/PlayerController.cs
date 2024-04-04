@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
-            playerStats.TakeDamage(5.0f);
+            playerStats.TakeDamage(1);
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
