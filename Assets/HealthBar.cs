@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Media;
 using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
+    public PlayerStats playerStats;
+
     public float startingHealth = 100;
     public float currentHealth = 100;
     

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6767405095674404379}
   - component: {fileID: 2394958045375047742}
   - component: {fileID: 3625954588756434347}
-  - component: {fileID: 554529882170394605}
+  - component: {fileID: 5404422193736194101}
   - component: {fileID: 6423420631806633602}
   - component: {fileID: 3551017776133557381}
   m_Layer: 0
@@ -168,8 +168,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &554529882170394605
-BoxCollider2D:
+--- !u!60 &5404422193736194101
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -200,7 +200,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028927177, y: -0.028570175}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -210,9 +210,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7492971, y: 1.4761682}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.22807169, y: 0.6855135}
+      - {x: -0.3683529, y: 0.47211242}
+      - {x: -0.3240738, y: -0.29691958}
+      - {x: -0.1939907, y: -0.55058646}
+      - {x: -0.24791718, y: -0.76594186}
+      - {x: 0.002523899, y: -0.76449203}
+      - {x: 0.276268, y: -0.76811624}
+      - {x: 0.20328474, y: -0.56990623}
+      - {x: 0.30208445, y: -0.44374967}
+      - {x: 0.35605812, y: -0.29905725}
+      - {x: 0.37803793, y: 0.44921875}
+      - {x: 0.2167635, y: 0.69216084}
+  m_UseDelaunayMesh: 0
 --- !u!114 &6423420631806633602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,8 +238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeLine: {fileID: 447675782563765371}
+  bullet: {fileID: 0}
+  bulletSpawn: {fileID: 0}
   fireDelay: 0.75
   attackTime: 0.5
+  playerStats: {fileID: 0}
 --- !u!95 &3551017776133557381
 Animator:
   serializedVersion: 5

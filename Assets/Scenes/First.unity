@@ -7903,6 +7903,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicRanged
       objectReference: {fileID: 0}
+    - target: {fileID: 5802145418359317337, guid: 1693203649034794db384cbbc6f93b86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7085206372629986438, guid: 1693203649034794db384cbbc6f93b86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
