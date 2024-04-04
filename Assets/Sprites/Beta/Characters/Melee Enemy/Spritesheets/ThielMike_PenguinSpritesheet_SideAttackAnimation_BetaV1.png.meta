@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56dba446246556840ad7720d98d06c0b
+guid: 3f044f6d4f7a610468d0dc9fa05db634
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9660d32deda586f4488367871f4dc046
+      internalID: 1334293118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbec157eecb3d74cb8d63f660ee06b9
+      internalID: 1318075192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b23cfada950f43b2ab42e66713ce6
+      internalID: -1298869847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb14d9ff38a6df941974fc8646f11417
+      internalID: 1065354446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_0: 1334293118
+      ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_1: 1318075192
+      ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_2: -1298869847
+      ThielMike_PenguinSpritesheet_SideAttackAnimation_BetaV1_3: 1065354446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

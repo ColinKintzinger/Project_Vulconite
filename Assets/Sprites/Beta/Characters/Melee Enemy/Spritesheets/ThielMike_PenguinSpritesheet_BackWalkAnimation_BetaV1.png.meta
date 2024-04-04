@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 48a6a25efec5e894db94271a9428c70d
+guid: 217d4a4b122639c4abbd50737455f7f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_0
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 25
-        height: 73
+        x: 12
+        y: 1
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a22bb0010990b144aa9089a90ed6b5f5
-      internalID: 163634880
+      spriteID: 2bd561cad632171499e9cf23edc321b6
+      internalID: -249536668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_1
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 4
-        width: 25
-        height: 68
+        x: 60
+        y: 1
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ea120506d2fabe47a011ea4abf015ad
-      internalID: -1031820344
+      spriteID: 5ffbbd91e2bafdf45b419dc57c659c0d
+      internalID: -1294597399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_2
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 4
-        width: 25
-        height: 68
+        x: 106
+        y: 0
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 992c4e12672eeec44b19e7a8c5c9da75
-      internalID: -578570853
+      spriteID: 644d569afa684d04ebce04d926980f5e
+      internalID: 1527043477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_3
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 4
-        width: 25
-        height: 68
+        x: 156
+        y: 1
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5224cb0823d7643a1f105d98e3c7a3
-      internalID: -2088177035
+      spriteID: 6ba0ceda2f86cd041b6feccad3d0f7ac
+      internalID: -210190156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_4
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 4
-        width: 25
-        height: 68
+        x: 205
+        y: 1
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5473dba12ba76394fa0750643075bb88
-      internalID: -313871141
+      spriteID: 62c3cd5fc15702e449f551118be5c712
+      internalID: -2138493954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_5
+      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 4
-        width: 25
-        height: 68
+        x: 254
+        y: 0
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,29 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0dbe26168dd8045b89c6870465a7f8
-      internalID: -1274517033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_6
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 8
-        width: 15
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cc4d504370c7c545a4b70a56c38004b
-      internalID: 773704937
+      spriteID: b1e18102b5b02a24081c12eaa85ce9ed
+      internalID: 1989802030
       vertices: []
       indices: 
       edges: []
@@ -267,13 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_0: 163634880
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_1: -1031820344
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_2: -578570853
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_3: -2088177035
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_4: -313871141
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_5: -1274517033
-      ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_6: 773704937
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_0: -249536668
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_1: -1294597399
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_2: 1527043477
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_3: -210190156
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_4: -2138493954
+      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_5: 1989802030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
