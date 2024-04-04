@@ -39,10 +39,10 @@ public class Teleport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            MoveIt();
-        }
+        //if (Input.GetKeyDown(KeyCode.T))
+        //{
+        //    MoveIt();
+        //}
     }
 
     public void MoveIt()

@@ -31,10 +31,10 @@ public class IceSpikes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            StartCoroutine(SendTheSpikes());
-        }
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    StartCoroutine(SendTheSpikes());
+        //}
     }
 
     public IEnumerator SendTheSpikes()
