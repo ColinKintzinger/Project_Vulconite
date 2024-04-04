@@ -7977,6 +7977,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1678104203339261659, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+      propertyPath: bulletInResorces
+      value: Triangle
+      objectReference: {fileID: 0}
     - target: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.9
