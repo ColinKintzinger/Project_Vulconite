@@ -15,7 +15,7 @@ using UnityEngine;
 public class Range : Weapon
 {
     GameObject bullet;
-    public string bulletInResorces = "NEW PLAYER BULLET";
+    public string bulletInResorces = "Triangle";
     public string attackWeaponInResorces = "PlayerStats";
 
     protected void Start()
