@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8974257108243134222}
   - component: {fileID: 409357532849746592}
   - component: {fileID: -683025311748822667}
+  - component: {fileID: -4868829113534902851}
   m_Layer: 0
   m_Name: DynamicRanged
   m_TagString: Enemy
@@ -292,6 +293,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+--- !u!114 &-4868829113534902851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802145418359317337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863cee11d881c0543b693766db39f1d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7085206372629986438
 GameObject:
   m_ObjectHideFlags: 0
