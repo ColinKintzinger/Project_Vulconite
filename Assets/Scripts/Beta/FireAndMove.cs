@@ -26,10 +26,10 @@ public class FireAndMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            StartCoroutine(TeleSpam());
-        }
+        //if (Input.GetKeyDown(KeyCode.F))
+        //{
+        //    StartCoroutine(TeleSpam());
+        //}
     }
 
     public IEnumerator TeleSpam()

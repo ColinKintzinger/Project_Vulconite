@@ -32,11 +32,11 @@ public class IceSpikesRandom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            numOfSpikes = Random.Range(10, 20);
-            StartCoroutine(PrepareWarnings(numOfSpikes));
-        }
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    numOfSpikes = Random.Range(10, 20);
+        //    StartCoroutine(PrepareWarnings(numOfSpikes));
+        //}
     }
 
     public IEnumerator PrepareWarnings(int num)

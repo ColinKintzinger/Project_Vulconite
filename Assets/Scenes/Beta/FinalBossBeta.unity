@@ -8285,19 +8285,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
   m_PrefabInstance: {fileID: 1647101665}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1567969777
-MonoBehaviour:
+--- !u!50 &1567969788
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567969776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e3935f194da8a449f5b5d05570a8f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1647101665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8306,32 +8320,8 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5722834008980117067, guid: 962e84cbf55a4224889689f6d299a8ec, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1779005725}
-    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
-      propertyPath: topY
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
-      propertyPath: leftX
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
-      propertyPath: rightX
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
-      propertyPath: bottomY
-      value: -3.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
       propertyPath: m_Name
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
-      propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 6708035022964926955, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
@@ -8380,13 +8370,8 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1567969777}
+      addedObject: {fileID: 1567969788}
   m_SourcePrefab: {fileID: 100100000, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
---- !u!50 &1779005725 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3625954588756434347, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
-  m_PrefabInstance: {fileID: 1518426373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983216987
 GameObject:
   m_ObjectHideFlags: 0
