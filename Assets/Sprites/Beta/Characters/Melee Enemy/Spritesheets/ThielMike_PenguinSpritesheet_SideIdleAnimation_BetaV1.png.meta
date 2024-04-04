@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 75169b2abd65252418554f12679d53fa
+guid: 0b40f17246cd55c42be8d5d04c8ab579
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d9b5c76c039334bba9716ede7bfeaf
+      internalID: 264299088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd27c77bda3a004a999550e7ef79365
+      internalID: -1108185827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8cc9c99fcd97d4f920827e603596d7
+      internalID: 1329292285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17769692eddf0534d8e05632b2d911f6
+      internalID: 1031113257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_0: 264299088
+      ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_1: -1108185827
+      ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_2: 1329292285
+      ThielMike_PenguinSpritesheet_SideIdleAnimation_BetaV1_3: 1031113257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
