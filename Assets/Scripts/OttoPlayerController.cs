@@ -1,6 +1,6 @@
 /*
  * Dylan Rothbauer
- * 02/19/24
+ * 02/19/24 (REBUILD: Staton Otto - 04/03/24)
  * Standard PlayerController class that handles movement, collisions, etc.
  * 
  * CHANGE LOG
@@ -13,20 +13,20 @@
  * Dylan/Colin - 03/04/24 - polished code and spacing
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
+ * Otto - 04/03/24 - Made a fresh PlayerController for my TEST PLAYER based off of this code
  */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class PlayerController : MonoBehaviour
-{    
+public class OttoPlayerController : MonoBehaviour
+{
     public float horizontalInput;
     public float verticalInput;
     public float speed = 3.0f;
     public float xMovement = 10.0f;
     public float yMovement = 10.0f;
-    //public GameObject meleeLine;
 
     [SerializeField]
     private PlayerStats playerStats; // Trying out ScriptableObjects
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xMovement, transform.position.y, transform.position.z);
         }
 
-        transform.Translate(Vector3.up *  verticalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         if (transform.position.y < -yMovement)
         {
             transform.position = new Vector3(transform.position.x, -yMovement, transform.position.z);
@@ -62,38 +62,22 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
         }
-
-        //Debug.Log(playerStats.health);
     }
 
     // Testing collision for delagate scene transition
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
 
-        } else if (collision.gameObject.CompareTag("Charm"))
+        }
+        else if (collision.gameObject.CompareTag("Charm"))
         {
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
-        }
-        else if (collision.gameObject.name == "Ranged")
-        {
-            gameObject.AddComponent<Range>();
-            //GetComponent<Range>().Start(); 
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Melee"));
-            Debug.Log(true);
-        }
-        else if (collision.gameObject.name == "Melee")
-        {
-            gameObject.AddComponent<Melee>();
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Ranged"));
-            Debug.Log(true);
         }
     }
 
