@@ -45,8 +45,8 @@ GameObject:
   - component: {fileID: 2394958045375047742}
   - component: {fileID: 3625954588756434347}
   - component: {fileID: 5404422193736194101}
-  - component: {fileID: 6423420631806633602}
   - component: {fileID: 3551017776133557381}
+  - component: {fileID: 1678104203339261659}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -139,7 +139,6 @@ MonoBehaviour:
   speed: 7
   xMovement: 15.4
   yMovement: 5.5
-  meleeLine: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
   playerStats: {fileID: 11400000, guid: 3cd012de8ba8bc24193cef88ca9061c8, type: 2}
 --- !u!50 &3625954588756434347
 Rigidbody2D:
@@ -225,24 +224,6 @@ PolygonCollider2D:
       - {x: 0.37803793, y: 0.44921875}
       - {x: 0.2167635, y: 0.69216084}
   m_UseDelaunayMesh: 0
---- !u!114 &6423420631806633602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8270781994743990378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc1455a07d0fb541a8c176b5980ce97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meleeLine: {fileID: 447675782563765371}
-  bullet: {fileID: 0}
-  bulletSpawn: {fileID: 0}
-  fireDelay: 0.75
-  attackTime: 0.5
-  playerStats: {fileID: 0}
 --- !u!95 &3551017776133557381
 Animator:
   serializedVersion: 5
@@ -264,6 +245,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1678104203339261659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270781994743990378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87899c5dac4053247a19b6f18d64d649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireDelay: 1
+  attackTime: 0.5
+  timer: 0
+  attackWeapon: {fileID: 0}
+  bullet: {fileID: 0}
 --- !u!1001 &1531084330264724220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,11 +327,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
---- !u!1 &447675782563765371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1371900062167899783, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
-  m_PrefabInstance: {fileID: 1531084330264724220}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5943923987030834080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5134822972032153948, guid: 757ad670bb71d0d42bc4303679832a59, type: 3}
