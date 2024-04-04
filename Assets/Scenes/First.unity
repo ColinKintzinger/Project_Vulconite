@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6937307470502721462, guid: 658ca8bbefac770448126d4714dd4825, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1985873310}
     - target: {fileID: 8823649297459955004, guid: 658ca8bbefac770448126d4714dd4825, type: 3}
       propertyPath: m_Name
       value: RangedEnemy
@@ -8143,6 +8147,11 @@ MonoBehaviour:
   timer: 0
   attackWeapon: {fileID: 0}
   bullet: {fileID: 0}
+--- !u!4 &1985873310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+  m_PrefabInstance: {fileID: 1690686241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2010271318
 PrefabInstance:
   m_ObjectHideFlags: 0
