@@ -9,6 +9,7 @@ TagManager:
   - LootBox
   - Weapon
   - Charm
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -67,6 +67,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 2)
         {
+            teleport.MoveIt();
             yield return new WaitForSeconds(1.5f);
             numOfSpikes = Random.Range(15, 25);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
@@ -75,6 +76,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 3)
         {
+            teleport.MoveIt();
             yield return new WaitForSeconds(1.0f);
             StartCoroutine(wave.SendTheSpikes());
             yield return new WaitForSeconds(4.0f);
@@ -86,11 +88,10 @@ public class BossFightDirections : MonoBehaviour
             {
                 yield return new WaitForSeconds(1.5f);
                 melee.BlastIt();
+                Debug.Log("Melee");
                 yield return new WaitForSeconds(3.0f);
             }
         }
-
-        teleport.MoveIt();
 
         StartCoroutine(LetsStartTheFight());
     }
