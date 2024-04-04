@@ -59,5 +59,11 @@ public class RangedEnemy : MonoBehaviour
         // Move towards the flee position
         transform.position = Vector3.MoveTowards(transform.position, fleePosition, Time.deltaTime * speed);
     }
-
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Weapon"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
