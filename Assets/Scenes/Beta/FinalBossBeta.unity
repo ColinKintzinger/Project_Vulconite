@@ -8310,6 +8310,22 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1779005725}
+    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: topY
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: leftX
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: rightX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -898346335872543365, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: bottomY
+      value: -3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
       propertyPath: m_Name
       value: Boss
