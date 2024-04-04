@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats")]
 public class PlayerStats : ScriptableObject
@@ -18,6 +19,11 @@ public class PlayerStats : ScriptableObject
     public void TakeDamage(int damage)
     {
         health -= damage;
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("LoseScene");
+            health = 10;
+        }
     }
 
     public void EquipCharm(Charm charm)
