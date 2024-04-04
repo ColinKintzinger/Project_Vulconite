@@ -5,22 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Deathscene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public string SceneToLoad = "First";
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            restartGame();
+            SceneManager.LoadScene(SceneToLoad);
         }
-    }
-    public void restartGame()
-    {
-        SceneManager.LoadScene("First");
     }
 }

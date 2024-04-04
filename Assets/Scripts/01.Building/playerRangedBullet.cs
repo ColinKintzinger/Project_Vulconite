@@ -19,7 +19,7 @@ public class playerRangedBullet : MonoBehaviour
     void Start()
     {
         rb=GetComponent<Rigidbody2D>();
-        
+        rb.velocity = transform.right * speed;
 
     }
 
@@ -27,7 +27,7 @@ public class playerRangedBullet : MonoBehaviour
     void Update()
     {
         //sets the velocity of the bullet and also applies range based on time 
-        rb.velocity = transform.right *speed;
+        //rb.velocity = transform.right *speed;
         if (lifeTime < 0)
         {
             Destroy(gameObject);

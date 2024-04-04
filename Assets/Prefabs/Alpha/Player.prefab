@@ -261,7 +261,7 @@ MonoBehaviour:
   attackTime: 0.5
   timer: 0
   attackWeapon: {fileID: 0}
-  bulletInResorces: Triangle
+  bulletInResorces: NEW PLAYER BULLET
   attackWeaponInResorces: PlayerStats
 --- !u!1001 &1531084330264724220
 PrefabInstance:

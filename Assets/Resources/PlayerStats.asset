@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
-  speed: 0.98979557
+  speed: 0
   maxSpeed: 0
   damage: 1
   collectedCharms:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

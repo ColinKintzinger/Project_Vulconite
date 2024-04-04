@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Third.unity
     guid: 849905f5ea12cb448b0504f1fe112945
+  - enabled: 1
+    path: Assets/Scenes/Beta/FinalBossBeta.unity
+    guid: d8de5445947645648a73e60ab1e1d139
   m_configObjects: {}
