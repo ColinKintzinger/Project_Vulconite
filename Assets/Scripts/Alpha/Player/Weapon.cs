@@ -27,7 +27,8 @@ public class Weapon : MonoBehaviour
     {
         aimTransform = transform.Find("Aim");
         bulletSpawn = transform.Find("Aim");
-        
+        attackWeapon = Resources.Load("PlayerStats") as PlayerStats;
+
     }
 
     // Update is called once per frame
@@ -59,8 +60,8 @@ public class Weapon : MonoBehaviour
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
         angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        Debug.Log(aimTransform);
-        Debug.Log(angle);
+       // Debug.Log(aimTransform);
+       // Debug.Log(angle);
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
         // Debug.Log(angle);  
     }

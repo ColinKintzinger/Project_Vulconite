@@ -29,11 +29,26 @@ public class LootBox : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Weapon"))
+    //    {
+    //        collisionCount++;
+
+    //        if (collisionCount >= collisionCountThreshold)
+    //        {
+    //            RevealCharm();
+    //            //charm.GetComponent<Charm>().RevealCharm(charm);
+    //            Destroy(gameObject);
+    //        }
+    //    }
+    //}
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Weapon"))
         {
             collisionCount++;
+            Destroy(collision.gameObject);
 
             if (collisionCount >= collisionCountThreshold)
             {

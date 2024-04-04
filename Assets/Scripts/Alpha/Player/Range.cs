@@ -28,7 +28,9 @@ public class Range : Weapon
     public override void Attack()
     {
         
-        GameObject bulletInst = Instantiate(bullet, bulletSpawn.position, Quaternion.Euler(0, 0, angle - 90));
+        Vector3 offset = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+        GameObject bulletInst = Instantiate(bullet, bulletSpawn.position+offset, Quaternion.Euler(0, 0, angle - 90));
 
     }
+   
 }
