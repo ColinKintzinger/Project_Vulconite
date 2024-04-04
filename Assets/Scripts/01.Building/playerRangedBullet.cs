@@ -24,10 +24,10 @@ public class playerRangedBullet : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         //sets the velocity of the bullet and also applies range based on time 
-        rb.velocity = transform.up *speed;
+        rb.velocity = transform.right *speed;
         if (lifeTime < 0)
         {
             Destroy(gameObject);

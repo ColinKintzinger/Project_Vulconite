@@ -49,4 +49,12 @@ public class NewPlayerBulletAttack : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
