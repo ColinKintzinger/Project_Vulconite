@@ -10,6 +10,7 @@ public class HealthBar : MonoBehaviour
 
 
     public float startingHealth = 10;
+    public PlayerStats stats;
 
     private float currentHealth = 10; //playerStats.health;
     private GameObject healthContainer;
@@ -19,6 +20,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stats = Resources.Load("PlayerStats") as PlayerStats;
         scaleAdjustment = transform.localScale.x / startingHealth;
         basePosition = transform.localPosition.x;
     }
