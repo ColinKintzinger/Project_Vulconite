@@ -8,9 +8,7 @@
  */
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
-
 //derrived class from parent
 public class Range : Weapon
 {
@@ -18,7 +16,7 @@ public class Range : Weapon
     public string bulletInResorces = "Triangle";
     public string attackWeaponInResorces = "PlayerStats";
 
-    protected void Start()
+    protected new void Start()
     {
         //calls the start function from the parent class
         base.Start();
