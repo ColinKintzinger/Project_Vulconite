@@ -44,24 +44,7 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-        if (transform.position.x < -xMovement)
-        {
-            transform.position = new Vector3(-xMovement, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > xMovement)
-        {
-            transform.position = new Vector3(xMovement, transform.position.y, transform.position.z);
-        }
-
-        transform.Translate(Vector3.up *  verticalInput * Time.deltaTime * speed);
-        if (transform.position.y < -yMovement)
-        {
-            transform.position = new Vector3(transform.position.x, -yMovement, transform.position.z);
-        }
-        if (transform.position.y > yMovement)
-        {
-            transform.position = new Vector3(transform.position.x, yMovement, transform.position.z);
-        }
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
         //Debug.Log(playerStats.health);
     }

@@ -14,7 +14,7 @@ public class PlayerStats : ScriptableObject
     public int damage = 1;
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
-    public Weapon attackWeapon;
+    //public Weapon attackWeapon;
 
 
     public void TakeDamage(int damage)

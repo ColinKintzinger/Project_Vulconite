@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
-  speed: 0.98979557
+  speed: 0.11005902
   maxSpeed: 0
-  damage: 1
+  damage: 4
   collectedCharms:
   - {fileID: 0}
   - {fileID: 0}
@@ -26,4 +26,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  attackWeapon: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
