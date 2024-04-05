@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Beta/FinalBossBeta.unity
     guid: d8de5445947645648a73e60ab1e1d139
+  - enabled: 1
+    path: Assets/Scenes/Fifth.unity
+    guid: 6f571444d68b51e49991916920a48268
+  - enabled: 1
+    path: Assets/Scenes/Forth.unity
+    guid: c2e3a71676823534b918f51eed78f103
   m_configObjects: {}
