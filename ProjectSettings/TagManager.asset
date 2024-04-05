@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Door
   - Enemy
+  - LootBox
+  - Weapon
+  - Charm
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -48,4 +52,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1060497675
+    locked: 0
+  - name: Obsticles
+    uniqueID: 3534975143
     locked: 0
