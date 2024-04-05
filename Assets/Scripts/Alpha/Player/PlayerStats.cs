@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats")]
 public class PlayerStats : ScriptableObject
 {
+    private const int MAX_HEALTH = 10;
+    private const float MAX_SPEED = 2.0f;
+
     public int health = 10;
-    public int maxHealth;
     public float speed;
-    public float maxSpeed;
     public int damage = 1;
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
@@ -24,7 +25,7 @@ public class PlayerStats : ScriptableObject
         if (health <= 0)
         {
             SceneManager.LoadScene("LoseScene");
-            health = 10;
+            resetPlayerStats();
         }
     }
 
@@ -36,5 +37,11 @@ public class PlayerStats : ScriptableObject
         charm.ApplyBuff(this);
     }
 
+    private void resetPlayerStats()
+    {
+        health = 10;
+        speed = 1.0f;
+        damage = 1;
+    }
 
 }
