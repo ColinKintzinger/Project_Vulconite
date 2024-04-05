@@ -9,7 +9,7 @@ public class Deathscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)){
+        if (Input.GetKeyDown(KeyCode.Q)){
             SceneManager.LoadScene(SceneToLoad);
         }
     }

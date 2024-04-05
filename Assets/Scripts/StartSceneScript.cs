@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class StartSceneScript : MonoBehaviour
 {
-    public string SceneToLoad = "First";
+    public string FirstGameScene = "First";
+    public string OptionsScreen = "";
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(SceneToLoad);
+            SceneManager.LoadScene(FirstGameScene);
         }
-
     }
 }
