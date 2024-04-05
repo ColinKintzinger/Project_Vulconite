@@ -16,7 +16,7 @@ public class Melee : Weapon
 
     public GameObject meleeLine;
     public GameObject bullet;
-    protected void Start()
+    protected new void Start()
     {
         //calls the start function from the parent class 
         base.Start();
