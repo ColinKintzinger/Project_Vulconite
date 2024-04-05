@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    private string SceneToLoad = "Win Screen";
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,9 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            if (gameObject.CompareTag("Boss")) {
+                SceneManager.LoadScene(SceneToLoad);
+            }
         }
     }
 
