@@ -14,6 +14,9 @@
  * whichAttack - A number that decides which attack will be performed
  * numOfSpikes - The number of spikes that will be summoned during the IceSpikesRandom attack
  * 
+ * CHANGE LOG
+ * Zach - 04/08/24 - Attacks speed up when boss is at half health
+ * 
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -29,8 +32,10 @@ public class BossFightDirections : MonoBehaviour
     IceSpikesRandom random;
     IceSpikes wave;
     MeleeAttack melee;
+    EnemyHealth health;
     int whichAttack;
     int numOfSpikes;
+    public float speedUp;
 
     // Start is called before the first frame update
     IEnumerator Start()
@@ -43,8 +48,10 @@ public class BossFightDirections : MonoBehaviour
         random = GetComponent<IceSpikesRandom>();
         wave = GetComponent<IceSpikes>();
         melee = GetComponent<MeleeAttack>();
+        health = GetComponent<EnemyHealth>();
+        speedUp = 0.0f;
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
 
         StartCoroutine(LetsStartTheFight());
     }
@@ -57,39 +64,44 @@ public class BossFightDirections : MonoBehaviour
 
     IEnumerator LetsStartTheFight()
     {
+        if (health.currentHealth <= health.maxHealth / 2)
+        {
+            speedUp = 0.5f;
+        }
+
         whichAttack = Random.Range(1, 5);
 
         if (whichAttack == 1)
         {
             StartCoroutine(fireAndMove.TeleSpam());
-            yield return new WaitForSeconds(8.0f);
+            yield return new WaitForSeconds(5.0f - (speedUp * 4));
         }
 
         if (whichAttack == 2)
         {
             teleport.MoveIt();
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1.0f);
             numOfSpikes = Random.Range(15, 25);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(3.0f - speedUp);
         }
 
         if (whichAttack == 3)
         {
             teleport.MoveIt();
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.0f - speedUp);
             StartCoroutine(wave.SendTheSpikes());
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(3.0f - speedUp);
         }
 
         if (whichAttack == 4)
         {
-            if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) < 2 && Mathf.Abs(player.transform.position.y - queen.transform.position.y) < 2)
+            Debug.Log("Melee");
+            if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) < 3 && Mathf.Abs(player.transform.position.y - queen.transform.position.y) < 3)
             {
-                yield return new WaitForSeconds(1.5f);
+                yield return new WaitForSeconds(1.5f - speedUp);
                 melee.BlastIt();
-                Debug.Log("Melee");
-                yield return new WaitForSeconds(3.0f);
+                yield return new WaitForSeconds(3.0f - speedUp);
             }
         }
 
