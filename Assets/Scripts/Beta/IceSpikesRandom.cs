@@ -48,7 +48,7 @@ public class IceSpikesRandom : MonoBehaviour
         for (int i = 0; i < num; i++)
         {
             warning.transform.position = new Vector3(xPosition, yPosition, 0);
-            spike.transform.position = new Vector3(xPosition, yPosition + 1, -0.1f);
+            spike.transform.position = new Vector3(xPosition, yPosition + 1.5f, -0.1f);
             spikePosition[i] = spike.transform.position;
             //Debug.Log(warning.transform.position);
             Instantiate(warning, warning.transform.position, Quaternion.identity);
