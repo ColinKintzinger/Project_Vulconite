@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8974257108243134222}
   - component: {fileID: 409357532849746592}
   - component: {fileID: -683025311748822667}
+  - component: {fileID: 7111171999901309980}
   m_Layer: 0
   m_Name: DynamicRanged
   m_TagString: Enemy
@@ -299,6 +300,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+--- !u!114 &7111171999901309980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802145418359317337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d09da4bf6b5b134e9add52a4008b7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  colorNorm: FFFFFF
+  colorDam: {r: 1, g: 0.21568628, b: 0.21568628, a: 1}
 --- !u!1 &7085206372629986438
 GameObject:
   m_ObjectHideFlags: 0
