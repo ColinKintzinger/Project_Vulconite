@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4606139356208252760}
   - component: {fileID: 6693880352707053549}
-  - component: {fileID: 7057793129979505624}
   - component: {fileID: -8089649416676518102}
+  - component: {fileID: 74154179857263041}
+  - component: {fileID: -6708678643452241354}
   m_Layer: 0
   m_Name: IceSpikeBreakable
   m_TagString: Enemy
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 4602231704265416593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.5, y: 6.8, z: -0.1}
-  m_LocalScale: {x: 3.6099997, y: 4.8133326, z: 1.2033331}
+  m_LocalPosition: {x: 1.0108557, y: -0.73398256, z: -0.1}
+  m_LocalScale: {x: 1.4, y: 1.8666666, z: 0.46666664}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7057793129979505624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4602231704265416593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b69323ebded4714481a604cfa96e41f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &-8089649416676518102
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +123,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -150,3 +139,45 @@ PolygonCollider2D:
       - {x: -0.2114, y: -0.32639652}
       - {x: 0.22463858, y: -0.32242483}
   m_UseDelaunayMesh: 0
+--- !u!114 &74154179857263041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602231704265416593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010508d937c42d34d988842445e72f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0
+  collisionCountThreshold: 1
+  charmPrefabs: []
+--- !u!50 &-6708678643452241354
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602231704265416593}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
