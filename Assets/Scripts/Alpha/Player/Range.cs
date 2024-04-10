@@ -21,10 +21,6 @@ public class Range : Weapon
     {
         //calls the start function from the parent class
         base.Start();
-
-        //sets the variables to the script component 
-        //bullet = Resources.Load(bulletInResorces, typeof(GameObject)) as GameObject;
-        //attackWeapon = Resources.Load(attackWeaponInResorces) as PlayerStats ;
     }
     //instantiates ranged bullet
     public override void Attack()
@@ -40,11 +36,6 @@ public class Range : Weapon
         {
             Debug.LogError("Bullet or bulletSpawn is null!");
         }
-
-        //if (playerStats == null)
-        //{
-        //    Debug.LogError("Player stats is null!");
-        //}
     }
    
 }

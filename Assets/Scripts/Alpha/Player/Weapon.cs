@@ -30,10 +30,6 @@ public class Weapon : MonoBehaviour
     {
         UpdatePlayerAim();
 
-        //aimtransform = transform.find("aim");
-        //bulletspawn = transform.find("aim");
-        //playerstats = resources.load("playerstats") as playerstats;
-
     }
 
     // Update is called once per frame
@@ -81,7 +77,6 @@ public class Weapon : MonoBehaviour
             Debug.Log("AIM TRANSFORM IS NULL");
         }
         
-        // Debug.Log(angle);  
     }
     //these obtain the mouse position in the world position for tracking on the map 
     public static Vector3 GetMouseWorldPositon()

@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
-        //Debug.Log(playerStats.health);
     }
 
     // Testing collision for delagate scene transition
@@ -65,21 +64,6 @@ public class PlayerController : MonoBehaviour
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
         }
-        //else if (collision.gameObject.name == "Ranged")
-        //{
-        //    gameObject.AddComponent<Range>();
-        //    //GetComponent<Range>().Start(); 
-        //    Destroy(collision.gameObject);
-        //    Destroy(GameObject.Find("Melee"));
-        //    Debug.Log(true);
-        //}
-        //else if (collision.gameObject.name == "Melee")
-        //{
-        //    gameObject.AddComponent<Melee>();
-        //    Destroy(collision.gameObject);
-        //    Destroy(GameObject.Find("Ranged"));
-        //    Debug.Log(true);
-        //}
         else if (collision.gameObject.CompareTag("Weapon"))
         {
             Singleton.Instance.SetWeapon(collision.gameObject);
