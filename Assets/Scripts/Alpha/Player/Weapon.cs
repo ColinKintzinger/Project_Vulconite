@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     protected float angle;
     protected GameObject player;
 
-    public PlayerStats playerStats;
+    //public PlayerStats playerStats;
     // Start is called before the first frame update
     protected void Start()
     {
@@ -36,18 +36,18 @@ public class Weapon : MonoBehaviour
     void Update()
     {
 
-        meleeAiming();
+        Aiming();
         //sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0 && Singleton.Instance.GetWeapon() != null)
         {
             timer = fireDelay;
             Attack();
             
+
         }
         if (timer > 0)
         {
             timer -= Time.deltaTime * 1;
-            //Debug.Log(timer);
         }
     }
     //virtual method for attacking
@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour
 
     }
     //allows the player object to get the angle for the positioning of the melee object 
-    private void meleeAiming()
+    private void Aiming()
     {
         if (aimTransform == null)
         {
@@ -104,5 +104,14 @@ public class Weapon : MonoBehaviour
         aimTransform = player.transform.Find("Aim");
         bulletSpawn = player.transform.Find("Aim");
     }
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("Enemy"))
+    //    {
+    //        other.GetComponent<EnemyHealth>().TakeDamage(playerStats.damage);
+    //    }
+    //}
+
 }
 

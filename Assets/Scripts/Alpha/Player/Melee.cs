@@ -13,33 +13,43 @@ using UnityEngine;
 //derrived class from parent
 public class Melee : Weapon
 {
-
     public GameObject meleeLine;
-    public GameObject bullet;
+    public float meleeCooldown = .5f;
+    private bool canMelee = true;
+
     protected new void Start()
     {
-        //calls the start function from the parent class 
         base.Start();
-
-        //sets the variables to the script component 
-        meleeLine = aimTransform.GetChild(0).gameObject;
-        playerStats = Resources.Load("PlayerStats") as PlayerStats;
-        bullet = Resources.Load("MeleeShot") as GameObject;
+        meleeLine.SetActive(false);
     }
+
     public override void Attack()
     {
-        //instantiates the melee attack
-        GameObject bulletInst = Instantiate(bullet, aimTransform.position, Quaternion.Euler(0, 0, angle - 90));
-        //if (timer >= attackTime)
-        //{
-        //    meleeLine.gameObject.SetActive(true);
-        //    Debug.Log("true");
-        //}
-        //else
-        //{
-        //    meleeLine.gameObject.SetActive(false);
-        //}
+        if (canMelee)
+        {
+            canMelee = false;
 
+            meleeLine.SetActive(true);
+
+            float meleeDuration = 0.1f;
+            Invoke("DeactivateMelee", meleeDuration);
+
+            // Wait for the cooldown
+            float cooldownDuration = 1f;
+            Invoke("ResetCanMelee", cooldownDuration);
+        }
+    }
+
+    private void DeactivateMelee()
+    {
+        meleeLine.SetActive(false);
+    }
+
+    private void ResetCanMelee()
+    {
+        canMelee = true;
     }
 }
+
+
 
