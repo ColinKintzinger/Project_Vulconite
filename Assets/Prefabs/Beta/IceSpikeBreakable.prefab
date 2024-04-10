@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4606139356208252760}
   - component: {fileID: 6693880352707053549}
-  - component: {fileID: 7057793129979505624}
   - component: {fileID: -8089649416676518102}
+  - component: {fileID: 74154179857263041}
+  - component: {fileID: -6708678643452241354}
   m_Layer: 0
-  m_Name: IceSpikeV2
+  m_Name: IceSpikeBreakable
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4602231704265416593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.5647254, y: -2.60967, z: -0.1}
+  m_LocalPosition: {x: 6.97, y: -2.79, z: -0.1}
   m_LocalScale: {x: 1.4, y: 1.8666666, z: 0.46666664}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 381443261152ecb4e9309b9fa588a367, type: 3}
-  m_Color: {r: 0.23270434, g: 0.7435567, b: 1, a: 1}
+  m_Color: {r: 0.6416874, g: 0.88635445, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7057793129979505624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4602231704265416593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b69323ebded4714481a604cfa96e41f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &-8089649416676518102
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -142,11 +131,53 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.42325276, y: -0.50081867}
-      - {x: 0.22810441, y: -0.48442382}
-      - {x: 0.02384409, y: -0.49868387}
-      - {x: -0.107482225, y: -0.49342355}
-      - {x: -0.41593298, y: -0.5236242}
-      - {x: -0.49789843, y: -0.9319499}
-      - {x: 0.5285003, y: -0.9410008}
+    - - {x: 0.42305893, y: -0.49796712}
+      - {x: 0.23034829, y: -0.49935055}
+      - {x: 0.08744564, y: -0.500149}
+      - {x: -0.09011854, y: -0.5022778}
+      - {x: -0.4076428, y: -0.5077498}
+      - {x: -0.51906824, y: -0.9214913}
+      - {x: 0.49992037, y: -0.9296643}
   m_UseDelaunayMesh: 0
+--- !u!114 &74154179857263041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602231704265416593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010508d937c42d34d988842445e72f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0
+  collisionCountThreshold: 1
+  charmPrefabs: []
+--- !u!50 &-6708678643452241354
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602231704265416593}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -38,7 +38,10 @@ public class LootBox : MonoBehaviour
 
             if (collisionCount >= collisionCountThreshold)
             {
-                RevealCharm();
+                if (gameObject.CompareTag("LootBox"))
+                {
+                    RevealCharm();
+                }
                 //charm.GetComponent<Charm>().RevealCharm(charm);
                 Destroy(gameObject);
             }
