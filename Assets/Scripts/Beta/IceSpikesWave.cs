@@ -56,14 +56,14 @@ public class IceSpikes : MonoBehaviour
 
         for (int i = 0; i < 9; i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < 8; j++)
             {
                 warning.transform.position = new Vector3(xPosition, yPosition, 0);
-                spike.transform.position = new Vector3(xPosition, yPosition + 1.5f, -0.1f);
+                spike.transform.position = new Vector3(xPosition, yPosition + 1.9f, -0.1f);
                 Instantiate(warning, warning.transform.position, Quaternion.identity);
                 spikePosition[spikeCount] = spike.transform.position;
                 spikeCount++;
-                yPosition += 1.2f;
+                yPosition += 1.5f;
             }
             xPosition += 3.5f;
             yPosition = -5.5f;
@@ -75,7 +75,7 @@ public class IceSpikes : MonoBehaviour
 
         for (int i = 0; i < 9;i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < 8; j++)
             {
                 Instantiate(spike, spikePosition[spikeCount], Quaternion.identity);
                 spikeCount++;
