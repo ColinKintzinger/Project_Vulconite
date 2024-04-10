@@ -23,7 +23,7 @@ public class Melee : Weapon
 
         //sets the variables to the script component 
         meleeLine = aimTransform.GetChild(0).gameObject;
-        attackWeapon = Resources.Load("PlayerStats") as PlayerStats;
+        playerStats = Resources.Load("PlayerStats") as PlayerStats;
         bullet = Resources.Load("MeleeShot") as GameObject;
     }
     public override void Attack()

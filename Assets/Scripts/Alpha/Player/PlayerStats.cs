@@ -15,8 +15,7 @@ public class PlayerStats : ScriptableObject
     public int damage = 1;
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
-    //public Weapon attackWeapon;
-
+    public GameObject weapon;
 
     public void TakeDamage(int damage)
     {
@@ -42,6 +41,12 @@ public class PlayerStats : ScriptableObject
         health = 10;
         speed = 1.0f;
         damage = 1;
+        collectedCharms.Clear();
+    }
+
+    public void EquipWeapon(GameObject weaponObject)
+    {
+        weapon = weaponObject;
     }
 
 }

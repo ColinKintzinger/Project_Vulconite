@@ -14,8 +14,10 @@
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
  */
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -63,20 +65,29 @@ public class PlayerController : MonoBehaviour
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.name == "Ranged")
+        //else if (collision.gameObject.name == "Ranged")
+        //{
+        //    gameObject.AddComponent<Range>();
+        //    //GetComponent<Range>().Start(); 
+        //    Destroy(collision.gameObject);
+        //    Destroy(GameObject.Find("Melee"));
+        //    Debug.Log(true);
+        //}
+        //else if (collision.gameObject.name == "Melee")
+        //{
+        //    gameObject.AddComponent<Melee>();
+        //    Destroy(collision.gameObject);
+        //    Destroy(GameObject.Find("Ranged"));
+        //    Debug.Log(true);
+        //}
+        else if (collision.gameObject.CompareTag("Weapon"))
         {
-            gameObject.AddComponent<Range>();
-            //GetComponent<Range>().Start(); 
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Melee"));
-            Debug.Log(true);
-        }
-        else if (collision.gameObject.name == "Melee")
-        {
-            gameObject.AddComponent<Melee>();
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Ranged"));
-            Debug.Log(true);
+            Singleton.Instance.SetWeapon(collision.gameObject);
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            //playerStats.weapon = collision.gameObject.GetComponent<Range>();
+            //playerStats.EquipWeapon(collision.gameObject);
+            //Destroy(collision.gameObject);
         }
     }
 

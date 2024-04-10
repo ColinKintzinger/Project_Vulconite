@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 3625954588756434347}
   - component: {fileID: 5404422193736194101}
   - component: {fileID: 3551017776133557381}
-  - component: {fileID: 1678104203339261659}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -245,24 +244,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1678104203339261659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8270781994743990378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87899c5dac4053247a19b6f18d64d649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireDelay: 1
-  attackTime: 0.5
-  timer: 0
-  attackWeapon: {fileID: 0}
-  bulletInResorces: NEW PLAYER BULLET
-  attackWeaponInResorces: PlayerStats
 --- !u!1001 &1531084330264724220
 PrefabInstance:
   m_ObjectHideFlags: 0

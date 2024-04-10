@@ -9,6 +9,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -16,18 +17,22 @@ public class Weapon : MonoBehaviour
     protected Transform aimTransform;
     protected Transform bulletSpawn;
 
+
     public float fireDelay = 1f;
     public float attackTime = .5f;
     public float timer = 0;
     protected float angle;
+    protected GameObject player;
 
-    public PlayerStats attackWeapon;
+    public PlayerStats playerStats;
     // Start is called before the first frame update
     protected void Start()
     {
-        aimTransform = transform.Find("Aim");
-        bulletSpawn = transform.Find("Aim");
-        attackWeapon = Resources.Load("PlayerStats") as PlayerStats;
+        UpdatePlayerAim();
+
+        //aimtransform = transform.find("aim");
+        //bulletspawn = transform.find("aim");
+        //playerstats = resources.load("playerstats") as playerstats;
 
     }
 
@@ -37,10 +42,11 @@ public class Weapon : MonoBehaviour
 
         meleeAiming();
         //sets the delay so player can't spam the melee attack
-        if (Input.GetMouseButton(0) && timer <= 0)
+        if (Input.GetMouseButton(0) && timer <= 0 && Singleton.Instance.GetWeapon() != null)
         {
             timer = fireDelay;
             Attack();
+            
         }
         if (timer > 0)
         {
@@ -56,13 +62,25 @@ public class Weapon : MonoBehaviour
     //allows the player object to get the angle for the positioning of the melee object 
     private void meleeAiming()
     {
+        if (aimTransform == null)
+        {
+            UpdatePlayerAim();
+        }
+
         Vector3 mousePosition = GetMouseWorldPositon();
 
-        Vector3 aimDirection = (mousePosition - transform.position).normalized;
+        Vector3 aimDirection = (mousePosition - player.transform.position).normalized;
         angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-       // Debug.Log(aimTransform);
-       // Debug.Log(angle);
-        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+       //Debug.Log(aimTransform);
+       //Debug.Log(angle);
+       if (aimTransform != null)
+        {
+            aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        } else
+        {
+            Debug.Log("AIM TRANSFORM IS NULL");
+        }
+        
         // Debug.Log(angle);  
     }
     //these obtain the mouse position in the world position for tracking on the map 
@@ -84,6 +102,13 @@ public class Weapon : MonoBehaviour
     {
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
+    }
+
+    public void UpdatePlayerAim()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        aimTransform = player.transform.Find("Aim");
+        bulletSpawn = player.transform.Find("Aim");
     }
 }
 
