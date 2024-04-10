@@ -64,7 +64,6 @@ public class Weapon : MonoBehaviour
         }
 
         Vector3 mousePosition = GetMouseWorldPositon();
-
         Vector3 aimDirection = (mousePosition - player.transform.position).normalized;
         angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
        //Debug.Log(aimTransform);
