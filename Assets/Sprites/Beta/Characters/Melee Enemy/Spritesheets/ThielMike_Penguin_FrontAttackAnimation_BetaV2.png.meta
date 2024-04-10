@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 75169b2abd65252418554f12679d53fa
+guid: 7e46f82aa0535264ebdc2f9f54fd348f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,43 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_0
+      name: ThielMike_Penguin_FrontAttackAnimation_BetaV2_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 31
-        height: 30
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a025ee2f9c614f44cbc8f5f100b4ba04
-      internalID: -939434793
+      spriteID: bc3f6f7c958c439478d5db5461079361
+      internalID: -1759254829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_1
+      name: ThielMike_Penguin_FrontAttackAnimation_BetaV2_1
       rect:
         serializedVersion: 2
-        x: 59
+        x: 48
         y: 0
-        width: 31
-        height: 31
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6675aebab395e49b1f1ff8280a56ae
-      internalID: -206969958
+      spriteID: 4fd52435194c22b42bd700f53b2cbaed
+      internalID: -1085676460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_2
+      name: ThielMike_Penguin_FrontAttackAnimation_BetaV2_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 42
-        height: 31
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8fb230acfafb9d4190592ad8c5eccf1
-      internalID: 677596786
+      spriteID: 7132be12d1b800c48ac4a02aa71447a4
+      internalID: -925731100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_3
+      name: ThielMike_Penguin_FrontAttackAnimation_BetaV2_3
       rect:
         serializedVersion: 2
-        x: 152
+        x: 144
         y: 0
-        width: 37
-        height: 30
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e43b03ac29330747951252372cd919a
-      internalID: 1177656363
+      spriteID: 152d985bc96861740a0a74d304b2365e
+      internalID: 666226825
       vertices: []
       indices: 
       edges: []
@@ -230,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_0: -939434793
-      ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_1: -206969958
-      ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_2: 677596786
-      ThielMike_PenguinSpritesheet_BackAttackAnimation_BetaV1_3: 1177656363
+      ThielMike_Penguin_FrontAttackAnimation_BetaV2_0: -1759254829
+      ThielMike_Penguin_FrontAttackAnimation_BetaV2_1: -1085676460
+      ThielMike_Penguin_FrontAttackAnimation_BetaV2_2: -925731100
+      ThielMike_Penguin_FrontAttackAnimation_BetaV2_3: 666226825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

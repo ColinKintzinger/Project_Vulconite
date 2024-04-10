@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d570014779d147643b4cdc4dd09bbc78
+guid: 89458bb54096d9e48b31e3de16674d03
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,43 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_0
+      name: ThielMike_Penguin_FrontIdleAnimation_BetaV2_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 31
-        height: 31
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d52bfb0610b1246830ae477f841ee7
-      internalID: -1275107721
+      spriteID: 71297d1135449d345b10043113baf985
+      internalID: -113884424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_1
+      name: ThielMike_Penguin_FrontIdleAnimation_BetaV2_1
       rect:
         serializedVersion: 2
-        x: 57
+        x: 48
         y: 0
-        width: 34
-        height: 30
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c128f3760640b254c90fa9c76783771c
-      internalID: -413377674
+      spriteID: 5653bfaa73ee22c4c935288bab80ecb1
+      internalID: 424822688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_2
+      name: ThielMike_Penguin_FrontIdleAnimation_BetaV2_2
       rect:
         serializedVersion: 2
-        x: 105
+        x: 96
         y: 0
-        width: 37
-        height: 29
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaf7a60f84feff441a445f8333efeee2
-      internalID: -1779707704
+      spriteID: 5508731f82bd1ff40831cb33f53b695f
+      internalID: 1719953342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_3
+      name: ThielMike_Penguin_FrontIdleAnimation_BetaV2_3
       rect:
         serializedVersion: 2
-        x: 153
+        x: 144
         y: 0
-        width: 34
-        height: 30
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fd4a5cfeae99ec43a0d47f189d59620
-      internalID: -334975908
+      spriteID: 921a256da2f5c3e4c81c18ac2bd7d86f
+      internalID: 583136129
       vertices: []
       indices: 
       edges: []
@@ -230,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_0: -1275107721
-      ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_1: -413377674
-      ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_2: -1779707704
-      ThielMike_PenguinSpritesheet_BackIdleAnimation_BetaV1_3: -334975908
+      ThielMike_Penguin_FrontIdleAnimation_BetaV2_0: -113884424
+      ThielMike_Penguin_FrontIdleAnimation_BetaV2_1: 424822688
+      ThielMike_Penguin_FrontIdleAnimation_BetaV2_2: 1719953342
+      ThielMike_Penguin_FrontIdleAnimation_BetaV2_3: 583136129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
