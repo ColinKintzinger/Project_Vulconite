@@ -14,17 +14,24 @@ using UnityEngine;
 public class Melee : Weapon
 {
     public GameObject meleeLine;
+<<<<<<< Updated upstream
     public float meleeCooldown = .5f;
     private bool canMelee = true;
 
+=======
+>>>>>>> Stashed changes
     protected new void Start()
     {
         base.Start();
+<<<<<<< Updated upstream
         meleeLine.SetActive(false);
+=======
+>>>>>>> Stashed changes
     }
 
     public override void Attack()
     {
+<<<<<<< Updated upstream
         if (canMelee)
         {
             canMelee = false;
@@ -48,6 +55,10 @@ public class Melee : Weapon
     private void ResetCanMelee()
     {
         canMelee = true;
+=======
+        Vector3 offset = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+        //Instantiate(meleeLine, bulletSpawn.position + offset, Quaternion.Euler(0, 0, angle));
+>>>>>>> Stashed changes
     }
 }
 
