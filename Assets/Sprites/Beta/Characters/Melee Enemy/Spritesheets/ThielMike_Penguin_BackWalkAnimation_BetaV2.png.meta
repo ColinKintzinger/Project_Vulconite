@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 217d4a4b122639c4abbd50737455f7f0
+guid: e8b5c61451a9ce343a9be1d36580dd33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,85 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_0
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd561cad632171499e9cf23edc321b6
-      internalID: -249536668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 1
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ffbbd91e2bafdf45b419dc57c659c0d
-      internalID: -1294597399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_2
-      rect:
-        serializedVersion: 2
-        x: 106
+        x: 0
         y: 0
-        width: 24
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,62 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 644d569afa684d04ebce04d926980f5e
-      internalID: 1527043477
+      spriteID: d485e84ddc7b0de48ae036ee1f938d2a
+      internalID: 115320637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_3
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_1
       rect:
         serializedVersion: 2
-        x: 156
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ba0ceda2f86cd041b6feccad3d0f7ac
-      internalID: -210190156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_4
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 1
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62c3cd5fc15702e449f551118be5c712
-      internalID: -2138493954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_5
-      rect:
-        serializedVersion: 2
-        x: 254
+        x: 48
         y: 0
-        width: 28
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,8 +145,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e18102b5b02a24081c12eaa85ce9ed
-      internalID: 1989802030
+      spriteID: 06c921ab478a444429eb5f4f5254b714
+      internalID: -883123141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6fde0cf6a5fe24896532a4fab2e807
+      internalID: 1535029625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a51ce789c6fa54ca03ce700e5a323a
+      internalID: 43124700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413cd11a74692304c90bf481da2d75ee
+      internalID: -257635566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThielMike_Penguin_BackWalkAnimation_BetaV2_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f336f8725b48c43a2424022df3db81
+      internalID: 582757442
       vertices: []
       indices: 
       edges: []
@@ -272,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_0: -249536668
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_1: -1294597399
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_2: 1527043477
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_3: -210190156
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_4: -2138493954
-      ThielMike_PenguinSpritesheet_BackWalkAnimation_BetaV1_5: 1989802030
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_0: 115320637
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_1: -883123141
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_2: 1535029625
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_3: 43124700
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_4: -257635566
+      ThielMike_Penguin_BackWalkAnimation_BetaV2_5: 582757442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
