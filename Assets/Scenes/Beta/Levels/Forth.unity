@@ -8382,7 +8382,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicRanged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7111171999901309980, guid: 1693203649034794db384cbbc6f93b86, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
