@@ -34,6 +34,7 @@ public class BossFightDirections : MonoBehaviour
     MeleeAttack melee;
     EnemyHealth health;
     int whichAttack;
+    int lastAttack;
     int numOfSpikes;
     public float speedUp;
 
@@ -50,6 +51,7 @@ public class BossFightDirections : MonoBehaviour
         melee = GetComponent<MeleeAttack>();
         health = GetComponent<EnemyHealth>();
         speedUp = 0.0f;
+        lastAttack = 0;
 
         yield return new WaitForSeconds(1.0f);
 
@@ -70,6 +72,12 @@ public class BossFightDirections : MonoBehaviour
         }
 
         whichAttack = Random.Range(1, 5);
+        if (whichAttack == lastAttack)
+        {
+            Debug.Log("Attack was the same.");
+            whichAttack = 4;
+        }
+        lastAttack = whichAttack;
 
         if (whichAttack == 1)
         {
@@ -81,9 +89,9 @@ public class BossFightDirections : MonoBehaviour
         {
             teleport.MoveIt();
             yield return new WaitForSeconds(1.0f);
-            numOfSpikes = Random.Range(15, 25);
+            numOfSpikes = Random.Range(5, 8);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
-            yield return new WaitForSeconds(3.0f - speedUp);
+            yield return new WaitForSeconds(3.0f - (speedUp * 2));
         }
 
         if (whichAttack == 3)
