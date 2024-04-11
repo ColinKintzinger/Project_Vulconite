@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Door_Melting
+  m_Name: Door_Complete
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,18 +21,6 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 163634880, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 0.23333333
-      value: {fileID: -1031820344, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 0.43333334
-      value: {fileID: -578570853, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 0.6666667
-      value: {fileID: -2088177035, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 0.9
-      value: {fileID: -313871141, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 1.1
-      value: {fileID: -1274517033, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - time: 1.3333334
       value: {fileID: 773704937, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
     attribute: m_Sprite
     path: 
@@ -56,19 +44,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 163634880, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - {fileID: -1031820344, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - {fileID: -578570853, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - {fileID: -2088177035, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - {fileID: -313871141, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
-    - {fileID: -1274517033, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
     - {fileID: 773704937, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.35
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
