@@ -18,6 +18,8 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -34,10 +36,14 @@ public class PlayerController : MonoBehaviour
     private PlayerStats playerStats; // Trying out ScriptableObjects
 
     private int damageToPlayer = 1;
+
+    private Animator movementAnimate;
+    private SpriteRenderer render;
     // Start is called before the first frame update
     void Start()
     {
-        
+      movementAnimate = GetComponent<Animator>(); 
+      render = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,7 +54,42 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            setAnimation(false,1,true);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            
+            setAnimation(false,3,true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            setAnimation(false,2,true);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            setAnimation(true,2,true);
+        }
+        else
+        {
+            setAnimation(false,0,false);
+        }
 
+        void setAnimation(bool flip, int dInt, bool walking) {
+            gameObject.GetComponent<SpriteRenderer>().flipX = flip;
+            movementAnimate.SetInteger("Direction", dInt);
+            movementAnimate.SetBool("isWalking", walking);
+        }
+        //if (Input.GetKey(KeyCode.S))
+        //{
+        //    movementAnimate.SetInteger("Direction", 3);
+        //    //movementAnimate.SetBool("isWalking", true);
+        //}
+        //else
+        //{
+        //    movementAnimate.SetInteger("Direction", 0);
+        //}
     }
 
     // Testing collision for delagate scene transition

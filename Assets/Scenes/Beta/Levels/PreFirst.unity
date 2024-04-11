@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Melee
       objectReference: {fileID: 0}
+    - target: {fileID: 3551017776133557381, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b239c035aecd36d45b609ad986b8a97c, type: 2}
     - target: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.9
@@ -309,6 +313,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6767405095674404379, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 916748406, guid: b5c51fc118b1c2b4586ce5aa836b93a7, type: 3}
     - target: {fileID: 8270781994743990378, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -654,6 +662,7 @@ GameObject:
   - component: {fileID: 906010844}
   - component: {fileID: 906010846}
   - component: {fileID: 906010845}
+  - component: {fileID: 906010847}
   m_Layer: 3
   m_Name: Background1
   m_TagString: Untagged
@@ -7097,6 +7106,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &906010847
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906010843}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 678a17b51844376449ed6d7cf8c529c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &915663641
 GameObject:
   m_ObjectHideFlags: 0
