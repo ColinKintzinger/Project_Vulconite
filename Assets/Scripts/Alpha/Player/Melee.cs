@@ -5,6 +5,7 @@
  * 
  * CHANGE LOG
  * colin-4/02/24-Finished up on the code and added comments
+ * Dylan - 04/11/24 - Added cooldown functions, cause unity hates me
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -20,7 +21,6 @@ public class Melee : Weapon
     protected new void Start()
     {
         base.Start();
-
         meleeLine.SetActive(false);
 
     }
@@ -33,7 +33,7 @@ public class Melee : Weapon
 
             meleeLine.SetActive(true);
 
-            float meleeDuration = 0.1f;
+            float meleeDuration = 0.5f;
             Invoke("DeactivateMelee", meleeDuration);
 
             // Wait for the cooldown
