@@ -265,10 +265,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 447675782563765371, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
-      propertyPath: m_Name
-      value: Melee
-      objectReference: {fileID: 0}
     - target: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.9
@@ -314,12 +310,8 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 447675782563765371, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 9217795860039029494, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 785340650}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
 --- !u!1001 &613425377
@@ -401,10 +393,10 @@ GameObject:
   m_Component:
   - component: {fileID: 761666946}
   - component: {fileID: 761666945}
-  - component: {fileID: 761666944}
   - component: {fileID: 761666948}
   - component: {fileID: 761666947}
   - component: {fileID: 761666949}
+  - component: {fileID: 761666950}
   m_Layer: 0
   m_Name: Melee
   m_TagString: Weapon
@@ -412,23 +404,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &761666944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761666943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e19adaea9ee5f4095013681dd4084f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireDelay: 1
-  attackTime: 0.5
-  timer: 0
-  meleeLine: {fileID: 785340645}
-  meleeCooldown: 1
 --- !u!212 &761666945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -571,6 +546,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 3cd012de8ba8bc24193cef88ca9061c8, type: 2}
+--- !u!114 &761666950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761666943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e19adaea9ee5f4095013681dd4084f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireDelay: 1
+  attackTime: 0.5
+  timer: 0
+  meleeLine: {fileID: 785340645}
+  meleeCooldown: 0.5
 --- !u!1001 &773561007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -630,17 +622,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
 --- !u!1 &785340645 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8609055961077423053, guid: 61c34f44e360554438eb065972e04539, type: 3}
-  m_PrefabInstance: {fileID: 1313844699}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &785340650 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-  m_PrefabInstance: {fileID: 1313844699}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &845194309 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9217795860039029494, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2437698915289194483, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 542733460}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &906010843
@@ -7377,63 +7359,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1313844699
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 845194309}
-    m_Modifications:
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.0599995
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973926661880474397, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609055961077423053, guid: 61c34f44e360554438eb065972e04539, type: 3}
-      propertyPath: m_Name
-      value: MeleeSword
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 61c34f44e360554438eb065972e04539, type: 3}
 --- !u!1001 &1334186065
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ public class Weapon : MonoBehaviour
         return worldPosition;
     }
 
-    public void UpdatePlayerAim()
+    public virtual void UpdatePlayerAim()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         aimTransform = player.transform.Find("Aim");
