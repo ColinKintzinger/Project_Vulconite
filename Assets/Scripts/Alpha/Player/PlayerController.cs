@@ -14,8 +14,12 @@
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
  */
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -32,9 +36,14 @@ public class PlayerController : MonoBehaviour
     private PlayerStats playerStats; // Trying out ScriptableObjects
 
     private int damageToPlayer = 1;
+
+    private Animator movementAnimate;
+    private SpriteRenderer render;
     // Start is called before the first frame update
     void Start()
     {
+      movementAnimate = GetComponent<Animator>(); 
+      render = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -45,8 +54,42 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            setAnimation(false,1,true);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            
+            setAnimation(false,3,true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            setAnimation(false,2,true);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            setAnimation(true,2,true);
+        }
+        else
+        {
+            setAnimation(false,0,false);
+        }
 
-        //Debug.Log(playerStats.health);
+        void setAnimation(bool flip, int dInt, bool walking) {
+            gameObject.GetComponent<SpriteRenderer>().flipX = flip;
+            movementAnimate.SetInteger("Direction", dInt);
+            movementAnimate.SetBool("isWalking", walking);
+        }
+        //if (Input.GetKey(KeyCode.S))
+        //{
+        //    movementAnimate.SetInteger("Direction", 3);
+        //    //movementAnimate.SetBool("isWalking", true);
+        //}
+        //else
+        //{
+        //    movementAnimate.SetInteger("Direction", 0);
+        //}
     }
 
     // Testing collision for delagate scene transition
@@ -63,20 +106,11 @@ public class PlayerController : MonoBehaviour
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.name == "Ranged")
+        else if (collision.gameObject.CompareTag("Weapon"))
         {
-            gameObject.AddComponent<Range>();
-            //GetComponent<Range>().Start(); 
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Melee"));
-            Debug.Log(true);
-        }
-        else if (collision.gameObject.name == "Melee")
-        {
-            gameObject.AddComponent<Melee>();
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Ranged"));
-            Debug.Log(true);
+            Singleton.Instance.SetWeapon(collision.gameObject);
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
 

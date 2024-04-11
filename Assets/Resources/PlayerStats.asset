@@ -13,21 +13,7 @@ MonoBehaviour:
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
   health: 10
-  maxHealth: 10
-  speed: 0
-  maxSpeed: 0
+  speed: 1
   damage: 1
-  collectedCharms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  collectedCharms: []
+  weapon: {fileID: 0}

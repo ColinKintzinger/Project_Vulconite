@@ -36,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Weapon"))
+        if (collision.gameObject.CompareTag("WeaponBullet"))
         {
             Destroy(collision.gameObject);
         }
