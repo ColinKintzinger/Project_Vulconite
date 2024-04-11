@@ -21,8 +21,6 @@ public class Melee : Weapon
     protected new void Start()
     {
         base.Start();
-
-
     }
 
     public override void Attack()

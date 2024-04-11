@@ -70,24 +70,7 @@ public class PlayerController : MonoBehaviour
             Singleton.Instance.SetWeapon(collision.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-            //playerStats.weapon = collision.gameObject.GetComponent<Range>();
-            //playerStats.EquipWeapon(collision.gameObject);
-            //Destroy(collision.gameObject);
         }
-        //else if (collision.CompareTag("MeleeCollider"))
-        //{
-        //    // Set the colliding game object as a child of the player
-            
-        //    collision.transform.SetParent(transform.Find("Aim"));
-
-        //    // Activate the melee weapon
-        //    Transform meleeWeapon = transform.Find("Aim/Weapon");
-        //    if (meleeWeapon != null)
-        //    {
-        //        meleeWeapon.gameObject.SetActive(true);
-        //    }
-        //    Singleton.Instance.SetWeapon(collision.gameObject);
-        //}
     }
 
 }

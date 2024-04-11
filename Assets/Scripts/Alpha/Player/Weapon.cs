@@ -105,13 +105,5 @@ public class Weapon : MonoBehaviour
         bulletSpawn = player.transform.Find("Aim");
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        other.GetComponent<EnemyHealth>().TakeDamage(playerStats.damage);
-    //    }
-    //}
-
 }
 
