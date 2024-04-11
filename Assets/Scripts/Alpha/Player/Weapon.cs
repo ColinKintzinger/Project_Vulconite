@@ -98,20 +98,12 @@ public class Weapon : MonoBehaviour
         return worldPosition;
     }
 
-    public void UpdatePlayerAim()
+    public virtual void UpdatePlayerAim()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         aimTransform = player.transform.Find("Aim");
         bulletSpawn = player.transform.Find("Aim");
     }
-
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        other.GetComponent<EnemyHealth>().TakeDamage(playerStats.damage);
-    //    }
-    //}
 
 }
 

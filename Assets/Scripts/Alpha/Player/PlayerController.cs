@@ -111,9 +111,6 @@ public class PlayerController : MonoBehaviour
             Singleton.Instance.SetWeapon(collision.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-            //playerStats.weapon = collision.gameObject.GetComponent<Range>();
-            //playerStats.EquipWeapon(collision.gameObject);
-            //Destroy(collision.gameObject);
         }
     }
 

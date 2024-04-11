@@ -21,9 +21,17 @@ public class Singleton : MonoBehaviour
     public void SetWeapon(GameObject weaponObject)
     {
         weapon = weaponObject;
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Weapon");
+        foreach (GameObject target in gameObjects)
+        {
+            if (target != weaponObject)
+            {
+                GameObject.Destroy(target);
+            }
+            
+        }
+
         DontDestroyOnLoad(weapon);
-        // Destroy other game object that isn't the one I picked up
-        Destroy(GameObject.FindGameObjectWithTag("Weapon"));
     }
 
     public GameObject GetWeapon()
