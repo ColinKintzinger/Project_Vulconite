@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator movementAnimate;
     private SpriteRenderer render;
+    private int direction = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,24 +57,32 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         if (Input.GetKey(KeyCode.W))
         {
+            direction = 1;
             setAnimation(false,1,true);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            
+            direction = 3;
             setAnimation(false,3,true);
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            direction = 2;
             setAnimation(false,2,true);
         }
         else if (Input.GetKey(KeyCode.A))
         {
+            direction = 4;
             setAnimation(true,2,true);
+        }
+        else if (direction==4 && !Input.GetKey(KeyCode.A))
+        {
+            setAnimation(true,0,false);
         }
         else
         {
             setAnimation(false,0,false);
+
         }
 
         void setAnimation(bool flip, int dInt, bool walking) {
