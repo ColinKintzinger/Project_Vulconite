@@ -20,6 +20,6 @@ public class DamageVisualization : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().color = colorNorm;
         }
-        Debug.Log("Timer = " + timer);
+        //Debug.Log("Timer = " + timer);
     }
 }

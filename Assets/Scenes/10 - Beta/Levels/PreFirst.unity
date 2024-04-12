@@ -123,6 +123,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &136890448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6231181717234955923, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+  m_PrefabInstance: {fileID: 773561007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &136890449
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136890448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0038141757, y: 0.0057212412}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14454898, y: 0.24753124}
+  m_EdgeRadius: 0
 --- !u!1001 &138482074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,14 +221,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 452687022291528157, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+      propertyPath: m_Radius
+      value: 0.1427616
+      objectReference: {fileID: 0}
+    - target: {fileID: 452687022291528157, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.03394173
+      objectReference: {fileID: 0}
+    - target: {fileID: 452687022291528157, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00038276613
+      objectReference: {fileID: 0}
     - target: {fileID: 6485781361652257027, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
       propertyPath: m_Name
-      value: Melee (1)
+      value: Melee
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6485781361652257027, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1456714645}
   m_SourcePrefab: {fileID: 100100000, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
 --- !u!1001 &191795566
 PrefabInstance:
@@ -452,9 +517,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ranged
       objectReference: {fileID: 0}
+    - target: {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: m_Radius
+      value: 0.12732375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.015477568
+      objectReference: {fileID: 0}
+    - target: {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0009967089
+      objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2471815
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -492,10 +569,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6231181717234955923, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 136890449}
   m_SourcePrefab: {fileID: 100100000, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
 --- !u!1001 &1334186065
 PrefabInstance:
@@ -619,6 +700,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71b9a9340aab3c04c912f627a0cfe36d, type: 3}
+--- !u!1 &1456714632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6485781361652257027, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+  m_PrefabInstance: {fileID: 138482074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1456714645
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456714632}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.035908222, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24818355, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1001 &1527390460
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -36,6 +36,7 @@ public class WeaponAttack : MonoBehaviour
             if (enemyHealth != null)
             {
                 Debug.Log("EnemyHealth component retrieved!");
+                Debug.Log(playerStats.damage);
                 enemyHealth.TakeDamage(playerStats.damage);
             }
             else

@@ -28,11 +28,11 @@ public class SpeedCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
-        float randomSpeedBuff = Random.Range(0.1f, 0.3f);
-        playerStats.speed += randomSpeedBuff;
+        float randomSpeedBuff = Random.Range(0.25f, 0.75f);
+        playerStats.speed += (playerStats.speed * randomSpeedBuff);
 
         // Show message on the UI Text object
-        Debug.Log("Speed Charm Collected! Speed increased by " + randomSpeedBuff);
+        Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
     }
 
 }

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int currentHealth;
+    public float maxHealth = 100.0f;
+    public float currentHealth;
     private string SceneToLoad = "Win Screen";
 
     // Start is called before the first frame update
@@ -21,11 +21,12 @@ public class EnemyHealth : MonoBehaviour
         
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        Debug.Log(currentHealth);
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0.0f)
         {
             Destroy(gameObject);
             if (gameObject.CompareTag("Boss")) {
