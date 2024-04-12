@@ -16,6 +16,7 @@
  * 
  * CHANGE LOG
  * Zach - 04/08/24 - Attacks speed up when boss is at half health
+ * Zach - 04/12/24 - Boss does not perform the same two attacks in a row
  * 
  */
 using System.Collections;
@@ -71,22 +72,24 @@ public class BossFightDirections : MonoBehaviour
             speedUp = 0.5f;
         }
 
-        whichAttack = Random.Range(1, 5);
-        if (whichAttack == lastAttack)
+        do
         {
-            Debug.Log("Attack was the same.");
-            whichAttack = 4;
-        }
-        lastAttack = whichAttack;
+            whichAttack = Random.Range(1, 5);
+        } while (whichAttack == lastAttack);
+        
+        Debug.Log("Last attack: " + lastAttack);
+        Debug.Log("This attack: " + whichAttack);
 
         if (whichAttack == 1)
         {
+            lastAttack = whichAttack;
             StartCoroutine(fireAndMove.TeleSpam());
             yield return new WaitForSeconds(5.0f - (speedUp * 4));
         }
 
         if (whichAttack == 2)
         {
+            lastAttack = whichAttack;
             teleport.MoveIt();
             yield return new WaitForSeconds(1.0f);
             numOfSpikes = Random.Range(5, 8);
@@ -96,6 +99,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 3)
         {
+            lastAttack = whichAttack;
             teleport.MoveIt();
             yield return new WaitForSeconds(1.0f - speedUp);
             StartCoroutine(wave.SendTheSpikes());
@@ -107,6 +111,7 @@ public class BossFightDirections : MonoBehaviour
             Debug.Log("Melee");
             if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) < 3 && Mathf.Abs(player.transform.position.y - queen.transform.position.y) < 3)
             {
+                lastAttack = whichAttack;
                 yield return new WaitForSeconds(1.5f - speedUp);
                 melee.BlastIt();
                 yield return new WaitForSeconds(3.0f - speedUp);
