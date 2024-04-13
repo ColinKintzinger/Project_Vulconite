@@ -7452,7 +7452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3719042837018265841}
   m_Layer: 0
-  m_Name: LitBackground
+  m_Name: 00 - LitBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
