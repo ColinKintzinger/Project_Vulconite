@@ -97,6 +97,10 @@ public class Weapon : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
+    public float GetAngle()
+    {
+        return angle;
+    }
 
     public virtual void UpdatePlayerAim()
     {
