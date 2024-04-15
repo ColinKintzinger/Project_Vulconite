@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        angle = attackDrection.GetAngle();
+        //angle = attackDrection.GetAngle();
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
         {
             Singleton.Instance.SetWeapon(collision.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
