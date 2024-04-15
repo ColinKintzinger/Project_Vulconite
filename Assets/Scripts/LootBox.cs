@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class LootBox : MonoBehaviour
 {
-    public int collisionCount = 0;
+    public int collisionCount;
     public int collisionCountThreshold = 3;
     //public GameObject charmTest;
     public GameObject[] charmPrefabs;
@@ -22,6 +22,7 @@ public class LootBox : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        collisionCount = 0;
     }
 
     // Update is called once per frame
@@ -44,8 +45,9 @@ public class LootBox : MonoBehaviour
                 {
                     RevealCharm();
                 }
-                //charm.GetComponent<Charm>().RevealCharm(charm);
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
             }
         }
     }
