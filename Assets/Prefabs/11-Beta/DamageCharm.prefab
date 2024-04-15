@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charmName: Damage Charm
+  pickupIndicatorPrefab: {fileID: 4246512559394374580, guid: 8cbf78484819f5d4a825d217c770f88f, type: 3}
 --- !u!1 &8699146022733998793
 GameObject:
   m_ObjectHideFlags: 0
