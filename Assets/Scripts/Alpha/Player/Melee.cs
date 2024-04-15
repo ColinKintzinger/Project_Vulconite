@@ -5,6 +5,7 @@
  * 
  * CHANGE LOG
  * colin-4/02/24-Finished up on the code and added comments
+ * Dylan - 04/11/24 - Added cooldown
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -13,33 +14,50 @@ using UnityEngine;
 //derrived class from parent
 public class Melee : Weapon
 {
+    private GameObject meleeLine;
+    public float meleeCooldown = .5f;
+    private bool canMelee = true;
 
-    public GameObject meleeLine;
-    public GameObject bullet;
     protected new void Start()
     {
-        //calls the start function from the parent class 
         base.Start();
-
-        //sets the variables to the script component 
-        meleeLine = aimTransform.GetChild(0).gameObject;
-        attackWeapon = Resources.Load("PlayerStats") as PlayerStats;
-        bullet = Resources.Load("MeleeShot") as GameObject;
     }
+
     public override void Attack()
     {
-        //instantiates the melee attack
-        GameObject bulletInst = Instantiate(bullet, aimTransform.position, Quaternion.Euler(0, 0, angle - 90));
-        //if (timer >= attackTime)
-        //{
-        //    meleeLine.gameObject.SetActive(true);
-        //    Debug.Log("true");
-        //}
-        //else
-        //{
-        //    meleeLine.gameObject.SetActive(false);
-        //}
+        if (canMelee)
+        {
+            canMelee = false;
+
+            meleeLine.SetActive(true);
+
+            float meleeDuration = 0.1f;
+            Invoke("DeactivateMelee", meleeDuration);
+
+            // Wait for the cooldown
+            float cooldownDuration = 1f;
+            Invoke("ResetCanMelee", cooldownDuration);
+        }
+    }
+
+    private void DeactivateMelee()
+    {
+        meleeLine.SetActive(false);
+    }
+
+    private void ResetCanMelee()
+    {
+        canMelee = true;
+    }
+
+    public override void UpdatePlayerAim()
+    {
+        base.UpdatePlayerAim();
+        meleeLine = aimTransform.Find("MeleeSword").gameObject;
+        meleeLine.SetActive(false);
 
     }
 }
+
+
 

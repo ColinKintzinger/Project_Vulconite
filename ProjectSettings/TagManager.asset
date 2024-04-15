@@ -10,6 +10,8 @@ TagManager:
   - Weapon
   - Charm
   - Boss
+  - WeaponBullet
+  - MeleeCollider
   layers:
   - Default
   - TransparentFX

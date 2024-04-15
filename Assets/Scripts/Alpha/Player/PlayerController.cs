@@ -14,8 +14,12 @@
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
  */
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -32,22 +36,77 @@ public class PlayerController : MonoBehaviour
     private PlayerStats playerStats; // Trying out ScriptableObjects
 
     private int damageToPlayer = 1;
+
+    private Animator movementAnimate;
+    private SpriteRenderer render;
+    private int direction = 0;
+    private Weapon attackDrection;
+    private float angle;
     // Start is called before the first frame update
     void Start()
     {
+      movementAnimate = GetComponent<Animator>(); 
+      render = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //angle = attackDrection.GetAngle();
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            direction = 1;
+            setAnimation(false,1,true);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            direction = 3;
+            setAnimation(false,3,true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            direction = 2;
+            setAnimation(false,2,true);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            direction = 4;
+            setAnimation(true,2,true);
+        }
+        else if (direction==4 && !Input.GetKey(KeyCode.A))
+        {
+            setAnimation(true,0,false);
+        }
+        else
+        {
+            setAnimation(false,0,false);
 
-        //Debug.Log(playerStats.health);
+        }
+        if(Input.GetMouseButtonDown(0)&& angle>45f && angle<135)
+        {
+
+        }
+
+        //if (Input.GetKey(KeyCode.S))
+        //{
+        //    movementAnimate.SetInteger("Direction", 3);
+        //    //movementAnimate.SetBool("isWalking", true);
+        //}
+        //else
+        //{
+        //    movementAnimate.SetInteger("Direction", 0);
+        //}
     }
+        void setAnimation(bool flip, int dInt, bool walking) {
+            gameObject.GetComponent<SpriteRenderer>().flipX = flip;
+            movementAnimate.SetInteger("Direction", dInt);
+            movementAnimate.SetBool("isWalking", walking);
+        }
 
     // Testing collision for delagate scene transition
     private void OnTriggerEnter2D(Collider2D collision)
@@ -63,20 +122,11 @@ public class PlayerController : MonoBehaviour
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.name == "Ranged")
+        else if (collision.gameObject.CompareTag("Weapon"))
         {
-            gameObject.AddComponent<Range>();
-            //GetComponent<Range>().Start(); 
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Melee"));
-            Debug.Log(true);
-        }
-        else if (collision.gameObject.name == "Melee")
-        {
-            gameObject.AddComponent<Melee>();
-            Destroy(collision.gameObject);
-            Destroy(GameObject.Find("Ranged"));
-            Debug.Log(true);
+            Singleton.Instance.SetWeapon(collision.gameObject);
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 

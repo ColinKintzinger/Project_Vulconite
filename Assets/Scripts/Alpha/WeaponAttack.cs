@@ -28,22 +28,6 @@ public class WeaponAttack : MonoBehaviour
         
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Enemy"))
-    //    {
-    //        EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-    //        if (enemyHealth != null)
-    //        {
-    //            Debug.Log("EnemyHealth component retrieved!");
-    //            enemyHealth.TakeDamage(playerStats.damage);
-    //        } else
-    //        {
-    //            Debug.Log("EnemyHealth component NOT retrieved!");
-    //        }
-    //        //Destroy(collision.gameObject);
-    //    }
-    //}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
@@ -52,6 +36,7 @@ public class WeaponAttack : MonoBehaviour
             if (enemyHealth != null)
             {
                 Debug.Log("EnemyHealth component retrieved!");
+                Debug.Log(playerStats.damage);
                 enemyHealth.TakeDamage(playerStats.damage);
             }
             else

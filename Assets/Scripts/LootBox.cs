@@ -16,11 +16,12 @@ public class LootBox : MonoBehaviour
     public int collisionCountThreshold = 3;
     //public GameObject charmTest;
     public GameObject[] charmPrefabs;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,14 +32,18 @@ public class LootBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Weapon"))
+        if (collision.gameObject.CompareTag("WeaponBullet"))
         {
             collisionCount++;
+            animator.SetInteger("Collision Count", collisionCount);
             Destroy(collision.gameObject);
 
             if (collisionCount >= collisionCountThreshold)
             {
-                RevealCharm();
+                if (gameObject.CompareTag("LootBox"))
+                {
+                    RevealCharm();
+                }
                 //charm.GetComponent<Charm>().RevealCharm(charm);
                 Destroy(gameObject);
             }

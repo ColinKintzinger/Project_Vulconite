@@ -27,8 +27,8 @@ public class DamageCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
-        int randomDamageBuff = Random.Range(1, 4);
-        playerStats.damage += randomDamageBuff;
-        Debug.Log("Damage Charm Collected! Damage increased by " + randomDamageBuff);
+        float randomDamageBuff = Random.Range(0.25f, .75f);
+        playerStats.damage += (playerStats.damage * randomDamageBuff);
+        Debug.Log("Damage Charm Collected! Damage increased by " + (100 * randomDamageBuff) + "percent");
     }
 }

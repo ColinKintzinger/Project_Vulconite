@@ -9,10 +9,10 @@ public class HealthBar : MonoBehaviour
     //public PlayerStats playerStats;
 
 
-    public float startingHealth = 10;
     public PlayerStats playerStats;
 
-    private float currentHealth = 10; //playerStats.health;
+    private float startingHealth = 100.0f;
+    private float currentHealth = 100.0f; //playerStats.health;
     private GameObject healthContainer;
     private float scaleAdjustment;
     private float basePosition;

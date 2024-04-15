@@ -18,10 +18,13 @@ public class SceneTransition : MonoBehaviour
 {
     public string sceneToGoTo;
     private bool active = false;
+    private Animator animator;
+    private float delay = 1.0f;
 
     // Start is called before the first frame update
     void Start()
-    {  
+    {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,7 +33,9 @@ public class SceneTransition : MonoBehaviour
         // Checks for current enemies on scene
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
-            active = true;
+            //active = true;
+            animator.SetBool("active", true);
+            Invoke("ActivateDoor", delay);
         }
     }
     // Checks when player collides with door and enemies are dead
@@ -40,5 +45,10 @@ public class SceneTransition : MonoBehaviour
         {
             SceneManager.LoadScene(sceneToGoTo);
         }
+    }
+
+    private void ActivateDoor()
+    {
+        active = true;
     }
 }

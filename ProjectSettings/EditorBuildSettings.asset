@@ -6,37 +6,37 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Beta/Screens/Beta Controls Screen.unity
+    path: Assets/Scenes/10 - Beta/Screens/Beta Controls Screen.unity
     guid: 5d150d099ec68044e9dff52c9161f6a1
   - enabled: 1
-    path: Assets/Scenes/Beta/Screens/Start Screen.unity
+    path: Assets/Scenes/10 - Beta/Screens/Start Screen.unity
     guid: 17cb428293b71ba41a3b8e7104a79e72
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/First.unity
+    path: Assets/Scenes/10 - Beta/Levels/First.unity
     guid: 7fcabe902ccc0464dbd77f135b434453
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/Second.unity
+    path: Assets/Scenes/10 - Beta/Levels/Second.unity
     guid: 517ea50d9af374f49b4f024e60d405ba
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/Third.unity
+    path: Assets/Scenes/10 - Beta/Levels/Third.unity
     guid: 849905f5ea12cb448b0504f1fe112945
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/Forth.unity
+    path: Assets/Scenes/10 - Beta/Levels/Forth.unity
     guid: c2e3a71676823534b918f51eed78f103
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/Fifth.unity
+    path: Assets/Scenes/10 - Beta/Levels/Fifth.unity
     guid: 6f571444d68b51e49991916920a48268
   - enabled: 1
-    path: Assets/Scenes/Beta/Levels/FinalBossBeta.unity
+    path: Assets/Scenes/10 - Beta/Levels/FinalBossBeta.unity
     guid: d8de5445947645648a73e60ab1e1d139
   - enabled: 1
-    path: Assets/Scenes/Beta/Screens/Win Screen.unity
+    path: Assets/Scenes/10 - Beta/Screens/Win Screen.unity
     guid: b0d8397de2634ab4ca0c6e41e138fd4d
   - enabled: 1
-    path: Assets/Scenes/Beta/Screens/LoseScene.unity
+    path: Assets/Scenes/10 - Beta/Screens/LoseScene.unity
     guid: 7a6202cded1d67f4d82627732b35c8c7
   - enabled: 0
-    path: Assets/Scenes/Alpha/SampleScene.unity
+    path: Assets/Scenes/01 - Alpha/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Alpha_SceneTransition.unity
@@ -45,15 +45,48 @@ EditorBuildSettings:
     path: Assets/Scenes/Otto_Scene(PathHate).unity
     guid: d75c7d95c80cdbd41b7992cb2c250344
   - enabled: 0
-    path: Assets/Scenes/Alpha/Mellee_testing_scene.unity
+    path: Assets/Scenes/01 - Alpha/Mellee_testing_scene.unity
     guid: dac1deca7f038d9468ed158c5e39cef9
   - enabled: 0
     path: Assets/Scenes/LootRoom1.unity
     guid: 67f7f88cc8ea06c43a8d78c9ebaee9ee
   - enabled: 0
-    path: Assets/Scenes/Beta/Test Scenes/Layout.unity
+    path: Assets/Scenes/10 - Beta/Test Scenes/Layout.unity
     guid: 3a985bddfb72c4b47b6df8ad2adf642d
   - enabled: 0
-    path: Assets/Scenes/Alpha/AlphTestScene.unity
+    path: Assets/Scenes/01 - Alpha/AlphTestScene.unity
     guid: c101ad4e760bcc3498d2941e67b67ede
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Screens/01-Beta Controls Screen.unity
+    guid: 88d788354df44ac419608f106412c60c
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Screens/01-Start Screen.unity
+    guid: 7f59d3e3a1c214445a25e5e370d75f5e
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Screens/01-LoseScene.unity
+    guid: f0b7bc489db63a54b8235f47eb81a498
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Screens/01-Win Screen.unity
+    guid: d1d3db7f23287da4d86087e25d6db8c8
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/01-First.unity
+    guid: 685644d7bc121034e8ec7927efc92f2b
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/02-Second.unity
+    guid: 44eb57b6628e2c9499fa023915ec951a
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/03-Third.unity
+    guid: b12b61d1327937647a27e7244afcd066
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/04-Forth.unity
+    guid: 1e416c5a6a5872344b36975fd33863ac
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/05-Fifth.unity
+    guid: 9e623683a2369064b82ff3ebd755fa5c
+  - enabled: 1
+    path: Assets/Scenes/20 - Pre-Release Build/Levels/06-FinalBossBeta.unity
+    guid: 8ce0e13a16805b74abdf24693b7675f4
+  - enabled: 1
+    path: Assets/Scenes/10 - Beta/Levels/PreFirst.unity
+    guid: 3e327b374957b564b86f83144d2c3624
   m_configObjects: {}
