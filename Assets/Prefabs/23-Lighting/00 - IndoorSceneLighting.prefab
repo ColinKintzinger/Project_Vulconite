@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832878317047573562}
   m_Layer: 0
-  m_Name: IndoorSceneLighting
+  m_Name: 00 - IndoorSceneLighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

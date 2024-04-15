@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3816096995839778997}
   - component: {fileID: 1250901984574599065}
   - component: {fileID: 2914924129808358206}
+  - component: {fileID: 2026287690216661874}
+  - component: {fileID: 6829663402169450874}
   m_Layer: 0
   m_Name: LootBox
   m_TagString: LootBox
@@ -143,7 +145,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00000047683716, y: -0.13229689}
@@ -176,3 +178,43 @@ MonoBehaviour:
   charmPrefabs:
   - {fileID: 231526499602556927, guid: 863d38fc05278d147b69aedbe12dbeb9, type: 3}
   - {fileID: 2006423490730176266, guid: ccb191d54f129ff4eb11a5940fc84ce6, type: 3}
+--- !u!95 &2026287690216661874
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189062004623397030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2797b6c5664310c4aab6a04e5d03ed32, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &6829663402169450874
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189062004623397030}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b20a7a4907a6baa40beacfe04c13707f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b20a7a4907a6baa40beacfe04c13707f, type: 2}
+  - {fileID: 7400000, guid: 673c57a9c36965641b62e4734d10057a, type: 2}
+  - {fileID: 7400000, guid: 97586a07e9bed1740805ca01fde1455e, type: 2}
+  - {fileID: 7400000, guid: 078535c4410aded4b8d2398098f22f1d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
