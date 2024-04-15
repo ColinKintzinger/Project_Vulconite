@@ -693,7 +693,7 @@ TextureImporter:
       name: ReeceGarrett_Environment_Tileset_Release_27
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -706,6 +706,27 @@ TextureImporter:
       bones: []
       spriteID: df23a920f5086704dbe7e25f742f90d9
       internalID: 135615376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReeceGarrett_Environment_Tileset_Release_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6166d4fc9ac094086812b71e0b5b1b
+      internalID: -1354364021
       vertices: []
       indices: 
       edges: []
@@ -742,6 +763,7 @@ TextureImporter:
       ReeceGarrett_Environment_Tileset_Release_25: -714609932
       ReeceGarrett_Environment_Tileset_Release_26: 2078530091
       ReeceGarrett_Environment_Tileset_Release_27: 135615376
+      ReeceGarrett_Environment_Tileset_Release_28: -1354364021
       ReeceGarrett_Environment_Tileset_Release_3: 347120127
       ReeceGarrett_Environment_Tileset_Release_4: -1869857683
       ReeceGarrett_Environment_Tileset_Release_5: 1228447308
