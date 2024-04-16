@@ -37,14 +37,17 @@ public class SpeedCharm : Charm
         Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
         string text = "Speed Charm Collected! Speed increased by " + System.Math.Round(100 * randomSpeedBuff, 2) + "%";
 
+        ShowIndicator(text);
         //pickupIndicator.GetComponent<TextMeshPro>().SetText(text);
         //pickupIndicator.GetComponent<TextMeshPro>().text = text;
         //Instantiate(pickupIndicator, transform);
 
-        GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
-        pickupIndicator.GetComponent<TextMeshPro>().text = text;
+        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
+        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform);
+        //Debug.Log(pickupIndicator.transform.position);
+        //pickupIndicator.GetComponent<TextMeshPro>().text = text;
 
-        Destroy(pickupIndicator, 2f);
+        //Destroy(pickupIndicator, 2f);
     }
 
 }

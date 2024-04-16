@@ -14,7 +14,6 @@ using UnityEngine.Rendering;
 
 public class DamageCharm : Charm
 {
-    public GameObject pickupIndicatorPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -35,14 +34,16 @@ public class DamageCharm : Charm
 
         Debug.Log("Damage Charm Collected! Damage increased by " + (100 * randomDamageBuff) + "percent");
         string text = "Damage Charm Collected!\n Damage increased by " + System.Math.Round(100 * randomDamageBuff, 2) + "%";
+        ShowIndicator(text);
 
         //pickupIndicator.GetComponent<TextMeshPro>().SetText(text);
         //Instantiate(pickupIndicator, transform);
 
-        GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
-        pickupIndicator.GetComponent<TextMeshPro>().text = text;
+        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
+        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform);
+        //pickupIndicator.GetComponent<TextMeshPro>().text = text;
 
-        Destroy(pickupIndicator, 3f);
+        //Destroy(pickupIndicator, 3f);
 
     }
 

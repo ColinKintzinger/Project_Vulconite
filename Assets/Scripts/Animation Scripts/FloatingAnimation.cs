@@ -15,7 +15,7 @@ public class FloatingAnimation : MonoBehaviour
     void Update()
     {
         float floaterVar = Mathf.Sin((timer/1)*Mathf.PI)*.005f;
-        Debug.Log("floaterVar= " +floaterVar);
+        //Debug.Log("floaterVar= " +floaterVar);
         transform.position += new Vector3(0,floaterVar,0);
         if (timer < 0) {
             timer = 2;

@@ -10,12 +10,15 @@ public class PickupIndicator : MonoBehaviour
     void Start()
     {
         textMeshPro = GetComponent<TextMeshPro>();
+        Debug.Log(textMeshPro.text);
+        //Debug.Log(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(textMeshPro.text);
+        Debug.Log(textMeshPro.transform);
     }
 
 }
