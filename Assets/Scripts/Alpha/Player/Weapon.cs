@@ -23,6 +23,7 @@ public class Weapon : MonoBehaviour
     public float timer = 0;
     protected float angle;
     protected GameObject player;
+    public float gettingAngle;
 
     //public PlayerStats playerStats;
     // Start is called before the first frame update
@@ -37,6 +38,7 @@ public class Weapon : MonoBehaviour
     {
 
         Aiming();
+        gettingAngle = angle;
         //sets the delay so player can't spam the melee attack
         if (Input.GetMouseButton(0) && timer <= 0 && Singleton.Instance.GetWeapon() != null)
         {
@@ -97,10 +99,7 @@ public class Weapon : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-    public float GetAngle()
-    {
-        return angle;
-    }
+
 
     public virtual void UpdatePlayerAim()
     {
