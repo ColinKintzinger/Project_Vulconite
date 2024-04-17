@@ -31,7 +31,7 @@ public class SceneTransition : MonoBehaviour
     void Update()
     {
         // Checks for current enemies on scene
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
         {
             //active = true;
             animator.SetBool("active", true);
