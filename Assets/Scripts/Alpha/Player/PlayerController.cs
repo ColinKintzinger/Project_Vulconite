@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
       movementAnimate = GetComponent<Animator>(); 
       render = GetComponent<SpriteRenderer>();
       rb= GetComponent<Rigidbody2D>();
-      angle = attackDrection.gettingAngle;
+      
     }
 
     // Update is called once per frame
