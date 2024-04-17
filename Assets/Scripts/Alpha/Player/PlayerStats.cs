@@ -39,7 +39,7 @@ public class PlayerStats : ScriptableObject
     private void resetPlayerStats()
     {
         health = 100.0f;
-        speed = 4.0f;
+        speed = 5.0f;
         damage = 30.0f;
         collectedCharms.Clear();
     }
