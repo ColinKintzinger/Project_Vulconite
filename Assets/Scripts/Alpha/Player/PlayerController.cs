@@ -74,6 +74,10 @@ public class PlayerController : MonoBehaviour
             //movementAnimate.SetBool("isAttacking", true);
             movementAnimate.SetTrigger("Attacking");
         }
+        else
+        {
+            movementAnimate.ResetTrigger("Attacking");
+        }
         //if (Input.GetMouseButton(0))
         //{
         //    attX = -1;
