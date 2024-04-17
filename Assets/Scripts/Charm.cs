@@ -6,27 +6,28 @@
  * CHANGE LOG
  * Dylan - 03/20/24 - Added a structure for different charms. Not yet functional
  * Dylan - 03/21/24 - Added more structure | Got feedback from Turner, inheritance looks like the way to go
+ * Dylan - 04/17/24 - Added text functionality
  */
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.IO.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Charm : MonoBehaviour
 {
     public string charmName;
-    public GameObject pickupIndicator;
-    private GameObject objectToFind;
-    private TextMeshPro textMeshPro;
-   
+    public TextMesh textMesh; // Component/Prefab
+
+    private float Yoffset = 1.0f;
+    private float Xoffset = -1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        objectToFind = transform.GetChild(1).gameObject;
-        objectToFind.SetActive(false);
-        textMeshPro = objectToFind.GetComponent<TextMeshPro>();
+
     }
 
     // Update is called once per frame
@@ -37,21 +38,45 @@ public class Charm : MonoBehaviour
 
     public virtual void ApplyBuff(PlayerStats playerStats)
     {
-        // A virtual fuction for children to override as needed
-        
+        // A virtual function for children to override as needed
     }
 
-    public void ShowIndicator(string text)
+    public void ShowIndicator(string text, Charm myself)
     {
-        if (objectToFind != null)
-        {
-            textMeshPro.text = text;
-            objectToFind.SetActive(true);
-        } else
-        {
-            Debug.Log("PICKUPINDICATOR IS NULL");
-        }
-    }
-    
+        myself.GetComponent<SpriteRenderer>().enabled = false;
+        myself.GetComponent<BoxCollider2D>().enabled = false;
 
+        TextMesh tempText = Instantiate(textMesh,new Vector3(transform.position.x + Xoffset, transform.position.y + Yoffset, 0), Quaternion.identity);
+        tempText.text = text;
+        StartCoroutine(FloatAndFade(tempText, myself));
+
+        // Coroutine
+    }
+
+    private IEnumerator FloatAndFade(TextMesh tempText, Charm myself)
+    {
+        float progress = 0.0f;
+        float speed = 1.0f;
+        Color startAlpha = tempText.color;
+        Color endAlpha = Color.red;
+
+        //TextMesh endAlpha = 0.0f;
+
+        while (progress < 3.0f)
+        {
+            tempText.transform.Translate(Vector2.up * speed * Time.deltaTime);
+            tempText.color = Color.Lerp(startAlpha, endAlpha, progress / 3);
+
+            progress += Time.deltaTime;
+            //Debug.Log(progress);
+            // Lerp to move from startAlpha to endAlpha
+            yield return null;
+        }
+
+        Destroy(tempText.gameObject);
+        Destroy(myself.gameObject);
+
+        //Debug.Log(progress);
+        //yield return null; // stop for this frame, come back
+    }
 }

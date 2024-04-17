@@ -31,20 +31,10 @@ public class DamageCharm : Charm
         //base.applyBuff();
         float randomDamageBuff = Random.Range(0.05f, 0.15f);
         playerStats.damage += (playerStats.damage * randomDamageBuff);
+        //Debug.Log("Damage Charm Collected! Damage increased by " + (100 * randomDamageBuff) + "percent");
+        string text = "+" + System.Math.Round(100 * randomDamageBuff, 2) + "% Damage";
 
-        Debug.Log("Damage Charm Collected! Damage increased by " + (100 * randomDamageBuff) + "percent");
-        string text = "Damage Charm Collected!\n Damage increased by " + System.Math.Round(100 * randomDamageBuff, 2) + "%";
-        ShowIndicator(text);
-
-        //pickupIndicator.GetComponent<TextMeshPro>().SetText(text);
-        //Instantiate(pickupIndicator, transform);
-
-        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
-        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform);
-        //pickupIndicator.GetComponent<TextMeshPro>().text = text;
-
-        //Destroy(pickupIndicator, 3f);
-
+        ShowIndicator(text, this);
     }
 
 }

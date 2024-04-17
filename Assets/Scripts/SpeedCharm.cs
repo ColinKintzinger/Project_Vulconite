@@ -13,7 +13,6 @@ using UnityEngine;
 
 public class SpeedCharm : Charm
 {
-    public GameObject pickupIndicatorPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -32,22 +31,10 @@ public class SpeedCharm : Charm
         //base.applyBuff();
         float randomSpeedBuff = Random.Range(0.05f, 0.15f);
         playerStats.speed += (playerStats.speed * randomSpeedBuff);
+        //Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
+        string text = "+" + System.Math.Round(100 * randomSpeedBuff, 2) + "% Speed";
 
-        // Show message on the UI Text object
-        Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
-        string text = "Speed Charm Collected! Speed increased by " + System.Math.Round(100 * randomSpeedBuff, 2) + "%";
-
-        ShowIndicator(text);
-        //pickupIndicator.GetComponent<TextMeshPro>().SetText(text);
-        //pickupIndicator.GetComponent<TextMeshPro>().text = text;
-        //Instantiate(pickupIndicator, transform);
-
-        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform.position, Quaternion.identity, transform);
-        //GameObject pickupIndicator = Instantiate(pickupIndicatorPrefab, transform);
-        //Debug.Log(pickupIndicator.transform.position);
-        //pickupIndicator.GetComponent<TextMeshPro>().text = text;
-
-        //Destroy(pickupIndicator, 2f);
+        ShowIndicator(text, this);
     }
 
 }

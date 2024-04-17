@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
         } else if (collision.gameObject.CompareTag("Charm"))
         {
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("Weapon"))
         {

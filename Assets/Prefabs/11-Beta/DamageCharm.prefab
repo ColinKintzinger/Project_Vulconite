@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charmName: Damage Charm
-  pickupIndicatorPrefab: {fileID: 2686746399483511094, guid: 123d377bb6425b148995b05c362d14b0, type: 3}
+  textMesh: {fileID: 160975320539145103, guid: 3b3b114f5d0c75d4a8f5c7f6c8aec9d9, type: 3}
 --- !u!114 &-2643451061314901220
 MonoBehaviour:
   m_ObjectHideFlags: 0
