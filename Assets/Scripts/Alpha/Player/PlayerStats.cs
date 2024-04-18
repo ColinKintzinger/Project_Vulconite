@@ -15,7 +15,6 @@ public class PlayerStats : ScriptableObject
     public float damage = 30.0f;
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
-    public GameObject weapon;
 
     public void TakeDamage(float damage)
     {
@@ -42,11 +41,6 @@ public class PlayerStats : ScriptableObject
         speed = 3.0f;
         damage = 30.0f;
         collectedCharms.Clear();
-    }
-
-    public void EquipWeapon(GameObject weaponObject)
-    {
-        weapon = weaponObject;
     }
 
 }
