@@ -12,25 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0111f769e44dd90499f06450f159695a, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  health: 100
-  speed: 3
-  damage: 30
+  health: 30
+  speed: 3.4423683
+  damage: 33.233006
   collectedCharms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
