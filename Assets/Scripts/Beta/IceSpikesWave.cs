@@ -21,6 +21,9 @@ public class IceSpikes : MonoBehaviour
 {
     public GameObject warning;
     public GameObject spike;
+    public AudioSource src;
+    public AudioClip playWarning;
+    public AudioClip playEmerge;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +71,8 @@ public class IceSpikes : MonoBehaviour
             xPosition += 3.5f;
             yPosition = -5.5f;
         }
+        src.clip = playWarning;
+        src.Play();
 
         spikeCount = 0;
 
@@ -81,5 +86,7 @@ public class IceSpikes : MonoBehaviour
                 spikeCount++;
             }
         }
+        src.clip = playEmerge;
+        src.Play();
     }
 }
