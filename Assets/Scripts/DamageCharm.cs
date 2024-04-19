@@ -32,7 +32,7 @@ public class DamageCharm : Charm
         float randomDamageBuff = Random.Range(0.05f, 0.15f);
         playerStats.damage += (playerStats.damage * randomDamageBuff);
         //Debug.Log("Damage Charm Collected! Damage increased by " + (100 * randomDamageBuff) + "percent");
-        string text = "+" + System.Math.Round(100 * randomDamageBuff, 2) + "% Damage";
+        string text = "+" + System.Math.Round(100 * randomDamageBuff, 1) + "% Damage";
 
         ShowIndicator(text, this);
     }

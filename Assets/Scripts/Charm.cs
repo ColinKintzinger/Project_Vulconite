@@ -56,16 +56,16 @@ public class Charm : MonoBehaviour
     private IEnumerator FloatAndFade(TextMesh tempText, Charm myself)
     {
         float progress = 0.0f;
-        float speed = 1.0f;
+        float speed = 0.5f;
         Color startAlpha = tempText.color;
         Color endAlpha = Color.red;
 
         //TextMesh endAlpha = 0.0f;
 
-        while (progress < 3.0f)
+        while (progress < 2.0f)
         {
             tempText.transform.Translate(Vector2.up * speed * Time.deltaTime);
-            tempText.color = Color.Lerp(startAlpha, endAlpha, progress / 3);
+            tempText.color = Color.Lerp(startAlpha, endAlpha, progress / 2);
 
             progress += Time.deltaTime;
             //Debug.Log(progress);
