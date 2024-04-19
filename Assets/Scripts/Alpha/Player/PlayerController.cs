@@ -40,12 +40,15 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMoveDir;
     private Rigidbody2D rb;
     private float angle;
+
+    public AudioSource hurt;
     // Start is called before the first frame update
     void Start()
     {
-      movementAnimate = GetComponent<Animator>(); 
-      render = GetComponent<SpriteRenderer>();
-      rb= GetComponent<Rigidbody2D>();
+        movementAnimate = GetComponent<Animator>(); 
+        render = GetComponent<SpriteRenderer>();
+        rb= GetComponent<Rigidbody2D>();
+        hurt = GetComponent<AudioSource>();
       
     }
 
@@ -152,6 +155,7 @@ public class PlayerController : MonoBehaviour
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
+            hurt.Play();
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
