@@ -11,6 +11,8 @@
  * yPosition - The y position of a spike
  * spikePosition - An array of all spike locations
  * 
+ * CHANGE LOG
+ * Zach - 04/19/24 - Added sound effects
  */
 using System.Collections;
 using System.Collections.Generic;

@@ -12,6 +12,8 @@
  * spikePosition - An array of all spike locations
  * spikeCount - Keeps track of the total number of spikes generated
  * 
+ * CHANGE LOG
+ * Zach - 04/19/24 - Added sound effects
  */
 using System.Collections;
 using System.Collections.Generic;

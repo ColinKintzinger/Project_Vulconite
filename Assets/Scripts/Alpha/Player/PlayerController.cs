@@ -13,6 +13,7 @@
  * Dylan/Colin - 03/04/24 - polished code and spacing
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
+ * Zach - 04/19/24 - Added sound effects
  */
 using JetBrains.Annotations;
 using System.Collections;
@@ -41,14 +42,15 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private float angle;
 
-    public AudioSource hurt;
+    public AudioSource src;
+    public AudioClip hurt;
+    public AudioClip pickUp;
     // Start is called before the first frame update
     void Start()
     {
         movementAnimate = GetComponent<Animator>(); 
         render = GetComponent<SpriteRenderer>();
         rb= GetComponent<Rigidbody2D>();
-        hurt = GetComponent<AudioSource>();
       
     }
 
@@ -155,12 +157,15 @@ public class PlayerController : MonoBehaviour
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
-            hurt.Play();
+            src.clip = hurt;
+            src.Play();
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             //Destroy(collision.gameObject);
+            src.clip = pickUp;
+            src.Play();
         }
         else if (collision.gameObject.CompareTag("Weapon"))
         {
