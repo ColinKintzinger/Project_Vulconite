@@ -190,7 +190,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -539,6 +539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1486521292990448916, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1511770360, guid: fb15223b626d802439f10ccf0ac54a98, type: 3}
     - target: {fileID: 6231181717234955923, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_Name
       value: Ranged
@@ -569,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -581,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -593,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811726454962783164, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
