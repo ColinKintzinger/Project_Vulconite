@@ -8,6 +8,7 @@
  * Dylan - 02/21/24 - Added this new script for door functionality instead of player
  * Dylan - 02/27/24 - Added a bool to check if game objects with Enemy tag is dead (to avoid delegates)
  * Dylan/Colin - 03/04/24 - polished code and spacing added comments
+ * Zach - 04/17/24 - Door does not open until a weapon is picked up
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ public class SceneTransition : MonoBehaviour
     void Update()
     {
         // Checks for current enemies on scene
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
         {
             //active = true;
             animator.SetBool("active", true);

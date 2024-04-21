@@ -178,6 +178,8 @@ MonoBehaviour:
   charmPrefabs:
   - {fileID: 231526499602556927, guid: 863d38fc05278d147b69aedbe12dbeb9, type: 3}
   - {fileID: 2006423490730176266, guid: ccb191d54f129ff4eb11a5940fc84ce6, type: 3}
+  - {fileID: 5942463123447262244, guid: 22ac79c8c61b7de4bb0b40bac1f7f527, type: 3}
+  - {fileID: 3653011606068458652, guid: 4a7d305a0f4af214f8db66e30dc1247f, type: 3}
 --- !u!95 &2026287690216661874
 Animator:
   serializedVersion: 5

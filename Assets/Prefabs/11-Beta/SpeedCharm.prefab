@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charmName: Speed Charm
-  pickupIndicatorPrefab: {fileID: 4246512559394374580, guid: 8cbf78484819f5d4a825d217c770f88f, type: 3}
+  textMesh: {fileID: 160975320539145103, guid: 3b3b114f5d0c75d4a8f5c7f6c8aec9d9, type: 3}
 --- !u!114 &2271742112363223707
 MonoBehaviour:
   m_ObjectHideFlags: 0

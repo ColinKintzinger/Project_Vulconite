@@ -187,8 +187,8 @@ MonoBehaviour:
   projectile: {fileID: 8622186633332003165, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
   projectileSpeed: 5
   target: {fileID: 0}
-  targetingDistance: 25
-  targetingTimer: 2
+  targetingDistance: 14
+  targetingTimer: 0.5
 --- !u!114 &8571377129813906639
 MonoBehaviour:
   m_ObjectHideFlags: 0

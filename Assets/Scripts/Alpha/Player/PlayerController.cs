@@ -13,6 +13,7 @@
  * Dylan/Colin - 03/04/24 - polished code and spacing
  * Dylan - 03/05/24 - Added PlayerStats SerializedFeild to try ScriptableObjects
  * Colin - 04/02/24 - added more to the on collision for melee/range choice
+ * Zach - 04/19/24 - Added sound effects
  */
 using JetBrains.Annotations;
 using System.Collections;
@@ -34,74 +35,119 @@ public class PlayerController : MonoBehaviour
     private float damageToPlayer = 10.0f;
     private Animator movementAnimate;
     private SpriteRenderer render;
-    private int direction = 0;
     private Weapon attackDrection;
+
+    private Vector2 moveDir;
+    private Vector2 lastMoveDir;
+    private Rigidbody2D rb;
     private float angle;
+
+    public AudioSource src;
+    public AudioClip hurt;
+    public AudioClip pickUp;
     // Start is called before the first frame update
     void Start()
     {
-      movementAnimate = GetComponent<Animator>(); 
-      render = GetComponent<SpriteRenderer>();
+        movementAnimate = GetComponent<Animator>(); 
+        render = GetComponent<SpriteRenderer>();
+        rb= GetComponent<Rigidbody2D>();
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        //angle = attackDrection.GetAngle();
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * playerStats.speed);
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * playerStats.speed);
-        if (Input.GetKey(KeyCode.W))
-        {
-            direction = 1;
-            setAnimation(false,1,true);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            direction = 3;
-            setAnimation(false,3,true);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            direction = 2;
-            setAnimation(false,2,true);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            direction = 4;
-            setAnimation(true,2,true);
-        }
-        else if (direction==4 && !Input.GetKey(KeyCode.A))
-        {
-            setAnimation(true,0,false);
-        }
-        else
-        {
-            setAnimation(false,0,false);
-
-        }
-        if(Input.GetMouseButtonDown(0)&& angle>45f && angle<135)
-        {
-
-        }
-
-        //if (Input.GetKey(KeyCode.S))
-        //{
-        //    movementAnimate.SetInteger("Direction", 3);
-        //    //movementAnimate.SetBool("isWalking", true);
-        //}
-        //else
-        //{
-        //    movementAnimate.SetInteger("Direction", 0);
-        //}
+        HandleMovementAnimations();
+        HandleAttackAnimation();
     }
         void setAnimation(bool flip, int dInt, bool walking) {
             gameObject.GetComponent<SpriteRenderer>().flipX = flip;
             movementAnimate.SetInteger("Direction", dInt);
             movementAnimate.SetBool("isWalking", walking);
         }
+    private void HandleAttackAnimation()
+    {
+        //float attX = 0f, attY = 0f;        
+        if(Input.GetMouseButton(0))
+        {
+            //attY = +1;
+            //movementAnimate.SetBool("isAttacking", true);
+            movementAnimate.SetTrigger("Attacking");
+        }
+        else
+        {
+            movementAnimate.ResetTrigger("Attacking");
+        }
+        //if (Input.GetMouseButton(0))
+        //{
+        //    attX = -1;
+        //}
+        //bool isIdle = attX == 0 && attY == 0;
+
+        //if(isIdle)
+        //{
+        //    attX = 0f;
+        //    attY = 0f;
+        //    movementAnimate.SetBool("isAttacking", false);
+        //}
+        //else
+        //{
+        //    
+        //    movementAnimate.SetFloat("Horizontal", attX);
+        //    movementAnimate.SetFloat("Verticle", attY);
+        //}
+            
+    }
+    private void HandleMovementAnimations()
+    {
+        Vector3 mousePosition = Weapon.GetMouseWorldPositon();
+        Vector3 aimDirection = (mousePosition - gameObject.transform.position).normalized;
+        float moveX = 0f;
+        float moveY = 0f;
+        if (Input.GetKey(KeyCode.W))
+        {
+            moveY = +1f;  
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            moveY = -1f;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            moveX = +1f;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            moveX = -1f;
+        }
+        moveDir=new Vector2 (moveX, moveY).normalized;
+
+        bool isIdle= moveX==0 && moveY==0;
+        if (isIdle)
+        {
+            //idle
+            rb.velocity = Vector2.zero;
+            movementAnimate.SetBool("isWalking", false);
+        }
+        else
+        {
+            //moving
+            lastMoveDir = moveDir;
+            rb.velocity = moveDir * playerStats.speed;
+            //movementAnimate.SetFloat("Horizontal", moveDir.x);
+            //movementAnimate.SetFloat("Verticle", moveDir.y);
+            movementAnimate.SetBool("isWalking", true);
+        }
+        movementAnimate.SetFloat("Horizontal", aimDirection.x);
+        movementAnimate.SetFloat("Verticle", aimDirection.y);
+
+
+    }
 
     // Testing collision for delagate scene transition
     private void OnTriggerEnter2D(Collider2D collision)
@@ -111,11 +157,15 @@ public class PlayerController : MonoBehaviour
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
+            src.clip = hurt;
+            src.Play();
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            src.clip = pickUp;
+            src.Play();
         }
         else if (collision.gameObject.CompareTag("Weapon"))
         {
