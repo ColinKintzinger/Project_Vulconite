@@ -20,10 +20,16 @@ public class EnemyAnimationDirector : MonoBehaviour
     Vector3 oldPositon = new Vector3(0, 0, 0);
     bool isIdle = true;
     float angle;
+    private Animator anim;
+    private Vector2 moveDir;
+    private Vector2 lastMoveDir;
+    private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         newPosition = transform.position;
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -49,6 +55,39 @@ public class EnemyAnimationDirector : MonoBehaviour
         }
         else {
             timer -= Time.deltaTime;
+        }
+        HandleMovementAnimation();
+    }
+    private void HandleMovementAnimation()
+    {
+        float moveX = 0f;
+        float moveY = 0f;
+        if(angle<135 && angle > 45)
+        {
+            moveY = +1f;
+        }
+        else if (angle > -135 && angle < -45)
+        {
+            moveY = -1f;
+        }
+        else if (angle < 45 && angle > -45)
+        {
+            moveX = +1f;
+        }
+        else if (angle > 135 || angle < -135)
+        {
+            moveX = -1f;
+        }
+        moveDir= new Vector2 (moveX, moveY);
+        if (isIdle)
+        {
+            rb.velocity = Vector2.zero;
+        }
+        else
+        {
+            anim.SetFloat("Horizontal", moveDir.x);
+            anim.SetFloat("Verticle", moveDir.y);
+
         }
     }
 }
