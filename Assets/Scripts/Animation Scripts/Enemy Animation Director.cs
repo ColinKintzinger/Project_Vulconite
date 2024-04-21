@@ -82,12 +82,18 @@ public class EnemyAnimationDirector : MonoBehaviour
         if (isIdle)
         {
             rb.velocity = Vector2.zero;
+            anim.SetBool("isWalking", false);
         }
         else
         {
+            lastMoveDir = moveDir;
             anim.SetFloat("Horizontal", moveDir.x);
             anim.SetFloat("Verticle", moveDir.y);
-
+            anim.SetBool("isWalking", true);
         }
+    }
+    private void HandleAttack()
+    {
+
     }
 }
