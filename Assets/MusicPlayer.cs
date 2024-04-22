@@ -26,12 +26,14 @@ public class MusicPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        currentScene = SceneManager.GetActiveScene();
+
         if (currentScene.name == "Start Screen")
         {
             if (isPlaying != 1)
@@ -50,6 +52,13 @@ public class MusicPlayer : MonoBehaviour
                 src.Play();
                 isPlaying = 2;
             }
+        }
+
+        else if (currentScene.name == "LoseScene" || currentScene.name == "Win Screen")
+        {
+            Debug.Log("Preparing to stop.");
+            src.Stop();
+            Debug.Log("Music should have stopped.");
         }
 
         else
