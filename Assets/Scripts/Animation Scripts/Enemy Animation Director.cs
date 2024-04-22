@@ -58,6 +58,10 @@ public class EnemyAnimationDirector : MonoBehaviour
         }
         HandleMovementAnimation();
     }
+    private void HandleAttack()
+    {
+        
+    }
     private void HandleMovementAnimation()
     {
         float moveX = 0f;
@@ -91,9 +95,5 @@ public class EnemyAnimationDirector : MonoBehaviour
             anim.SetFloat("Verticle", moveDir.y);
             anim.SetBool("isWalking", true);
         }
-    }
-    private void HandleAttack()
-    {
-
     }
 }
