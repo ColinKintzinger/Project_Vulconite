@@ -6,6 +6,7 @@ public class Singleton : MonoBehaviour
 {
     public static Singleton Instance {  get; private set; }
     public GameObject weapon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class Singleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void SetWeapon(GameObject weaponObject)
@@ -51,5 +52,8 @@ public class Singleton : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
+    public void ResetWeapon()
+    {
+        weapon = null;
+    }
 }
