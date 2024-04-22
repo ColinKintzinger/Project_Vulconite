@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/Fifth.unity
 --- !u!1001 &566712557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,6 +189,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
+=======
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/30 - Fifth.unity
 --- !u!1001 &821515764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251,6 +254,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+--- !u!1001 &1032121656
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.097206
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3124375
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.74676955
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97192513467338427, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340344260663138664, guid: 36616685671a02245bba17ed205ecd94, type: 3}
+      propertyPath: m_Name
+      value: InvisWallBounds
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36616685671a02245bba17ed205ecd94, type: 3}
 --- !u!1001 &1075319563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,11 +382,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1077781640637677171, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/Fifth.unity
       value: 15.7
+=======
+      value: 15.37
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/30 - Fifth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1077781640637677171, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53991914
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 1077781640637677171, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -362,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: sceneToGoTo
-      value: Sixth
+      value: 35 - Sixth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -513,6 +577,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/Fifth.unity
 --- !u!1001 &1819111390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -716,6 +781,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
+=======
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/30 - Fifth.unity
 --- !u!1001 &2073440395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1435,14 +1502,14 @@ SceneRoots:
   m_Roots:
   - {fileID: 1532880376}
   - {fileID: 2144301502}
-  - {fileID: 1973273100}
-  - {fileID: 1845952273}
-  - {fileID: 1819111390}
   - {fileID: 821515764}
-  - {fileID: 566712557}
   - {fileID: 1078481958}
   - {fileID: 1450132528}
   - {fileID: 1075319563}
   - {fileID: 2073440395}
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/Fifth.unity
   - {fileID: 4274772252794093574}
   - {fileID: 1084995013127624462}
+=======
+  - {fileID: 1032121656}
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/30 - Fifth.unity
