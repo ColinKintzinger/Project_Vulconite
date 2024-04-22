@@ -92,8 +92,4 @@ public class EnemyAnimationDirector : MonoBehaviour
             anim.SetBool("isWalking", true);
         }
     }
-    private void HandleAttack()
-    {
-
-    }
 }
