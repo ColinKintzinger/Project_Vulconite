@@ -9,6 +9,10 @@ public class EnemyHealth : MonoBehaviour
     public float currentHealth;
     private string SceneToLoad = "Win Screen";
 
+    public AudioSource src;
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +32,17 @@ public class EnemyHealth : MonoBehaviour
 
         if (currentHealth <= 0.0f)
         {
+            src.clip = deathClip;
+            src.Play();
             Destroy(gameObject);
             if (gameObject.CompareTag("Boss")) {
                 SceneManager.LoadScene(SceneToLoad);
             }
+        }
+        else
+        {
+            src.clip = hurtClip;
+            src.Play();
         }
     }
 
