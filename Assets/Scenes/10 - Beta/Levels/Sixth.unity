@@ -137,7 +137,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 185463311168912799, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/Sixth.unity
       value: -16.64
+=======
+      value: 10.097206
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
+=======
+      value: -16.58
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
+=======
+      value: -16.64
+>>>>>>> parent of a0a29e3 (Fuck it scene chaos. GL Everyone!!):Assets/Scenes/10 - Beta/Levels/Sixth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 185463311168912799, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -259,7 +271,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2462289703595872643, guid: 1693203649034794db384cbbc6f93b86, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
       value: -7.2119417
+=======
+      value: 15.76
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2462289703595872643, guid: 1693203649034794db384cbbc6f93b86, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1281,7 +1297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 185463311168912799, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
       value: 16.61
+=======
+      value: 16.6
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
       objectReference: {fileID: 0}
     - target: {fileID: 185463311168912799, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1516,7 +1536,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8270781994743990378, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 1976221223}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
 --- !u!1001 &231053981568678245
+=======
+--- !u!1001 &2114717129018133815
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1524,6 +1548,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
     - target: {fileID: 1145520058500331748, guid: 79023e4564e035e489658ac675575846, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.361166
@@ -1568,12 +1593,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sixth Snow Dressing
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 1566148341863783698, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_Name
+      value: Seventh Set Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2859262
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5349846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08495176
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
   m_SourcePrefab: {fileID: 100100000, guid: 79023e4564e035e489658ac675575846, type: 3}
 --- !u!1001 &7128639183043228399
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+--- !u!1001 &4665160052736929320
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1581,6 +1657,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
     - target: {fileID: 738461289171229007, guid: f5383aea9b1bc6a4699297934247c4ca, type: 3}
       propertyPath: m_Name
       value: Sixth Set Dressing
@@ -1622,6 +1699,49 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6308954808316905324, guid: f5383aea9b1bc6a4699297934247c4ca, type: 3}
+=======
+    - target: {fileID: 2497196228749122823, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_Name
+      value: Seventh Snow Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2859262
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5349846
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08495176
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1629,11 +1749,16 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
   m_SourcePrefab: {fileID: 100100000, guid: f5383aea9b1bc6a4699297934247c4ca, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
   - {fileID: 1627764925}
   - {fileID: 666177623}
   - {fileID: 1976221223}
@@ -1650,3 +1775,27 @@ SceneRoots:
   - {fileID: 374887829}
   - {fileID: 7128639183043228399}
   - {fileID: 231053981568678245}
+<<<<<<< HEAD:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
+=======
+  - {fileID: 121277231}
+>>>>>>> Ottos:Assets/Scenes/10 - Beta/Levels/35 - Sixth.unity
+=======
+  - {fileID: 1450211906}
+  - {fileID: 1009943041}
+  - {fileID: 466402134}
+  - {fileID: 486979585}
+  - {fileID: 325833564}
+  - {fileID: 1872120107}
+  - {fileID: 802650814}
+  - {fileID: 1004632506}
+  - {fileID: 1315505323}
+  - {fileID: 1518311376}
+  - {fileID: 1328681539}
+  - {fileID: 1212008967}
+  - {fileID: 626733710}
+  - {fileID: 1275215356}
+  - {fileID: 4665160052736929320}
+  - {fileID: 2114717129018133815}
+>>>>>>> 5ca797d3ad687b0e83aa11912131499353d88d8d:Assets/Scenes/10 - Beta/Levels/Seventh.unity
+=======
+>>>>>>> parent of a0a29e3 (Fuck it scene chaos. GL Everyone!!):Assets/Scenes/10 - Beta/Levels/Sixth.unity

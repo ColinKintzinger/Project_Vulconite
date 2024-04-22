@@ -12,7 +12,10 @@ public class Deathscene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Singleton.Instance.ResetWeapon();
+<<<<<<< HEAD
+=======
             SceneManager.LoadScene(SceneToLoad);
+>>>>>>> parent of a0a29e3 (Fuck it scene chaos. GL Everyone!!)
         }
     }
 
