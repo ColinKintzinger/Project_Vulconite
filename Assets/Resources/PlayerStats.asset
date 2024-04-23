@@ -15,7 +15,4 @@ MonoBehaviour:
   health: 100
   speed: 3
   damage: 30
-  collectedCharms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  collectedCharms: []

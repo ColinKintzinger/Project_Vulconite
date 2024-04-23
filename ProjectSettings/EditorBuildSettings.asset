@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/10 - Beta/Levels/BeforeBoss.unity
     guid: ed43fa8b51cfd484dbda3e9d47be187c
+  - enabled: 1
+    path: Assets/Scenes/10 - Beta/Levels/Eighth.unity
+    guid: a10fee6c8a3812d4e82da5141eda3f8b
   m_configObjects: {}
