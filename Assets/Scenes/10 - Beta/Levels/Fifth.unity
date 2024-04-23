@@ -1365,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3481681950074369853, guid: 15efdba2d43a50a42b749564ef86c45f, type: 3}
       propertyPath: m_Name
-      value: Fifth Set DRessing
+      value: Fifth Set Dressing
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

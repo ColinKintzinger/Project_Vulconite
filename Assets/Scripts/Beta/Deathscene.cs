@@ -13,6 +13,7 @@ public class Deathscene : MonoBehaviour
         {
             Singleton.Instance.ResetWeapon();
             SceneManager.LoadScene(SceneToLoad);
+
         }
     }
 
