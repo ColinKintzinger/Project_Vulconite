@@ -55,16 +55,16 @@ public class EnemyShooting : MonoBehaviour
             timer += Time.deltaTime;
             if (timer == 1.5f)
             {
-                if (enemyShooting != null)
-                {
-                enemyShooting();
-                }
 
             }
             // Checks if enough time has passed
             if (timer > targetingTimer)
             {
                 timer = 0;
+                if (enemyShooting != null)
+                {
+                enemyShooting();
+                }
                 Shoot();
             }
         }
