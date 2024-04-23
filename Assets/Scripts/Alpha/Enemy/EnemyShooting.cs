@@ -31,6 +31,7 @@ public class EnemyShooting : MonoBehaviour
 
     private float timer;
     private GameObject player;
+    private bool didAnimate = false;
 
     private Animator anim;
 
@@ -58,14 +59,18 @@ public class EnemyShooting : MonoBehaviour
 
             }
             // Checks if enough time has passed
-            if (timer > targetingTimer)
+            if (timer > targetingTimer-0.25f)
             {
-                timer = 0;
                 if (enemyShooting != null)
                 {
-                enemyShooting();
+                    didAnimate = true;
+                    enemyShooting();
                 }
-                Shoot();
+                if (timer > targetingTimer) {
+                    timer = 0;
+                    didAnimate = false;
+                    Shoot();
+                }
             }
         }
     }
