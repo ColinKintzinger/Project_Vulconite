@@ -19,6 +19,9 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
+    public delegate void EnemyShootingDelegate();
+    public EnemyShootingDelegate enemyShooting;
+
     //used to modify the distance aquisition and consistency of the shots
     public float targetingDistance = 25.0f;
     public float targetingTimer = 2.0f;
@@ -29,10 +32,14 @@ public class EnemyShooting : MonoBehaviour
     private float timer;
     private GameObject player;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        anim = GetComponent<Animator>();
+        //enemyShooting = Shoot;
     }
 
     // Update is called once per frame
@@ -46,7 +53,14 @@ public class EnemyShooting : MonoBehaviour
         if (distance < targetingDistance)
         {
             timer += Time.deltaTime;
+            if (timer == 1.5f)
+            {
+                if (enemyShooting != null)
+                {
+                enemyShooting();
+                }
 
+            }
             // Checks if enough time has passed
             if (timer > targetingTimer)
             {

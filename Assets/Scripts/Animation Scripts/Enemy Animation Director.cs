@@ -24,12 +24,22 @@ public class EnemyAnimationDirector : MonoBehaviour
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
     private Rigidbody2D rb;
+    private EnemyShooting enemy;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         newPosition = transform.position;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        
+        enemy=GetComponent<EnemyShooting>();
+        enemy.enemyShooting += HandleAttack;
+        if(enemy != null ) 
+        {
+            enemy.enemyShooting(); 
+        }
     }
 
     // Update is called once per frame
@@ -50,13 +60,21 @@ public class EnemyAnimationDirector : MonoBehaviour
                 angle = Mathf.Atan2(targetVector.y, targetVector.x) * Mathf.Rad2Deg;
                 isIdle = false;
             }
-            Debug.Log("Target Angle= " + angle);
+            //Debug.Log("Target Angle= " + angle);
             timer = 0.01f;
         }
         else {
             timer -= Time.deltaTime;
         }
         HandleMovementAnimation();
+        
+
+    }
+    private void HandleAttack()
+    {
+
+        anim.SetTrigger("attacking");
+        //anim.ResetTrigger("attacking");
     }
     private void HandleMovementAnimation()
     {
