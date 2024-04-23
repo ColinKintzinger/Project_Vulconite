@@ -359,6 +359,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735444a8f0e34be44ab6d1bb6f6d5d13, type: 3}
+--- !u!1001 &363074405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2497196228749122823, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_Name
+      value: Seventh Snow Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
 --- !u!1001 &466402134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,6 +543,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 962e84cbf55a4224889689f6d299a8ec, type: 3}
+--- !u!1001 &727026336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1566148341863783698, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_Name
+      value: Seventh Set Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610370430832140630, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81d7863b89e39074795d6b3bc2907908, type: 3}
 --- !u!4 &843203509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
@@ -1494,3 +1608,5 @@ SceneRoots:
   - {fileID: 171675923}
   - {fileID: 343917488}
   - {fileID: 1912066159}
+  - {fileID: 363074405}
+  - {fileID: 727026336}
