@@ -1335,6 +1335,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1507681585}
   m_SourcePrefab: {fileID: 100100000, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+--- !u!1001 &1734343257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1699588
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.518986
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595603956919792175, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Name
+      value: PF Snow Dressing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1348,3 +1405,4 @@ SceneRoots:
   - {fileID: 47144691}
   - {fileID: 576761847}
   - {fileID: 685994709}
+  - {fileID: 1734343257}
