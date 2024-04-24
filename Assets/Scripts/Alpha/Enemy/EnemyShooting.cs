@@ -29,18 +29,15 @@ public class EnemyShooting : MonoBehaviour
     public GameObject bullet;
     public Transform bulletPos;
 
-    private float timer;
+    private float callCountdown;
     private GameObject player;
-    private bool didAnimate = false;
-
-    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        callCountdown = targetingTimer;
         player = GameObject.FindGameObjectWithTag("Player");
-        anim = GetComponent<Animator>();
-        //enemyShooting = Shoot;
+
     }
 
     // Update is called once per frame
@@ -48,72 +45,37 @@ public class EnemyShooting : MonoBehaviour
     {
         // Gets the distance the player is from the enemy
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        //Debug.Log(distance);
-
         // Checks if the player is close enough
-        if (distance < targetingDistance)
+        if (distance < targetingDistance && callCountdown < 0)
         {
-            timer += Time.deltaTime;
-            if (timer == 1.5f)
-            {
-
-            }
-            // Checks if enough time has passed
-            if (timer > targetingTimer-0.25f)
-            {
-                if (enemyShooting != null)
-                {
-                    didAnimate = true;
-                    enemyShooting();
-                }
-                if (timer > targetingTimer) {
-                    timer = 0;
-                    didAnimate = false;
-                    Shoot();
-                }
-            }
+            callCountdown = targetingTimer;
+            Shot(1);
+        }
+        if (callCountdown > 0) { 
+            callCountdown -= Time.deltaTime;
         }
     }
 
     // Shoots the bullet
-    void Shoot()
+    void Shot(float timer)
     {
-        Instantiate(bullet, transform.position, Quaternion.identity);
+        animate();
+        bool hasFired = false;
+        while (timer>0) {
+            timer -= Time.deltaTime;
+            // Checks if enough time has passed
+        }
+        if (!hasFired)
+        {
+            hasFired = true;
+            Instantiate(bullet, transform.position, Quaternion.identity);
+        }
     }
-
-    //public bool InterceptionDirection(Vector2 a, Vector2 b, Vector2 vA, float sB, out Vector2 result)
-    //{
-    //    var aToB = b - a;
-    //    var dC = aToB.magnitude;
-    //    var alpha = Vector2.Angle(aToB, vA) * Mathf.Deg2Rad;
-    //    var sA = vA.magnitude;
-    //    var r = sA / sB;
-    //    if (MyMath.SolveQuadratic(1 - r * r, 2 * r * dC * Mathf.Cos(alpha), -(dC * dC), out var root1, out var root2) == 0)
-    //    {
-    //        result = Vector2.zero;
-    //        return false;
-    //    }
-    //    var dA = Mathf.Max(root1, root2);
-    //    var t = dA / sB;
-    //    var c = a + vA * t;
-    //    result = (c - b).normalized;
-    //    return true;
-    //}
+    void animate() {
+        if (enemyShooting != null)
+        {
+            //this calls for the animator to start animating the attack.
+            enemyShooting();
+        }
+    }
 }
-
-//public class MyMath
-//{
-//    public static int SolveQuadratic(float a, float b, float c, out float root1, out float root2)
-//    {
-//        var discriminant = b * b - 4 * a * c;
-//        if (discriminant < 0)
-//        {
-//            root1 = Mathf.Infinity;
-//            root2 = -root1;
-//            return 0;
-//        }
-//        root1 = (-b + Mathf.Sqrt(discriminant)) / (2 * a);
-//        root2 = (-b - Mathf.Sqrt(discriminant)) / (2 * a);
-//        return discriminant > 0 ? 2 : 1;
-//    }
-//}
