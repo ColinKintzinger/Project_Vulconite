@@ -227,6 +227,8 @@ MonoBehaviour:
   targetingTimer: 1
   bullet: {fileID: 8622186633332003165, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
   bulletPos: {fileID: 1089091166546668478}
+  src: {fileID: -3669882499673034229}
+  fireClip: {fileID: 8300000, guid: 74f69acb682800f4d8b1d979d763276d, type: 3}
 --- !u!114 &2287984657757603499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

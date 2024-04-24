@@ -18,6 +18,9 @@ public class LootBox : MonoBehaviour
     public GameObject[] charmPrefabs;
     private Animator animator;
 
+    public AudioSource src;
+    public AudioClip damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,8 @@ public class LootBox : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("WeaponBullet"))
         {
+            src.clip = damage;
+            src.Play();
             collisionCount++;
             animator.SetInteger("Collision Count", collisionCount);
             Destroy(collision.gameObject);

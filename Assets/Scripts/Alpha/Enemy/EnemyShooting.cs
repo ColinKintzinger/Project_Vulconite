@@ -29,6 +29,9 @@ public class EnemyShooting : MonoBehaviour
     private float timer;
     private GameObject player;
 
+    public AudioSource src;
+    public AudioClip fireClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +62,8 @@ public class EnemyShooting : MonoBehaviour
     // Shoots the bullet
     void Shoot()
     {
+        src.clip = fireClip;
+        src.Play();
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
 

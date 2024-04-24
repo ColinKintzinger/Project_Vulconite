@@ -39,6 +39,11 @@ public class BossFightDirections : MonoBehaviour
     int numOfSpikes;
     public float speedUp;
 
+    public AudioSource src;
+    public AudioClip laugh;
+    public AudioClip taunt;
+    private bool hasTaunted = false;
+
     // Start is called before the first frame update
     IEnumerator Start()
     {
@@ -54,6 +59,8 @@ public class BossFightDirections : MonoBehaviour
         speedUp = 0.0f;
         lastAttack = 0;
 
+        src.clip = laugh;
+        src.Play();
         yield return new WaitForSeconds(1.0f);
 
         StartCoroutine(LetsStartTheFight());
@@ -69,6 +76,12 @@ public class BossFightDirections : MonoBehaviour
     {
         if (health.currentHealth <= health.maxHealth / 2)
         {
+            if(!hasTaunted)
+            {
+                src.clip = taunt;
+                src.Play();
+                hasTaunted = true;
+            }
             speedUp = 0.5f;
         }
 
