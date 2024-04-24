@@ -32,6 +32,9 @@ public class EnemyShooting : MonoBehaviour
     private float callCountdown;
     private GameObject player;
 
+    public AudioSource src;
+    public AudioClip fireClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +52,7 @@ public class EnemyShooting : MonoBehaviour
         if (distance < targetingDistance && callCountdown < 0)
         {
             callCountdown = targetingTimer;
-            Shot(1);
+            Shot();
         }
         if (callCountdown > 0) { 
             callCountdown -= Time.deltaTime;
@@ -57,19 +60,12 @@ public class EnemyShooting : MonoBehaviour
     }
 
     // Shoots the bullet
-    void Shot(float timer)
+    void Shot()
     {
+        src.clip = fireClip;
+        src.Play();
+        Instantiate(bullet, transform.position, Quaternion.identity);
         animate();
-        bool hasFired = false;
-        while (timer>0) {
-            timer -= Time.deltaTime;
-            // Checks if enough time has passed
-        }
-        if (!hasFired)
-        {
-            hasFired = true;
-            Instantiate(bullet, transform.position, Quaternion.identity);
-        }
     }
     void animate() {
         if (enemyShooting != null)

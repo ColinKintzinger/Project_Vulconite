@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4606139356208252760}
   - component: {fileID: 6693880352707053549}
   - component: {fileID: -8089649416676518102}
-  - component: {fileID: 74154179857263041}
   - component: {fileID: -6708678643452241354}
   - component: {fileID: 6581737207500080998}
   - component: {fileID: 6771718807983389402}
@@ -141,21 +140,6 @@ PolygonCollider2D:
       - {x: -0.51906824, y: -0.9214913}
       - {x: 0.49992037, y: -0.9296643}
   m_UseDelaunayMesh: 0
---- !u!114 &74154179857263041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4602231704265416593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 010508d937c42d34d988842445e72f43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionCount: 0
-  collisionCountThreshold: 1
-  charmPrefabs: []
 --- !u!50 &-6708678643452241354
 Rigidbody2D:
   serializedVersion: 4
@@ -197,9 +181,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  src: {fileID: 0}
-  hurtClip: {fileID: 0}
-  deathClip: {fileID: 0}
+  src: {fileID: 6771718807983389402}
+  hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
+  deathClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
 --- !u!82 &6771718807983389402
 AudioSource:
   m_ObjectHideFlags: 0
@@ -210,7 +194,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1429371a255e39f4aa66babe7897c588, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
