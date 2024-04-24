@@ -196,8 +196,24 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3138595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8794007968771762833, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: m_LocalPosition.x
@@ -307,6 +323,10 @@ PrefabInstance:
     - target: {fileID: 717335492033766997, guid: d8bdc7989cab33047b7c4d8f06fd3d46, type: 3}
       propertyPath: m_Name
       value: 01 - NewIndoorBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053959616689201772, guid: d8bdc7989cab33047b7c4d8f06fd3d46, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7007748060075009390, guid: d8bdc7989cab33047b7c4d8f06fd3d46, type: 3}
       propertyPath: m_LocalPosition.x
