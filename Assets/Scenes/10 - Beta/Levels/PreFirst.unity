@@ -526,6 +526,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ranged
       objectReference: {fileID: 0}
+    - target: {fileID: 6421217164568289153, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: fireDelay
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421217164568289153, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
+      propertyPath: attackTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7673797916211121778, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_Radius
       value: 0.12732375

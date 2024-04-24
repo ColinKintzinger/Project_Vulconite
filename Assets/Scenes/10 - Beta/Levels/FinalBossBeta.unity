@@ -184,6 +184,10 @@ PrefabInstance:
       value: Boss Health Bar
       objectReference: {fileID: 0}
     - target: {fileID: 4522557879760161456, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 1507681571}
+    - target: {fileID: 4522557879760161456, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: currentHealth
       value: 1000
       objectReference: {fileID: 0}
