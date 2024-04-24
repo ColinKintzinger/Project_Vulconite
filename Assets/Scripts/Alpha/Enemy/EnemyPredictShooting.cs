@@ -27,6 +27,9 @@ public class EnemyPredictShooting : MonoBehaviour
     public float targetingTimer = 2.0f;
     private float timer;
 
+    public AudioSource src;
+    public AudioClip charge;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +52,8 @@ public class EnemyPredictShooting : MonoBehaviour
             if (timer > targetingTimer && gameObject.tag != "Boss")
             {
                 timer = 0;
+                src.clip = charge;
+                src.Play();
                 ShootToKill();
             }
         }

@@ -12,6 +12,8 @@
  * spikePosition - An array of all spike locations
  * spikeCount - Keeps track of the total number of spikes generated
  * 
+ * CHANGE LOG
+ * Zach - 04/19/24 - Added sound effects
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -21,11 +23,14 @@ public class IceSpikes : MonoBehaviour
 {
     public GameObject warning;
     public GameObject spike;
+    public AudioSource src;
+    public AudioClip playWarning;
+    public AudioClip playEmerge;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -68,6 +73,8 @@ public class IceSpikes : MonoBehaviour
             xPosition += 3.5f;
             yPosition = -5.5f;
         }
+        src.clip = playWarning;
+        src.Play();
 
         spikeCount = 0;
 
@@ -81,5 +88,7 @@ public class IceSpikes : MonoBehaviour
                 spikeCount++;
             }
         }
+        src.clip = playEmerge;
+        src.Play();
     }
 }

@@ -11,6 +11,8 @@
  * yPosition - The y position of a spike
  * spikePosition - An array of all spike locations
  * 
+ * CHANGE LOG
+ * Zach - 04/19/24 - Added sound effects
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +24,10 @@ public class IceSpikesRandom : MonoBehaviour
     public GameObject warning;
     public GameObject spike;
     int numOfSpikes;
+
+    public AudioSource src;
+    public AudioClip playWarning;
+    public AudioClip playEmerge;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +61,8 @@ public class IceSpikesRandom : MonoBehaviour
             xPosition = Random.Range(-14.8f, 14.8f);
             yPosition = Random.Range(-4.5f, 5.0f);
         }
+        src.clip = playWarning;
+        src.Play();
 
         yield return new WaitForSeconds(1.0f);
 
@@ -62,5 +70,7 @@ public class IceSpikesRandom : MonoBehaviour
         {
             Instantiate(spike, spikePosition[i], Quaternion.identity);
         }
+        src.clip = playEmerge;
+        src.Play();
     }
 }

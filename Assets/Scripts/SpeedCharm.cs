@@ -8,6 +8,7 @@
  */
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpeedCharm : Charm
@@ -28,11 +29,12 @@ public class SpeedCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
-        float randomSpeedBuff = Random.Range(0.25f, 0.75f);
+        float randomSpeedBuff = Random.Range(0.05f, 0.15f);
         playerStats.speed += (playerStats.speed * randomSpeedBuff);
+        //Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
+        string text = "+" + System.Math.Round(100 * randomSpeedBuff, 2) + "% Speed";
 
-        // Show message on the UI Text object
-        Debug.Log("Speed Charm Collected! Speed increased by " + (100 * randomSpeedBuff) + "percent");
+        ShowIndicator(text, this);
     }
 
 }

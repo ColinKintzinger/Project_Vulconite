@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5627026749896912624}
   - component: {fileID: 7410635392849206854}
   - component: {fileID: 1598583029335941753}
+  - component: {fileID: 2271742112363223707}
   m_Layer: 0
   m_Name: SpeedCharm
   m_TagString: Charm
@@ -172,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charmName: Speed Charm
+  textMesh: {fileID: 160975320539145103, guid: 3b3b114f5d0c75d4a8f5c7f6c8aec9d9, type: 3}
+--- !u!114 &2271742112363223707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006423490730176266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01d9b76d8239554caf950f8d9be7333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
