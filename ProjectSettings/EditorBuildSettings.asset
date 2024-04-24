@@ -101,4 +101,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/10 - Beta/Levels/Eighth.unity
     guid: a10fee6c8a3812d4e82da5141eda3f8b
+  - enabled: 1
+    path: Assets/Scenes/10 - Beta/Levels/Tenth.unity
+    guid: af399c26a652a844b8006450015a502a
+  - enabled: 1
+    path: Assets/Scenes/10 - Beta/Levels/Ninth.unity
+    guid: 91e899eaad8bff24ea7d488ff8c8f5a5
   m_configObjects: {}
