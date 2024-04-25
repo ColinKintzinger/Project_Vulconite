@@ -22,7 +22,7 @@ public class PlayerStats : ScriptableObject
 
         if (health <= 0.0f)
         {
-            SceneManager.LoadScene("LoseScene");
+            SceneManager.LoadScene("01-LoseScene");
             resetPlayerStats();
         }
     }

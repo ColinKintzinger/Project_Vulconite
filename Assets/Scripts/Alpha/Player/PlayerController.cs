@@ -20,7 +20,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -139,8 +139,6 @@ public class PlayerController : MonoBehaviour
             //moving
             lastMoveDir = moveDir;
             rb.velocity = moveDir * playerStats.speed;
-            //movementAnimate.SetFloat("Horizontal", moveDir.x);
-            //movementAnimate.SetFloat("Verticle", moveDir.y);
             movementAnimate.SetBool("isWalking", true);
         }
         movementAnimate.SetFloat("Horizontal", aimDirection.x);
