@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public delegate void EnemyHealthDelegate();
+    public EnemyHealthDelegate takeDamage;
     public float maxHealth = 100.0f;
     public float currentHealth;
-    private string SceneToLoad = "Win Screen";
-
     public AudioSource src;
     public AudioClip hurtClip;
     public AudioClip deathClip;
+
+    private string SceneToLoad = "Win Screen";
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +30,10 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
-
+        //Debug.Log(currentHealth);
+        if (takeDamage != null) {
+            takeDamage();
+        }
         if (currentHealth <= 0.0f)
         {
             src.clip = deathClip;

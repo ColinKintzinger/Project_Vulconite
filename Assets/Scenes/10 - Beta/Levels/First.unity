@@ -1024,8 +1024,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9198177664115054378, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1736184851}
   m_SourcePrefab: {fileID: 100100000, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+--- !u!1 &1736184850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9198177664115054378, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+  m_PrefabInstance: {fileID: 1065699431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1736184851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736184850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13817b3f12820443ab17a374f20a615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cycles: 5
+  speed: 3
+  timer: 1
+  horizontalMovement: 0.01
+  jimmy: {r: 1, g: 0, b: 0.01999569, a: 1}
 --- !u!1001 &1872504438
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -35,13 +35,13 @@ public class WeaponAttack : MonoBehaviour
             EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                Debug.Log("EnemyHealth component retrieved!");
-                Debug.Log(playerStats.damage);
+                //Debug.Log("EnemyHealth component retrieved!");
+                //Debug.Log(playerStats.damage);
                 enemyHealth.TakeDamage(playerStats.damage);
             }
             else
             {
-                Debug.Log("EnemyHealth component NOT retrieved!");
+                //Debug.Log("EnemyHealth component NOT retrieved!");
             }
             if (collision.gameObject.CompareTag("LootBox"))
             {
