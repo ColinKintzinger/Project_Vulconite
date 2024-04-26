@@ -97,14 +97,14 @@ public class BossFightDirections : MonoBehaviour
         {
             lastAttack = whichAttack;
             StartCoroutine(fireAndMove.TeleSpam());
-            yield return new WaitForSeconds(5.0f - (speedUp * 4));
+            yield return new WaitForSeconds(8.0f - (speedUp * 4));
         }
 
         if (whichAttack == 2)
         {
             lastAttack = whichAttack;
-            teleport.MoveIt();
-            yield return new WaitForSeconds(1.0f);
+            StartCoroutine(teleport.MoveIt());
+            yield return new WaitForSeconds(2.0f);
             numOfSpikes = Random.Range(5, 8);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
             yield return new WaitForSeconds(3.0f - (speedUp * 2));
@@ -113,8 +113,8 @@ public class BossFightDirections : MonoBehaviour
         if (whichAttack == 3)
         {
             lastAttack = whichAttack;
-            teleport.MoveIt();
-            yield return new WaitForSeconds(1.0f - speedUp);
+            StartCoroutine(teleport.MoveIt());
+            yield return new WaitForSeconds(2.0f - speedUp);
             StartCoroutine(wave.SendTheSpikes());
             yield return new WaitForSeconds(3.0f - speedUp);
         }

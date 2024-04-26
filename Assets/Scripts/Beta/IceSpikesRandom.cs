@@ -70,7 +70,6 @@ public class IceSpikesRandom : MonoBehaviour
             if (yPosition > 4.0f)
             {
                 yPosition = 4.0f;
-                zPosition = 2.99f;
             }
 
             warning.transform.position = new Vector3(xPosition, yPosition, 0);
@@ -80,6 +79,7 @@ public class IceSpikesRandom : MonoBehaviour
             Instantiate(warning, warning.transform.position, Quaternion.identity);
             xPosition = Random.Range(player.transform.position.x - 4.0f, player.transform.position.x + 4.0f);
             yPosition = Random.Range(player.transform.position.y - 4.0f, player.transform.position.y + 4.0f);
+            zPosition = yPosition + 0.1f;
         }
         src.clip = playWarning;
         src.Play();
