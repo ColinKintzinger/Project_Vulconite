@@ -39,15 +39,11 @@ public class WeaponAttack : MonoBehaviour
                 //Debug.Log(playerStats.damage);
                 enemyHealth.TakeDamage(playerStats.damage);
             }
-            else
-            {
-                //Debug.Log("EnemyHealth component NOT retrieved!");
-            }
-            if (collision.gameObject.CompareTag("LootBox") || collision.gameObject.CompareTag("Obsticle"))
-            {
-               Destroy(gameObject); 
-            }
-            //Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("LootBox") || collision.gameObject.CompareTag("Obsticle"))
+        {
+            Destroy(gameObject);
         }
     }
 }
