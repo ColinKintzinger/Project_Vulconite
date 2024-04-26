@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7391630822582179789}
   - component: {fileID: 6744318376840040434}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: OutdoorBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 6298948054994031073}
   - component: {fileID: 6337601894186281595}
   - component: {fileID: 4314460620115772439}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Outdoor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,9 +609,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1060497675
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 8868688979728630762}
   - component: {fileID: 3352814679612199196}
   - component: {fileID: 881196233122143216}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Outdoor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4713,9 +4713,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1060497675
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 16, y: 3.0000002, z: 0}
   m_MaxChunkCount: 16
