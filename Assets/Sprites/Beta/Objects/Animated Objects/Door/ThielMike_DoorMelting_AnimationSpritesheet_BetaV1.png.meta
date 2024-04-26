@@ -139,10 +139,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 25
-        height: 73
+        x: 0
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 4
-        width: 25
-        height: 68
+        x: 32
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 4
-        width: 25
-        height: 68
+        x: 64
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 4
-        width: 25
-        height: 68
+        x: 96
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 4
-        width: 25
-        height: 68
+        x: 128
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 4
-        width: 25
-        height: 68
+        x: 160
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: ThielMike_DoorMelting_AnimationSpritesheet_BetaV1_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 8
-        width: 15
-        height: 64
+        x: 192
+        y: 0
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
