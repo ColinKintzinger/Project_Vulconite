@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.00038276613
       objectReference: {fileID: 0}
+    - target: {fileID: 2818567496554636696, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
+      propertyPath: fireDelay
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6485781361652257027, guid: df0b938c5fc8ce24d8f2bca6e156cdda, type: 3}
       propertyPath: m_Name
       value: Melee
@@ -528,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6421217164568289153, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: fireDelay
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6421217164568289153, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: attackTime
