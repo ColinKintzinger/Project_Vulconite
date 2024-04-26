@@ -43,7 +43,7 @@ public class WeaponAttack : MonoBehaviour
             {
                 //Debug.Log("EnemyHealth component NOT retrieved!");
             }
-            if (collision.gameObject.CompareTag("LootBox"))
+            if (collision.gameObject.CompareTag("LootBox") || collision.gameObject.CompareTag("Obsticle"))
             {
                Destroy(gameObject); 
             }

@@ -12,6 +12,7 @@ TagManager:
   - Boss
   - WeaponBullet
   - MeleeCollider
+  - Obsticle
   layers:
   - Default
   - TransparentFX
