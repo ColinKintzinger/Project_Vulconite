@@ -525,7 +525,7 @@ PrefabInstance:
     - target: {fileID: 1486521292990448916, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1511770360, guid: fb15223b626d802439f10ccf0ac54a98, type: 3}
+      objectReference: {fileID: -465871003, guid: c44d6edc420c30148bac57f07245bb61, type: 3}
     - target: {fileID: 6231181717234955923, guid: e2bb572cd97826744aa85469d0abd6f3, type: 3}
       propertyPath: m_Name
       value: Ranged
