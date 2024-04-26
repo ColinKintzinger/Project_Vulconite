@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3803923344154834613}
   - component: {fileID: 6416379210354157046}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8695557106537947227}
   - component: {fileID: -6397019994159378042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Candelabra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4094475197047910418}
   - component: {fileID: 3941077451981020694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5241098828059421042}
   - component: {fileID: 8512631178578971913}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

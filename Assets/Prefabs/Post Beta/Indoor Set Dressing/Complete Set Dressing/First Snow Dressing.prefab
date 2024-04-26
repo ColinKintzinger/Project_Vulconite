@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2394102057950851415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: First Snow Dressing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,6 +48,10 @@ PrefabInstance:
     - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_Name
       value: Ice Crystals (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4930352131443576688, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -111,6 +115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice Crystals
       objectReference: {fileID: 0}
+    - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4930352131443576688, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1340126
@@ -169,6 +177,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2394102057950851415}
     m_Modifications:
+    - target: {fileID: 7498441484095494, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 338824359519457177, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9790254
@@ -209,9 +221,89 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 411320166796810322, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 678086349623280605, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 952589325691208550, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650835914734048047, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679943730953183202, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591100304825981433, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733416653518469934, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684954759497670720, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850676125600548302, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984508648221118758, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994597873876532010, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027111968828981952, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307979419143379845, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334776797280395975, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417806004738106379, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728275859009812914, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978468257683284844, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489133646402188654, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557835300397057625, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8595603956919792175, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
       propertyPath: m_Name
       value: EPF Snow Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595603956919792175, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8898874373960871004, guid: e326a4ec0b767d04dbf3f2a7a2c4090b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -243,6 +335,10 @@ PrefabInstance:
     - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_Name
       value: Ice Crystals (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4930352131443576688, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,6 +402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice Crystals (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4930352131443576688, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1340127
@@ -367,6 +467,10 @@ PrefabInstance:
     - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_Name
       value: Ice Crystals (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678023941995815979, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4930352131443576688, guid: 0f5e42f24fb7dcd48b10c6b00a01f486, type: 3}
       propertyPath: m_LocalPosition.x
