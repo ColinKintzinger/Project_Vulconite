@@ -33,6 +33,5 @@ public class BossHealthBar : MonoBehaviour
         transform.localScale = new Vector3(potato.currentHealth * scaleAdjustment, baseYPosition, 0f);
         float positionXAdjustment = (potato.currentHealth * scaleAdjustment - potato.maxHealth * scaleAdjustment) / 2;
         transform.localPosition = new Vector3(basePosition + positionXAdjustment, -0.03f, 1);
-        Debug.Log("This is potato = " + potato.currentHealth);
     }
 }

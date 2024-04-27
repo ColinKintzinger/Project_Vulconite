@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 931858212146157655, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.74
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 931858212146157655, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: m_LocalRotation.w
@@ -194,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 4522557879760161456, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: startingHealth
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890241291719369878, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6835883699988160152, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: m_LocalScale.x
@@ -249,6 +253,14 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: faa18fe4af474cf44b7612493c943f18, type: 3}
+    - target: {fileID: 1685629887417704376, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032001018405948638, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2467303545924008828, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -293,10 +305,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6060327779294967655, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6147503287418655890, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1518426374}
+    - target: {fileID: 6147503287418655890, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: LeftBound
+      value: -5.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147503287418655890, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: RightBound
+      value: 5.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147503287418655890, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: BottomBound
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1026465968158287693, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
     - {fileID: 5873541249523419854, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}

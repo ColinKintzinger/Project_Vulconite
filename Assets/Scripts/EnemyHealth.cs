@@ -12,8 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public AudioSource src;
     public AudioClip hurtClip;
     public AudioClip deathClip;
-
-    private string SceneToLoad = "Win Screen";
+    public string SceneToLoad = "Win Screen";
 
     // Start is called before the first frame update
     void Start()
