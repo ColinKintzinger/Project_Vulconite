@@ -16,9 +16,9 @@ public class HorizontalDamageAnimation : MonoBehaviour
     public int cycles = 5;
     public int speed = 3;
     public float timer = 1;
+    public Color dmgColor = new Color(0/255,0/255,0/255);
     public float horizontalMovement = .01f;
-    public Color jimmy = new Color(0,0,0);
-    
+
     private int completedCycles = 0;
     private EnemyHealth damaged;
 
