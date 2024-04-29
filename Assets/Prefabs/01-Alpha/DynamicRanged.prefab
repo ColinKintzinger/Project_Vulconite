@@ -303,8 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e3935f194da8a449f5b5d05570a8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 75
+  currentHealth: 75
   visualDamageTimer: 1
   dmgColor: {r: 0, g: 0, b: 0, a: 1}
   src: {fileID: 1778927123023006678}
