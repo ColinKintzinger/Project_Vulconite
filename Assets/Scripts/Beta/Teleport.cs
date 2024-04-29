@@ -26,8 +26,9 @@ public class Teleport : MonoBehaviour
     public float leftX = -12.0f;
     public float middleX = 0.0f;
     public float rightX = 12.0f;
-    public float topY = 4.0f;
+    public float topY = 3.75f;
     public float bottomY = -4.0f;
+    public float bossHeight = 1.2f;
 
     int position = 0;
 
@@ -83,8 +84,10 @@ public class Teleport : MonoBehaviour
         {
             warning.transform.position = new Vector3(rightX, bottomY, 0);
         }
-
+        Debug.Log("Warning position: " + warning.transform.position.y);
+        Instantiate(warning, warning.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1.0f);
-        boss.transform.position = warning.transform.position;
+        boss.transform.position = new Vector3 (warning.transform.position.x, warning.transform.position.y + bossHeight, 0);
+        Debug.Log("Boss position:" + boss.transform.position.y);
     }
 }

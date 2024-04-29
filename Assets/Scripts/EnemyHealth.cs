@@ -13,8 +13,8 @@ public class EnemyHealth : MonoBehaviour
     public Color dmgColor = new Color(0 / 255, 0 / 255, 0 / 255);
     public AudioSource src;
     public AudioClip hurtClip;
-    public AudioClip deathClip;
     public string SceneToLoad = "Win Screen";
+    public PlayerController playerController;
 
     private float horizontalMovement = .001f;
     private int cycles = 5;
@@ -52,9 +52,8 @@ public class EnemyHealth : MonoBehaviour
         }
         if (currentHealth <= 0.0f)
         {
-            src.clip = deathClip;
-            src.Play();
             Destroy(gameObject);
+            playerController.enemyDead();
             if (gameObject.CompareTag("Boss")) {
                 SceneManager.LoadScene(SceneToLoad);
             }
