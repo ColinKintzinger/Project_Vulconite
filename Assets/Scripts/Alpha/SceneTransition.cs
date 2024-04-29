@@ -22,9 +22,6 @@ public class SceneTransition : MonoBehaviour
     private Animator animator;
     private float delay = 1.0f;
 
-    public AudioSource src;
-    public AudioClip open;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +51,10 @@ public class SceneTransition : MonoBehaviour
     private void ActivateDoor()
     {
         active = true;
-        src.clip = open;
-        src.Play();
+    }
+
+    public bool GetActive()
+    {
+        return active;
     }
 }

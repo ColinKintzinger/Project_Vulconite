@@ -141,6 +141,7 @@ MonoBehaviour:
   src: {fileID: 4900296748544987336}
   hurt: {fileID: 8300000, guid: 06f3f5974e371b94086ab4edcc90044e, type: 3}
   pickUp: {fileID: 8300000, guid: 0c8dd3459f2aefb49b679bf4dc156189, type: 3}
+  doorOpen: {fileID: 8300000, guid: 3daabc2e57ddb3145aff3e20d3bf46b0, type: 3}
 --- !u!50 &3625954588756434347
 Rigidbody2D:
   serializedVersion: 4

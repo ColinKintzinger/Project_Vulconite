@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Animator movementAnimate;
     private SpriteRenderer render;
     private Weapon attackDrection;
+    private SceneTransition transition;
 
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource src;
     public AudioClip hurt;
     public AudioClip pickUp;
+    public AudioClip doorOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +66,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * playerStats.speed);
         HandleMovementAnimations();
         HandleAttackAnimation();
+
+        if (transition.GetActive())
+        {
+            src.clip = doorOpen;
+            src.Play();
+        }
     }
         void setAnimation(bool flip, int dInt, bool walking) {
             gameObject.GetComponent<SpriteRenderer>().flipX = flip;
