@@ -2035,6 +2035,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seventh Snow Dressing
       objectReference: {fileID: 0}
+    - target: {fileID: 2689082106998554254, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046547070335345394, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.29
+      objectReference: {fileID: 0}
     - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.34
@@ -2074,6 +2082,18 @@ PrefabInstance:
     - target: {fileID: 7658662319634817218, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813973578237446372, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260291106416902341, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260291106416902341, guid: 57a03fa7aa6f9e4468a4100c7dd9d391, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

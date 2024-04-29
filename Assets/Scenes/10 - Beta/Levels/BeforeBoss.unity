@@ -1507,6 +1507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeforeBoss Snow Dressing
       objectReference: {fileID: 0}
+    - target: {fileID: 3050758128404768492, guid: b02a5aa54fa987547b49b77418043916, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.46
+      objectReference: {fileID: 0}
     - target: {fileID: 3177843428502694317, guid: b02a5aa54fa987547b49b77418043916, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.389009
@@ -1546,6 +1550,14 @@ PrefabInstance:
     - target: {fileID: 3177843428502694317, guid: b02a5aa54fa987547b49b77418043916, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293536786618763749, guid: b02a5aa54fa987547b49b77418043916, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293536786618763749, guid: b02a5aa54fa987547b49b77418043916, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

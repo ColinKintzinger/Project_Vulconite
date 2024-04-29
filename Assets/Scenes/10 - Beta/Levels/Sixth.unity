@@ -810,9 +810,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2766373758062252189, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263069525752667792, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263069525752667792, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320363766465858353, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5452312151631216965, guid: 79023e4564e035e489658ac675575846, type: 3}
       propertyPath: m_Name
       value: Sixth Snow Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734363189595473726, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133691444097371361, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133691444097371361, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649140282800755406, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017924915462350583, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017924915462350583, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185249804474838742, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185249804474838742, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711212303898377485, guid: 79023e4564e035e489658ac675575846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

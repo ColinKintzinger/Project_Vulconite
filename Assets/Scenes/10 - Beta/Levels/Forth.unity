@@ -1428,8 +1428,8 @@ MonoBehaviour:
   cycles: 5
   speed: 3
   timer: 1
+  dmgColor: {r: 0, g: 0, b: 0, a: 1}
   horizontalMovement: 0.005
-  jimmy: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1381033946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,6 +1677,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558249922574417936, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 558249922574417936, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066479425205375947, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095004876507271385, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095004876507271385, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222082426972180468, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222082426972180468, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222082426972180468, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501777432398799399, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501777432398799399, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832384739984394289, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022011245603240968, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923699745939540463, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837693112968641070, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.91
+      objectReference: {fileID: 0}
     - target: {fileID: 5476185257415145978, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6040549
@@ -1717,9 +1773,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5786200050581225051, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358195695760467447, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392740038871668184, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584355552348680278, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013434825593582621, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400578738840906556, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.55
+      objectReference: {fileID: 0}
     - target: {fileID: 7600153272119632292, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
       propertyPath: m_Name
       value: Forth Snow Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888366465521205140, guid: 2d0ccd2614d3ceb42874de5fce550f03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.81
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
