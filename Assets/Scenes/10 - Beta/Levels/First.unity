@@ -1141,6 +1141,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: dmgColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: dmgColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: dmgColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: visualDamageTimer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5475575981684830557, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: target
       value: 
