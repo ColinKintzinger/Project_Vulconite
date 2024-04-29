@@ -137,11 +137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e3935f194da8a449f5b5d05570a8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 45
+  currentHealth: 45
+  visualDamageTimer: 1
+  dmgColor: {r: 0, g: 0, b: 0, a: 1}
   src: {fileID: 4538016447397276144}
   hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
   deathClip: {fileID: 8300000, guid: 0b6eb589ba1efcf42b32ca6d77088584, type: 3}
+  SceneToLoad: Win Screen
 --- !u!212 &-3673649730391032594
 SpriteRenderer:
   m_ObjectHideFlags: 0
