@@ -52,7 +52,7 @@ public class EnemyShooting : MonoBehaviour
         if (distance < targetingDistance && callCountdown < 0)
         {
             callCountdown = targetingTimer;
-            Shot();
+            Bullet();
         }
         if (callCountdown > 0) { 
             callCountdown -= Time.deltaTime;
@@ -60,12 +60,19 @@ public class EnemyShooting : MonoBehaviour
     }
 
     // Shoots the bullet
-    void Shot()
+    void Bullet()
+    {
+        animate();
+        Invoke("Shot", .6f);
+        
+        
+    }
+
+    private void Shot()
     {
         src.clip = fireClip;
         src.Play();
         Instantiate(bullet, transform.position, Quaternion.identity);
-        animate();
     }
     void animate() {
         if (enemyShooting != null)
