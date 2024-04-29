@@ -1218,6 +1218,10 @@ PrefabInstance:
       propertyPath: visualDamageTimer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4538016447397276144, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5475575981684830557, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: target
       value: 

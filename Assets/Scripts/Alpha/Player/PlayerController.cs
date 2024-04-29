@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip hurt;
     public AudioClip pickUp;
     public AudioClip doorOpen;
+    public AudioClip enemyDefeated;
     // Start is called before the first frame update
     void Start()
     {
@@ -181,4 +182,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void enemyDead()
+    {
+        src.clip = enemyDefeated;
+        src.Play();
+    }
 }
