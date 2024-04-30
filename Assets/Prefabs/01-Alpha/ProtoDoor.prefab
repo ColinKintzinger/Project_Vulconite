@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToGoTo: First
-  doorOpen: {fileID: 8300000, guid: 3daabc2e57ddb3145aff3e20d3bf46b0, type: 3}
+  doorOpen: {fileID: 8300000, guid: 93fd150a975467f428d129faf9441810, type: 3}
   src: {fileID: 6009909533503245087}
 --- !u!95 &4093434023627407210
 Animator:
@@ -227,8 +227,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.319
-  m_Pitch: 1
+  m_Volume: 0.115
+  m_Pitch: -0
   Loop: 0
   Mute: 0
   Spatialize: 0

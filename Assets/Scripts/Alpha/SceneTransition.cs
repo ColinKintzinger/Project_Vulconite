@@ -37,8 +37,8 @@ public class SceneTransition : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
         {
             //active = true;
-            //src.clip = doorOpen;
-            //src.PlayOneShot(doorOpen);
+            src.clip = doorOpen;
+            src.PlayOneShot(doorOpen);
             animator.SetBool("active", true);
             Invoke("ActivateDoor", delay);
         }
