@@ -1208,15 +1208,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.b
-      value: 0
+      value: 0.1764706
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.g
-      value: 0
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.r
-      value: 1
+      value: 0.81960785
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: visualDamageTimer

@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        visualizeDamageHorizontal(timer);
+        //visualizeDamageHorizontal(timer);
         visualizeDamageColor(timer, dmgColor, normColor);
         if (timer > 0) {
             timer -= Time.deltaTime*speed;

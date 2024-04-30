@@ -1365,6 +1365,18 @@ PrefabInstance:
       propertyPath: bossHeight
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 129529423090823196, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: dmgColor.b
+      value: 0.45882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 129529423090823196, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: dmgColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 129529423090823196, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
+      propertyPath: dmgColor.r
+      value: 0.7411765
+      objectReference: {fileID: 0}
     - target: {fileID: 4311322814629563734, guid: 98451e0be1f4c104ba4a64d741800bb6, type: 3}
       propertyPath: m_Name
       value: Boss
