@@ -199,6 +199,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4896836284865126823, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 221193780}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &221193784 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+  m_PrefabInstance: {fileID: 221193780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &242959311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1642,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
+      propertyPath: src
+      value: 
+      objectReference: {fileID: 221193784}
     - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: sceneToGoTo
       value: BeforeBoss
