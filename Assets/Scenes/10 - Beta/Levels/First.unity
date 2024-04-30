@@ -237,6 +237,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
+      propertyPath: src
+      value: 
+      objectReference: {fileID: 2125560333}
+    - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: sceneToGoTo
       value: Second
       objectReference: {fileID: 0}
@@ -1743,6 +1747,11 @@ Transform:
 --- !u!1 &2125560332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8270781994743990378, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+  m_PrefabInstance: {fileID: 2125560330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2125560333 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 2125560330}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4696043407823170593

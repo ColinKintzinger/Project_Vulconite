@@ -46,8 +46,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource src;
     public AudioClip hurt;
     public AudioClip pickUp;
-    public AudioClip doorOpen;
-    public AudioClip enemyDefeated;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +59,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
@@ -67,18 +67,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * playerStats.speed);
         HandleMovementAnimations();
         HandleAttackAnimation();
-
-        //if (transition.GetActive())
-        //{
-        //    src.clip = doorOpen;
-        //    src.Play();
-        //}
     }
-        void setAnimation(bool flip, int dInt, bool walking) {
-            gameObject.GetComponent<SpriteRenderer>().flipX = flip;
-            movementAnimate.SetInteger("Direction", dInt);
-            movementAnimate.SetBool("isWalking", walking);
-        }
+        //void setAnimation(bool flip, int dInt, bool walking) {
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = flip;
+        //    movementAnimate.SetInteger("Direction", dInt);
+        //    movementAnimate.SetBool("isWalking", walking);
+        //}
     private void HandleAttackAnimation()
     {
         //float attX = 0f, attY = 0f;        
@@ -180,11 +174,6 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
-    }
 
-    public void enemyDead()
-    {
-        src.clip = enemyDefeated;
-        src.Play();
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7885411432898895591}
   - component: {fileID: 4093434023627407210}
   - component: {fileID: 2029813314068198754}
-  - component: {fileID: -3336663309914175895}
+  - component: {fileID: 6009909533503245087}
   m_Layer: 0
   m_Name: ProtoDoor
   m_TagString: Door
@@ -175,8 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToGoTo: First
-  src: {fileID: -3336663309914175895}
-  open: {fileID: 8300000, guid: 3daabc2e57ddb3145aff3e20d3bf46b0, type: 3}
+  doorOpen: {fileID: 8300000, guid: 3daabc2e57ddb3145aff3e20d3bf46b0, type: 3}
+  src: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
 --- !u!95 &4093434023627407210
 Animator:
   serializedVersion: 5
@@ -215,7 +215,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!82 &-3336663309914175895
+--- !u!82 &6009909533503245087
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +233,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 86
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

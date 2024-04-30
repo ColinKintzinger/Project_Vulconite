@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
     public AudioSource src;
     public AudioClip hurtClip;
     public string SceneToLoad = "Win Screen";
-    public PlayerController playerController;
+    public AudioClip enemyDefeated;
 
     private float horizontalMovement = .001f;
     private int cycles = 5;
@@ -52,8 +52,9 @@ public class EnemyHealth : MonoBehaviour
         }
         if (currentHealth <= 0.0f)
         {
-            Destroy(gameObject);
-            playerController.enemyDead();
+            //Destroy(gameObject);
+            Dead();
+            //playerController.enemyDead();
             if (gameObject.CompareTag("Boss")) {
                 SceneManager.LoadScene(SceneToLoad);
             }
@@ -95,4 +96,19 @@ public class EnemyHealth : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = colorNorm;
         }
     }
+
+    private void Dead()
+    {
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<PolygonCollider2D>().enabled = false; // Enemies MUST have polygon colliders,
+        src.clip = enemyDefeated;                              //  or will throw error
+        src.Play();
+        Invoke("Kill", 0.2f); // Time for audio to play, then destroy
+    }
+
+    private void Kill()
+    {
+        Destroy(gameObject);
+    }
+
 }

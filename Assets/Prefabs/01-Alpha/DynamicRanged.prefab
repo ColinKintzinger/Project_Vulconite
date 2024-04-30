@@ -310,7 +310,7 @@ MonoBehaviour:
   src: {fileID: 1778927123023006678}
   hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
   SceneToLoad: Win Screen
-  playerController: {fileID: 0}
+  enemyDefeated: {fileID: 8300000, guid: 0b6eb589ba1efcf42b32ca6d77088584, type: 3}
 --- !u!95 &8096277506911968420
 Animator:
   serializedVersion: 5
