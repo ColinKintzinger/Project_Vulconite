@@ -21,6 +21,8 @@ public class SceneTransition : MonoBehaviour
     private bool active = false;
     private Animator animator;
     private float delay = 1.0f;
+    public AudioClip doorOpen;
+    public AudioSource src;
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +37,12 @@ public class SceneTransition : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
         {
             //active = true;
+            //src.clip = doorOpen;
+            //src.PlayOneShot(doorOpen);
             animator.SetBool("active", true);
             Invoke("ActivateDoor", delay);
         }
+
     }
     // Checks when player collides with door and enemies are dead
     private void OnCollisionEnter2D(Collision2D collision)
@@ -51,6 +56,7 @@ public class SceneTransition : MonoBehaviour
     private void ActivateDoor()
     {
         active = true;
+        
     }
 
     public bool GetActive()
