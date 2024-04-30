@@ -20,7 +20,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Animator movementAnimate;
     private SpriteRenderer render;
     private Weapon attackDrection;
+    //private SceneTransition transition;
 
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource src;
     public AudioClip hurt;
     public AudioClip pickUp;
+    public AudioClip doorOpen;
+    public AudioClip enemyDefeated;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +67,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * playerStats.speed);
         HandleMovementAnimations();
         HandleAttackAnimation();
+
+        //if (transition.GetActive())
+        //{
+        //    src.clip = doorOpen;
+        //    src.Play();
+        //}
     }
         void setAnimation(bool flip, int dInt, bool walking) {
             gameObject.GetComponent<SpriteRenderer>().flipX = flip;
@@ -139,8 +148,6 @@ public class PlayerController : MonoBehaviour
             //moving
             lastMoveDir = moveDir;
             rb.velocity = moveDir * playerStats.speed;
-            //movementAnimate.SetFloat("Horizontal", moveDir.x);
-            //movementAnimate.SetFloat("Verticle", moveDir.y);
             movementAnimate.SetBool("isWalking", true);
         }
         movementAnimate.SetFloat("Horizontal", aimDirection.x);
@@ -175,4 +182,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void enemyDead()
+    {
+        src.clip = enemyDefeated;
+        src.Play();
+    }
 }

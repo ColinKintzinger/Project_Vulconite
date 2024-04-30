@@ -16,12 +16,22 @@ public class HorizontalDamageAnimation : MonoBehaviour
     public int cycles = 5;
     public int speed = 3;
     public float timer = 1;
-    public float horizontalMovement = .005f;
-    
+    public Color dmgColor = new Color(0/255,0/255,0/255);
+    public float horizontalMovement = .01f;
+
     private int completedCycles = 0;
-    // Update is called once per frame
-    void Update()
-    {
+    private EnemyHealth damaged;
+
+    void Start() {
+        damaged = GetComponent<EnemyHealth>();
+        damaged.takeDamage += VisualizeDamage;
+        if (damaged != null) {
+            damaged.TakeDamage(0);
+        }
+    }
+
+    private void VisualizeDamage() {
+        Debug.Log("Yay I activated!!!");
         float floaterVar = Mathf.Sin(timer * Mathf.PI) * horizontalMovement;
         transform.position += new Vector3(floaterVar, 0, 0);
         if (timer < 0 && completedCycles < cycles)
@@ -29,9 +39,6 @@ public class HorizontalDamageAnimation : MonoBehaviour
             timer = 2;
             completedCycles += 1;
         }
-        else if (completedCycles > cycles) { 
-            //kill this script
-        }
-        timer -= Time.deltaTime*speed;
+        timer -= Time.deltaTime * speed;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartSceneScript : MonoBehaviour
 {
-    public string FirstGameScene = "First";
+    public string FirstGameScene = "PreFirst";
     private string OptionsScreen = "";
 
     // Update is called once per frame

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4408992443816331914}
   - component: {fileID: -575141309810260926}
   - component: {fileID: 1530926721140791004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Brazier
-  m_TagString: Untagged
+  m_TagString: Obsticle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -24,6 +24,7 @@ public class IceSpikesRandom : MonoBehaviour
     public GameObject warning;
     public GameObject spike;
     int numOfSpikes;
+    public Rigidbody2D player;
 
     public AudioSource src;
     public AudioClip playWarning;
@@ -47,19 +48,38 @@ public class IceSpikesRandom : MonoBehaviour
 
     public IEnumerator PrepareWarnings(int num)
     {
-        float xPosition = Random.Range(-14.8f, 14.8f);
-        float yPosition = Random.Range(-4.5f, 5.0f);
+        float xPosition = Random.Range(player.transform.position.x - 4.0f, player.transform.position.x + 4.0f);
+        float yPosition = Random.Range(player.transform.position.y - 4.0f, player.transform.position.y + 4.0f);
+        float zPosition = yPosition + 0.1f;
         Vector3[] spikePosition = new Vector3[num];
 
         for (int i = 0; i < num; i++)
-        {
+        {   
+            if (xPosition < -14.8f)
+            {
+                xPosition = -14.8f;
+            }
+            if (xPosition > 14.8f)
+            {
+                xPosition = 14.8f;
+            }
+            if (yPosition < -5.0f)
+            {
+                yPosition = -5.0f;
+            }
+            if (yPosition > 4.0f)
+            {
+                yPosition = 4.0f;
+            }
+
             warning.transform.position = new Vector3(xPosition, yPosition, 0);
-            spike.transform.position = new Vector3(xPosition, yPosition + 1.9f, -0.1f);
+            spike.transform.position = new Vector3(xPosition, yPosition + 1.9f, zPosition);
             spikePosition[i] = spike.transform.position;
             //Debug.Log(warning.transform.position);
             Instantiate(warning, warning.transform.position, Quaternion.identity);
-            xPosition = Random.Range(-14.8f, 14.8f);
-            yPosition = Random.Range(-4.5f, 5.0f);
+            xPosition = Random.Range(player.transform.position.x - 4.0f, player.transform.position.x + 4.0f);
+            yPosition = Random.Range(player.transform.position.y - 4.0f, player.transform.position.y + 4.0f);
+            zPosition = yPosition + 0.1f;
         }
         src.clip = playWarning;
         src.Play();

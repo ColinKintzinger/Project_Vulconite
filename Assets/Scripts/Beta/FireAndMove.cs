@@ -41,8 +41,8 @@ public class FireAndMove : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            teleport.MoveIt();
-            yield return new WaitForSeconds(0.75f - directions.speedUp);
+            StartCoroutine(teleport.MoveIt());
+            yield return new WaitForSeconds(1.75f - directions.speedUp);
             fire.ShootToKill();
             yield return new WaitForSeconds(1.0f - directions.speedUp);
         }

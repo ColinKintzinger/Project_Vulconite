@@ -1,21 +1,11 @@
-/*
- * Zachary Speckan
- * 04/21/24
- * Plays music depending on the scene.
- * 
- * menu - Menu theme
- * regular - Standard level theme
- * finalBoss - Final boss theme
- * currentScene - Currently loaded scene
- * isPlaying - Song already playing
- */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class MusicSingleton : MonoBehaviour
 {
+    public static MusicSingleton Instance { get; private set; }
     public AudioSource src;
     public AudioClip menu;
     public AudioClip regular;
@@ -70,7 +60,18 @@ public class MusicPlayer : MonoBehaviour
                 isPlaying = 3;
             }
         }
-
-        DontDestroyOnLoad(this.gameObject);
     }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
 }

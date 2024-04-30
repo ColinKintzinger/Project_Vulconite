@@ -12,7 +12,7 @@ public class PlayerStats : ScriptableObject
 
     public float health = 100.0f;
     public float speed = 3.0f;
-    public float damage = 30.0f;
+    public float damage = 34.0f;
 
     public List<Charm> collectedCharms = new List<Charm>(); // List to store collected charms
 
@@ -39,7 +39,7 @@ public class PlayerStats : ScriptableObject
     {
         health = 100.0f;
         speed = 3.0f;
-        damage = 30.0f;
+        damage = 34.0f;
         collectedCharms.Clear();
     }
 

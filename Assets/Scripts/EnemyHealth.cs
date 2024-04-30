@@ -5,13 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float maxHealth = 100.0f;
+    public delegate void EnemyHealthDelegate();
+    public EnemyHealthDelegate takeDamage;
+    public float maxHealth = 45.0f;
     public float currentHealth;
-    private string SceneToLoad = "Win Screen";
-
+    public float visualDamageTimer = 1;
+    public Color dmgColor = new Color(0 / 255, 0 / 255, 0 / 255);
     public AudioSource src;
     public AudioClip hurtClip;
-    public AudioClip deathClip;
+    public string SceneToLoad = "Win Screen";
+    public PlayerController playerController;
+
+    private float horizontalMovement = .001f;
+    private int cycles = 5;
+    private int completedCycles = 0;
+    private int speed = 10;
+    private float timer = 0;
+    private Color normColor = new Color(255 / 255f, 255 / 255f, 255 / 255f);
 
     // Start is called before the first frame update
     void Start()
@@ -22,27 +32,38 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        visualizeDamageHorizontal(timer);
+        visualizeDamageColor(timer, dmgColor, normColor);
+        if (timer > 0) {
+            timer -= Time.deltaTime*speed;
+        }
+        if (timer < 0) {
+            timer = 0;
+        }
+
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
-
+        //Debug.Log(currentHealth);
+        if (takeDamage != null) {
+            takeDamage();
+        }
         if (currentHealth <= 0.0f)
         {
-            src.clip = deathClip;
-            src.Play();
             Destroy(gameObject);
+            playerController.enemyDead();
             if (gameObject.CompareTag("Boss")) {
                 SceneManager.LoadScene(SceneToLoad);
             }
         }
         else
         {
+            completedCycles = 0;
             src.clip = hurtClip;
             src.Play();
+            timer = 2;
         }
     }
 
@@ -54,4 +75,24 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+
+    public void visualizeDamageHorizontal(float timer) {
+        float horizontalMovement = .01f;
+        float floaterVar = Mathf.Sin(4*timer * Mathf.PI) * horizontalMovement;
+        transform.position += new Vector3(floaterVar, 0, 0);
+        if (timer <= 0 && completedCycles < cycles)
+        {
+            timer = 2;
+            completedCycles += 1;
+        }
+    }
+
+    public void visualizeDamageColor(float timer, Color colorDam, Color colorNorm) {
+        if (timer >= 0.5){
+            gameObject.GetComponent<SpriteRenderer>().color = colorDam;
+        }
+        else if (timer >= 0){
+            gameObject.GetComponent<SpriteRenderer>().color = colorNorm;
+        }
+    }
 }
