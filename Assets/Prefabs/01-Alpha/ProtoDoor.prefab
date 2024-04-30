@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToGoTo: First
-  doorOpen: {fileID: 8300000, guid: 93fd150a975467f428d129faf9441810, type: 3}
+  doorOpen: {fileID: 8300000, guid: 9b68dbcd8bf80464e8f5580815034800, type: 3}
   src: {fileID: 6009909533503245087}
 --- !u!95 &4093434023627407210
 Animator:
