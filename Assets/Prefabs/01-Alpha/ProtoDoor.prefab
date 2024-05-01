@@ -174,9 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da18acae39c988a4987c195281a22f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToGoTo: Third
-  doorOpen: {fileID: 8300000, guid: 9b68dbcd8bf80464e8f5580815034800, type: 3}
-  src: {fileID: 0}
+  sceneToGoTo: First
+  sound: {fileID: 3842175894900543189, guid: 32e4f7d773f1fb44ebd6c44e2d2aa96e, type: 3}
 --- !u!95 &4093434023627407210
 Animator:
   serializedVersion: 5

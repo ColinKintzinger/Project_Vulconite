@@ -488,11 +488,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
---- !u!82 &542733461 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
-  m_PrefabInstance: {fileID: 542733460}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &613425377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -950,15 +945,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
-      propertyPath: src
-      value: 
-      objectReference: {fileID: 542733461}
-    - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
-      propertyPath: sceneToGoTo
-      value: First
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6009909533503245087, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
