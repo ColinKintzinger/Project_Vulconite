@@ -21,7 +21,9 @@ public class BlastDirection : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         queen = GameObject.FindGameObjectWithTag("Boss");
-
+        queen.GetComponent<MeleeAttack>();
+        
+        
         if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) > Mathf.Abs(player.transform.position.y - queen.transform.position.y))
         {
             if (player.transform.position.x < queen.transform.position.x)
