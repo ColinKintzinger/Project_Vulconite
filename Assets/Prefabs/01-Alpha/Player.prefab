@@ -138,11 +138,9 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   playerStats: {fileID: 11400000, guid: 3cd012de8ba8bc24193cef88ca9061c8, type: 2}
-  src1: {fileID: 4900296748544987336}
-  src2: {fileID: 4900296748544987336}
+  src: {fileID: 4900296748544987336}
   hurt: {fileID: 8300000, guid: 06f3f5974e371b94086ab4edcc90044e, type: 3}
   pickUp: {fileID: 8300000, guid: 0c8dd3459f2aefb49b679bf4dc156189, type: 3}
-  fireball: {fileID: 0}
 --- !u!50 &3625954588756434347
 Rigidbody2D:
   serializedVersion: 4
