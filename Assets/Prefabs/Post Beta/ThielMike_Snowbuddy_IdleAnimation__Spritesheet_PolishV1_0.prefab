@@ -146,7 +146,7 @@ MonoBehaviour:
   projectile: {fileID: 8622186633332003165, guid: ff1befc671df9a94790b14790a10e5f8, type: 3}
   projectileSpeed: 3
   target: {fileID: 0}
-  targetingDistance: 25
+  targetingDistance: 17
   targetingTimer: 1
   src: {fileID: 2979268329728930168}
   charge: {fileID: 8300000, guid: ca96a1ebd0fb4284db2e8a701c198f36, type: 3}
