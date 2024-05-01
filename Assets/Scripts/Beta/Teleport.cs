@@ -62,27 +62,27 @@ public class Teleport : MonoBehaviour
 
         if (position == 1) //top left
         {
-            warning.transform.position = new Vector3(leftX, topY, 0);
+            warning.transform.position = new Vector3(leftX, topY, topY + 0.1f);
         }
         else if (position == 2) //top middle
         {
-            warning.transform.position = new Vector3(middleX, topY, 0);
+            warning.transform.position = new Vector3(middleX, topY, topY + 0.1f);
         }
         else if (position == 3) //top right
         {
-            warning.transform.position = new Vector3(rightX, topY, 0);
+            warning.transform.position = new Vector3(rightX, topY, topY + 0.1f);
         }
         else if (position == 4) //bottom left
         {
-            warning.transform.position = new Vector3(leftX, bottomY, 0);
+            warning.transform.position = new Vector3(leftX, bottomY, bottomY + 0.1f);
         }
         else if (position == 5) //bottom middle
         {
-            warning.transform.position = new Vector3(middleX, bottomY, 0);
+            warning.transform.position = new Vector3(middleX, bottomY, bottomY + 0.1f);
         }
         else if (position == 6) //bottom right
         {
-            warning.transform.position = new Vector3(rightX, bottomY, 0);
+            warning.transform.position = new Vector3(rightX, bottomY, bottomY + 0.1f);
         }
         Debug.Log("Warning position: " + warning.transform.position.y);
         Instantiate(warning, warning.transform.position, Quaternion.identity);
