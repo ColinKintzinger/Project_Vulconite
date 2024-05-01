@@ -43,12 +43,14 @@ public class BossFightDirections : MonoBehaviour
     public AudioClip laugh;
     public AudioClip taunt;
     private bool hasTaunted = false;
+    private Animator anim;
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         queen = GameObject.FindGameObjectWithTag("Boss");
+        anim = GetComponent<Animator>();
 
         fireAndMove = GetComponent<FireAndMove>();
         teleport = GetComponent<Teleport>();
@@ -103,7 +105,7 @@ public class BossFightDirections : MonoBehaviour
         if (whichAttack == 2)
         {
             lastAttack = whichAttack;
-            StartCoroutine(teleport.MoveIt());
+            enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f);
             numOfSpikes = Random.Range(5, 8);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
@@ -113,7 +115,7 @@ public class BossFightDirections : MonoBehaviour
         if (whichAttack == 3)
         {
             lastAttack = whichAttack;
-            StartCoroutine(teleport.MoveIt());
+            enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f - speedUp);
             StartCoroutine(wave.SendTheSpikes());
             yield return new WaitForSeconds(3.0f - speedUp);
@@ -124,6 +126,8 @@ public class BossFightDirections : MonoBehaviour
             Debug.Log("Melee");
             if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) < 3 && Mathf.Abs(player.transform.position.y - queen.transform.position.y) < 3)
             {
+                Vector3 dir = animationDirection(queen.transform.position, player.transform.position);
+                //
                 lastAttack = whichAttack;
                 yield return new WaitForSeconds(1.5f - speedUp);
                 melee.BlastIt();
@@ -132,5 +136,16 @@ public class BossFightDirections : MonoBehaviour
         }
 
         StartCoroutine(LetsStartTheFight());
+    }
+
+    Vector3 animationDirection(Vector3 self, Vector3 target) {
+        Vector3 targetVector = target - self;
+        return targetVector.normalized;
+    }
+
+    void enemyTeleportAndAnimation() {
+        anim.SetTrigger("Teleporting");
+        StartCoroutine(teleport.MoveIt());
+        anim.ResetTrigger("Teleporting");
     }
 }
