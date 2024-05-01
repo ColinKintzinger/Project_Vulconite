@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d529c8168565a94088921da63a36428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstGameScene: PreFirst
+  FirstGameScene: Video
 --- !u!4 &126852721
 Transform:
   m_ObjectHideFlags: 0
