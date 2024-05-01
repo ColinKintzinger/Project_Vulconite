@@ -272,6 +272,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/RothbauerDylan/OneDrive - University of Wisconsin-Stout/1st
+        Year/Desktop/Cutscene.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4342953390070719690, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
