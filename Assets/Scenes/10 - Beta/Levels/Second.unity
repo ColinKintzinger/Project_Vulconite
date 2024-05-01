@@ -917,6 +917,128 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 300946953}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &302240109
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945021326670366620, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201293095139045478, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: m_Name
+      value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: dependant1
+      value: 
+      objectReference: {fileID: 1266488264}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: dependant2
+      value: 
+      objectReference: {fileID: 1266488264}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[0].time
+      value: -0.0041494966
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[1].time
+      value: 0.5116547
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[2].time
+      value: 1.001656
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[0].value
+      value: -0.9950045
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[1].value
+      value: -0.70840746
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[2].value
+      value: -0.9943433
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106006083668397049, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      propertyPath: myCurve.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8201293095139045478, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302240111}
+  m_SourcePrefab: {fileID: 100100000, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+--- !u!1 &302240110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8201293095139045478, guid: a7521ae4e82bac140bd518d83deb8c0b, type: 3}
+  m_PrefabInstance: {fileID: 302240109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &302240111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302240110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010508d937c42d34d988842445e72f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0
+  collisionCountThreshold: 3
+  charmPrefabs: []
+  src: {fileID: 0}
+  damage: {fileID: 0}
 --- !u!1001 &600520665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,6 +1395,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53bfa82561336c643a67b62f5aca1c17, type: 3}
+--- !u!1 &1266488264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7189062004623397030, guid: 53bfa82561336c643a67b62f5aca1c17, type: 3}
+  m_PrefabInstance: {fileID: 1266488263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1399667676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,3 +2181,4 @@ SceneRoots:
   - {fileID: 856473800}
   - {fileID: 1711327149}
   - {fileID: 1107495724}
+  - {fileID: 302240109}

@@ -22,6 +22,7 @@ public class SceneTransition : MonoBehaviour
     private Animator animator;
     private float delay = 1.0f;
     public GameObject sound;
+    private bool isPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,11 @@ public class SceneTransition : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
         {
             //active = true;
-            Instantiate(sound);
+            if (!isPlaying)
+            {
+                Instantiate(sound);
+                isPlaying = true;
+            }
             animator.SetBool("active", true);
             Invoke("ActivateDoor", delay);
         }
