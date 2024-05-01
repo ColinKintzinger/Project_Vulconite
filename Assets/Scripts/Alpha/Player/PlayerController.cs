@@ -43,11 +43,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private float angle;
 
-    public AudioSource src1;
-    public AudioSource src2;
+    public AudioSource src;
     public AudioClip hurt;
     public AudioClip pickUp;
-    public AudioClip fireball;
 
     // Start is called before the first frame update
     void Start()
@@ -77,8 +75,6 @@ public class PlayerController : MonoBehaviour
         //}
     private void HandleAttackAnimation()
     {
-        src2.clip = fireball;
-        src2.Play();
         //float attX = 0f, attY = 0f;        
         if(Input.GetMouseButton(0))
         {
@@ -162,13 +158,13 @@ public class PlayerController : MonoBehaviour
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
-            src1.clip = hurt;
-            src1.Play();
+            src.clip = hurt;
+            src.Play();
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
-            src1.clip = pickUp;
-            src1.Play();
+            src.clip = pickUp;
+            src.Play();
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             //Destroy(collision.gameObject);
             
