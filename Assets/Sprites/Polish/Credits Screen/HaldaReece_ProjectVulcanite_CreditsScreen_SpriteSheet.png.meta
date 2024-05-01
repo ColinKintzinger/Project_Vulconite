@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aa43ae1f43692654d8bef8418e7bf17a
+guid: 22e3bd4eb36f3ab4881b07ce684dcfa2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,30 +119,59 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_0
+      name: HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 240
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b486e5eeb26c7654598578e2f26a1103
+      internalID: 1707638562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 135
+        width: 240
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93d0aeb74a5f6d4fbf7a8505ac7147d
+      internalID: -1037773457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 240
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,104 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da1f9b8a4145f794a817f43015d874ba
-      internalID: 1800511686
+      spriteID: 09cbdb0e01bace04ab2901fbaa6d3068
+      internalID: 100455960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 321fa0a0fb2586048b98c9272e79469e
-      internalID: -1165225406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 668c1f70b2c64bc4bb3ab0b7fec12094
-      internalID: -5823523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2560215e3e1168f4dafdc6f5aab290fd
-      internalID: -346318190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c728936593f1e594b84875bb605c1d36
-      internalID: -2112632652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThielMike_Penguin_SideWalkAnimation_BetaV2_5
+      name: HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
-        width: 48
-        height: 48
+        width: 240
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 444228e7f61ac1d4d9613d613af5336d
-      internalID: -2009640199
+      spriteID: 5e4aef7e0918fe04a9250511f9fdaa29
+      internalID: 255057828
       vertices: []
       indices: 
       edges: []
@@ -259,12 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_0: 1800511686
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_1: -1165225406
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_2: -5823523
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_3: -346318190
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_4: -2112632652
-      ThielMike_Penguin_SideWalkAnimation_BetaV2_5: -2009640199
+      HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_0: 1707638562
+      HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_1: -1037773457
+      HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_2: 100455960
+      HaldaReece_ProjectVulcanite_CreditsScreen_SpriteSheet_3: 255057828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
