@@ -794,7 +794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4672826330000959074, guid: 53bfa82561336c643a67b62f5aca1c17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.74
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 4672826330000959074, guid: 53bfa82561336c643a67b62f5aca1c17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1581,9 +1581,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2866222832689127844, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.185
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182313314266903591, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9339545
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739194876693658274, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8930833
+      objectReference: {fileID: 0}
     - target: {fileID: 4481858353093983025, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
       propertyPath: m_Name
       value: BeforeBoss Set Dressing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216820358423128096, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.64
       objectReference: {fileID: 0}
     - target: {fileID: 8156493277717152895, guid: cfdbf091fe2d854488ad4b1e7b48d8c8, type: 3}
       propertyPath: m_LocalPosition.x
