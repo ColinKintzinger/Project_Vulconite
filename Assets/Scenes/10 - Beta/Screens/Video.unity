@@ -272,14 +272,29 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7737203179833022261, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: videoFileName
+      value: Cutscene.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
       propertyPath: m_Url
-      value: file://C:/Users/RothbauerDylan/OneDrive - University of Wisconsin-Stout/1st
-        Year/Desktop/Cutscene.mp4
+      value: Cutscene.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_Looping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
       propertyPath: m_DataSource
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551864392210541118, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4342953390070719690, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
       propertyPath: m_LocalPosition.x
@@ -324,6 +339,18 @@ PrefabInstance:
     - target: {fileID: 5365865389698126077, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
       propertyPath: m_Name
       value: Video Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496800675697177739, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496800675697177739, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496800675697177739, guid: e203d7c883d47304cba1493ba50f2107, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
