@@ -36,15 +36,19 @@ public class PlayerController : MonoBehaviour
     private Animator movementAnimate;
     private SpriteRenderer render;
     private Weapon attackDrection;
+    //private SceneTransition transition;
 
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
     private Rigidbody2D rb;
     private float angle;
 
-    public AudioSource src;
+    public AudioSource src1;
+    public AudioSource src2;
     public AudioClip hurt;
     public AudioClip pickUp;
+    public AudioClip fireball;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +61,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
@@ -65,13 +70,15 @@ public class PlayerController : MonoBehaviour
         HandleMovementAnimations();
         HandleAttackAnimation();
     }
-        void setAnimation(bool flip, int dInt, bool walking) {
-            gameObject.GetComponent<SpriteRenderer>().flipX = flip;
-            movementAnimate.SetInteger("Direction", dInt);
-            movementAnimate.SetBool("isWalking", walking);
-        }
+        //void setAnimation(bool flip, int dInt, bool walking) {
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = flip;
+        //    movementAnimate.SetInteger("Direction", dInt);
+        //    movementAnimate.SetBool("isWalking", walking);
+        //}
     private void HandleAttackAnimation()
     {
+        src2.clip = fireball;
+        src2.Play();
         //float attX = 0f, attY = 0f;        
         if(Input.GetMouseButton(0))
         {
@@ -155,15 +162,16 @@ public class PlayerController : MonoBehaviour
         {
             // take damage
             playerStats.TakeDamage(damageToPlayer);
-            src.clip = hurt;
-            src.Play();
+            src1.clip = hurt;
+            src1.Play();
 
         } else if (collision.gameObject.CompareTag("Charm"))
         {
+            src1.clip = pickUp;
+            src1.Play();
             playerStats.EquipCharm(collision.gameObject.GetComponent<Charm>());
             //Destroy(collision.gameObject);
-            src.clip = pickUp;
-            src.Play();
+            
         }
         else if (collision.gameObject.CompareTag("Weapon"))
         {
@@ -171,6 +179,6 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
-    }
 
+    }
 }

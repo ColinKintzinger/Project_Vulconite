@@ -13,8 +13,8 @@ public class EnemyHealth : MonoBehaviour
     public Color dmgColor = new Color(0 / 255, 0 / 255, 0 / 255);
     public AudioSource src;
     public AudioClip hurtClip;
-    public AudioClip deathClip;
     public string SceneToLoad = "Win Screen";
+    public AudioClip enemyDefeated;
 
     private float horizontalMovement = .001f;
     private int cycles = 5;
@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        visualizeDamageHorizontal(timer);
+        //visualizeDamageHorizontal(timer);
         visualizeDamageColor(timer, dmgColor, normColor);
         if (timer > 0) {
             timer -= Time.deltaTime*speed;
@@ -52,9 +52,9 @@ public class EnemyHealth : MonoBehaviour
         }
         if (currentHealth <= 0.0f)
         {
-            src.clip = deathClip;
-            src.Play();
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            Dead();
+            //playerController.enemyDead();
             if (gameObject.CompareTag("Boss")) {
                 SceneManager.LoadScene(SceneToLoad);
             }
@@ -96,4 +96,19 @@ public class EnemyHealth : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = colorNorm;
         }
     }
+
+    private void Dead()
+    {
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<PolygonCollider2D>().enabled = false; // Enemies MUST have polygon colliders,
+        src.clip = enemyDefeated;                              //  or will throw error
+        src.Play();
+        Invoke("Kill", 0.2f); // Time for audio to play, then destroy
+    }
+
+    private void Kill()
+    {
+        Destroy(gameObject);
+    }
+
 }

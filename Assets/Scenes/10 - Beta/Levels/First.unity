@@ -237,6 +237,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
+      propertyPath: src
+      value: 
+      objectReference: {fileID: 2125560333}
+    - target: {fileID: 7885411432898895591, guid: f12b311228deb2f43919c93fd3468bc9, type: 3}
       propertyPath: sceneToGoTo
       value: Second
       objectReference: {fileID: 0}
@@ -1204,19 +1208,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.b
-      value: 0
+      value: 0.1764706
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.g
-      value: 0
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: dmgColor.r
-      value: 1
+      value: 0.81960785
       objectReference: {fileID: 0}
     - target: {fileID: 2849748277712553271, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: visualDamageTimer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538016447397276144, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5475575981684830557, guid: 4eeaef0c24fa10c4b8ad09f879aca36e, type: 3}
       propertyPath: target
@@ -1739,6 +1747,11 @@ Transform:
 --- !u!1 &2125560332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8270781994743990378, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
+  m_PrefabInstance: {fileID: 2125560330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2125560333 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4900296748544987336, guid: 5da9dfe3bf117b945aa4f62b7e2804e5, type: 3}
   m_PrefabInstance: {fileID: 2125560330}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4696043407823170593

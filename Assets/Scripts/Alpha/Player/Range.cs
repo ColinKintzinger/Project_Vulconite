@@ -14,6 +14,9 @@ using UnityEngine;
 public class Range : Weapon
 {
     public GameObject bullet;
+    public AudioSource src;
+    public AudioClip throwFire;
+
     //public string bulletInResorces = "Triangle";
     //public string attackWeaponInResorces = "PlayerStats";
 
@@ -31,6 +34,8 @@ public class Range : Weapon
             //Debug.LogError((Singleton.Instance.weapon));
             Vector3 offset = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
             Instantiate(bullet, bulletSpawn.position + offset, Quaternion.Euler(0, 0, angle));
+            src.clip = throwFire;
+            src.Play();
         }
         else
         {

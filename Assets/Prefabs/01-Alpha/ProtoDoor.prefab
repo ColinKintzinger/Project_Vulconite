@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7885411432898895591}
   - component: {fileID: 4093434023627407210}
   - component: {fileID: 2029813314068198754}
-  - component: {fileID: -3336663309914175895}
+  - component: {fileID: 6009909533503245087}
   m_Layer: 0
   m_Name: ProtoDoor
   m_TagString: Door
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 163634880, guid: 48a6a25efec5e894db94271a9428c70d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3334b44308118424ebb6e632ef05450a, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2.5}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -175,8 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToGoTo: First
-  src: {fileID: -3336663309914175895}
-  open: {fileID: 8300000, guid: 3daabc2e57ddb3145aff3e20d3bf46b0, type: 3}
+  sound: {fileID: 3842175894900543189, guid: 32e4f7d773f1fb44ebd6c44e2d2aa96e, type: 3}
 --- !u!95 &4093434023627407210
 Animator:
   serializedVersion: 5
@@ -215,7 +214,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!82 &-3336663309914175895
+--- !u!82 &6009909533503245087
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,15 +225,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.115
+  m_Pitch: -0
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 86
-  DopplerLevel: 1
+  Priority: 100
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0

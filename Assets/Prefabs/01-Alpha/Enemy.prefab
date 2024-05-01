@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: -3673649730391032594}
   - component: {fileID: -932283212231163000}
   - component: {fileID: 1476451553572284186}
-  - component: {fileID: 4495319314356252527}
   - component: {fileID: 3948591127082954610}
   - component: {fileID: 4538016447397276144}
+  - component: {fileID: -7168056189427995838}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -140,11 +140,12 @@ MonoBehaviour:
   maxHealth: 45
   currentHealth: 45
   visualDamageTimer: 1
-  dmgColor: {r: 0, g: 0, b: 0, a: 1}
+  dmgColor: {r: 0.81960785, g: 0.12156863, b: 0.1764706, a: 1}
   src: {fileID: 4538016447397276144}
   hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
-  deathClip: {fileID: 8300000, guid: 0b6eb589ba1efcf42b32ca6d77088584, type: 3}
   SceneToLoad: Win Screen
+  enemyDefeated: {fileID: 8300000, guid: 0b6eb589ba1efcf42b32ca6d77088584, type: 3}
+  playerController: {fileID: 0}
 --- !u!212 &-3673649730391032594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -245,41 +246,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &4495319314356252527
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9198177664115054378}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1316644}
-  serializedVersion: 2
-  m_Radius: 0.6183356
 --- !u!114 &3948591127082954610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,3 +354,58 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!60 &-7168056189427995838
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9198177664115054378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1875, y: 0.53125}
+      - {x: -0.1875, y: 0.53125}
+      - {x: -0.5625, y: 0.0625}
+      - {x: -0.65625, y: -0.0625}
+      - {x: -0.65625, y: -0.34375}
+      - {x: -0.28125, y: -0.5625}
+      - {x: 0.3125, y: -0.5625}
+      - {x: 0.4375, y: -0.375}
+      - {x: 0.4375, y: 0.0625}
+      - {x: 0.34375, y: 0.46875}
+  m_UseDelaunayMesh: 0
