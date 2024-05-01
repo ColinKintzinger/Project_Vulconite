@@ -49,6 +49,7 @@ public class LootBox : MonoBehaviour
                 if (gameObject.CompareTag("LootBox"))
                 {
                     RevealCharm();
+                    RemoveArrow();
                 }
                 //Destroy(gameObject);
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -67,4 +68,8 @@ public class LootBox : MonoBehaviour
         collisionCount = 0;
     }
 
+    public bool RemoveArrow()
+    {
+        return true;
+    }
 }
