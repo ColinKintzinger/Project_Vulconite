@@ -97,31 +97,44 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 1)
         {
-            //Teleport repeat single fire attack
+            Vector3 dir = animationDirection(queen.transform.position, player.transform.position); 
+            //Teleport repeat single fire attack 
             lastAttack = whichAttack;
             StartCoroutine(fireAndMove.TeleSpam());
             yield return new WaitForSeconds(8.0f - (speedUp * 4));
+            anim.SetFloat("Horizontal", dir.x);
+            anim.SetFloat("Verticle", dir.y);
+
         }
 
         if (whichAttack == 2)
         {
             //Spike attack random positions
+            Vector3 dir = animationDirection(queen.transform.position, player.transform.position);
             lastAttack = whichAttack;
             enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f);
             numOfSpikes = Random.Range(5, 8);
             StartCoroutine(random.PrepareWarnings(numOfSpikes));
             yield return new WaitForSeconds(3.0f - (speedUp * 2));
+            anim.SetFloat("Horizontal", dir.x);
+            anim.SetFloat("Verticle", dir.y);
+            Invoke("SpikeAttack", 1f);
         }
 
         if (whichAttack == 3)
         {
+            Vector3 dir = animationDirection(queen.transform.position, player.transform.position);
             //Falling Spikes, Lines of spikes attacks
             lastAttack = whichAttack;
             enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f - speedUp);
             StartCoroutine(wave.SendTheSpikes());
             yield return new WaitForSeconds(3.0f - speedUp);
+            anim.SetFloat("Horizontal", dir.x);
+            anim.SetFloat("Verticle", dir.y);
+            Invoke("SpikeAttack", 1f);
+
         }
 
         if (whichAttack == 4)
@@ -135,7 +148,6 @@ public class BossFightDirections : MonoBehaviour
                 anim.SetFloat("Horizontal", dir.x);
                 anim.SetFloat("Verticle", dir.y);
                 anim.SetTrigger("Blasting");
-                anim.ResetTrigger("Blasting");
 
                 //Hate everything
 
@@ -156,9 +168,14 @@ public class BossFightDirections : MonoBehaviour
     }
 
     //Enemy single teleport animation
-    void enemyTeleportAndAnimation() {
+    void enemyTeleportAndAnimation()
+    {
         anim.SetTrigger("Teleporting");
         StartCoroutine(teleport.MoveIt());
-        anim.ResetTrigger("Teleporting");
+        //anim.ResetTrigger("Teleporting");
+    }
+    void SpikeAttack()
+    {
+        anim.SetTrigger("Spikes");
     }
 }

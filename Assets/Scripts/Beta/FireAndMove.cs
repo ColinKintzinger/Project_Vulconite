@@ -27,6 +27,7 @@ public class FireAndMove : MonoBehaviour
         teleport = GetComponent<Teleport>();
         fire = GetComponent<EnemyPredictShooting>();
         directions = GetComponent<BossFightDirections>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -47,6 +48,7 @@ public class FireAndMove : MonoBehaviour
             yield return new WaitForSeconds(1.75f - directions.speedUp);
             fire.ShootToKill();
             yield return new WaitForSeconds(1.0f - directions.speedUp);
+            anim.SetTrigger("Throwing");
         }
     }
 }
