@@ -97,6 +97,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 1)
         {
+            //Teleport repeat single fire attack
             lastAttack = whichAttack;
             StartCoroutine(fireAndMove.TeleSpam());
             yield return new WaitForSeconds(8.0f - (speedUp * 4));
@@ -104,6 +105,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 2)
         {
+            //Spike attack random positions
             lastAttack = whichAttack;
             enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f);
@@ -114,6 +116,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 3)
         {
+            //Falling Spikes, Lines of spikes attacks
             lastAttack = whichAttack;
             enemyTeleportAndAnimation();
             yield return new WaitForSeconds(2.0f - speedUp);
@@ -123,6 +126,7 @@ public class BossFightDirections : MonoBehaviour
 
         if (whichAttack == 4)
         {
+            //Melee Attack close range
             Debug.Log("Melee");
             if (Mathf.Abs(player.transform.position.x - queen.transform.position.x) < 3 && Mathf.Abs(player.transform.position.y - queen.transform.position.y) < 3)
             {
@@ -132,6 +136,9 @@ public class BossFightDirections : MonoBehaviour
                 anim.SetFloat("Verticle", dir.y);
                 anim.SetTrigger("Blasting");
                 anim.ResetTrigger("Blasting");
+
+                //Hate everything
+
                 lastAttack = whichAttack;
                 yield return new WaitForSeconds(1.5f - speedUp);
                 melee.BlastIt();
@@ -142,11 +149,13 @@ public class BossFightDirections : MonoBehaviour
         StartCoroutine(LetsStartTheFight());
     }
 
+    //Animation position
     Vector3 animationDirection(Vector3 self, Vector3 target) {
         Vector3 targetVector = target - self;
         return targetVector.normalized;
     }
 
+    //Enemy single teleport animation
     void enemyTeleportAndAnimation() {
         anim.SetTrigger("Teleporting");
         StartCoroutine(teleport.MoveIt());
