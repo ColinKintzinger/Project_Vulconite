@@ -43,4 +43,8 @@ public class PlayerStats : ScriptableObject
         collectedCharms.Clear();
     }
 
+    public float GetMaxHealth()
+    {
+        return MAX_HEALTH;
+    }
 }
