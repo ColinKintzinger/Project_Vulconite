@@ -19,6 +19,7 @@ public class FireAndMove : MonoBehaviour
     Teleport teleport;
     EnemyPredictShooting fire;
     BossFightDirections directions;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class FireAndMove : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
+            anim.SetTrigger("Teleporting");
             StartCoroutine(teleport.MoveIt());
             yield return new WaitForSeconds(1.75f - directions.speedUp);
             fire.ShootToKill();
