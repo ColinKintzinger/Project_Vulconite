@@ -10,6 +10,7 @@ public class MusicSingleton : MonoBehaviour
     public AudioClip menu;
     public AudioClip regular;
     public AudioClip finalBoss;
+    public AudioClip sunset;
     private Scene currentScene;
     private int isPlaying = 0;
 
@@ -44,11 +45,17 @@ public class MusicSingleton : MonoBehaviour
             }
         }
 
-        else if (currentScene.name == "LoseScene" || currentScene.name == "Win Screen")
+        else if (currentScene.name == "LoseScene")
         {
             Debug.Log("Preparing to stop.");
             src.Stop();
             Debug.Log("Music should have stopped.");
+        }
+
+        else if (currentScene.name == "Win Screen")
+        {
+            src.clip = sunset;
+            src.Play();
         }
 
         else
