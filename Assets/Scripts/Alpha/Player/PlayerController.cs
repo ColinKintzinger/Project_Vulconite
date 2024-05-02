@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Animator movementAnimate;
     private SpriteRenderer render;
     private Weapon attackDrection;
+    private SceneTransition transition;
     //private SceneTransition transition;
 
     private Vector2 moveDir;
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
         movementAnimate = GetComponent<Animator>(); 
         render = GetComponent<SpriteRenderer>();
         rb= GetComponent<Rigidbody2D>();
-      
+        transition = GetComponent<SceneTransition>();
     }
 
     // Update is called once per frame
@@ -178,6 +179,7 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             arrow.SetActive(false);
+            transition.weaponPickup();
         }
 
     }

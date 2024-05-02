@@ -150,7 +150,7 @@ MonoBehaviour:
   targetingDistance: 17
   targetingTimer: 1
   src: {fileID: -6840766795391474759}
-  charge: {fileID: 8300000, guid: ca96a1ebd0fb4284db2e8a701c198f36, type: 3}
+  charge: {fileID: 8300000, guid: 74f69acb682800f4d8b1d979d763276d, type: 3}
 --- !u!82 &2979268329728930168
 AudioSource:
   m_ObjectHideFlags: 0
