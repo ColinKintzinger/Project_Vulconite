@@ -24,10 +24,10 @@ public class MeleeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            BlastIt();
-        }
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    BlastIt();
+        //}
     }
 
     public void BlastIt()
