@@ -171,6 +171,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Weapon"))
         {
+            src.clip = pickUp;
+            src.Play();
             Singleton.Instance.SetWeapon(collision.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;

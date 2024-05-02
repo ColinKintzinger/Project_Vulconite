@@ -145,7 +145,6 @@ MonoBehaviour:
   hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
   SceneToLoad: Win Screen
   enemyDefeated: {fileID: 8300000, guid: 0b6eb589ba1efcf42b32ca6d77088584, type: 3}
-  playerController: {fileID: 0}
 --- !u!212 &-3673649730391032594
 SpriteRenderer:
   m_ObjectHideFlags: 0
