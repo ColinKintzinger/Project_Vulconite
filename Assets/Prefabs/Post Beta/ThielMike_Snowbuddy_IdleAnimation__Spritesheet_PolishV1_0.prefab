@@ -127,7 +127,7 @@ MonoBehaviour:
   maxHealth: 45
   currentHealth: 45
   visualDamageTimer: 1
-  dmgColor: {r: 0, g: 0, b: 0, a: 1}
+  dmgColor: {r: 0.81960785, g: 0.12156863, b: 0.1764706, a: 1}
   src: {fileID: 2979268329728930168}
   hurtClip: {fileID: 8300000, guid: ca0aaf460495ce84280d9bf30a0fb5d1, type: 3}
   SceneToLoad: Win Screen

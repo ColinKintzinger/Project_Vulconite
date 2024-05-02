@@ -236,7 +236,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &738320744
+--- !u!1 &759297524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,22 +244,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 738320746}
-  - component: {fileID: 738320745}
+  - component: {fileID: 759297526}
+  - component: {fileID: 759297525}
   m_Layer: 0
-  m_Name: HaldaReece_VulcaniteEndScreen_Polish
+  m_Name: HaldaReece_VulcaniteEndScreen_Polish (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &738320745
+--- !u!212 &759297525
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738320744}
+  m_GameObject: {fileID: 759297524}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -305,17 +305,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &738320746
+--- !u!4 &759297526
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738320744}
+  m_GameObject: {fileID: 759297524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.4, y: 7.4, z: 1}
+  m_LocalScale: {x: 2.34, y: 2.34, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -663,5 +663,5 @@ SceneRoots:
   - {fileID: 186021145}
   - {fileID: 550170328}
   - {fileID: 1975159067}
-  - {fileID: 738320746}
   - {fileID: 825056018}
+  - {fileID: 759297526}
