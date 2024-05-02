@@ -6,8 +6,8 @@ using UnityEngine;
 public class BobUpAndDown : MonoBehaviour
 {
     public AnimationCurve myCurve;
-    public GameObject dependant1;
-    public GameObject dependant2;
+    //public GameObject dependant1;
+    //public GameObject dependant2;
     private GameObject lootBox;
     private bool boxExists = false;
 
@@ -35,10 +35,10 @@ public class BobUpAndDown : MonoBehaviour
         }
         else
         {
-            if (dependant1 == null || dependant2 == null)
-            {
-                gameObject.SetActive(false);
-            }
+            //if (dependant1 == null)
+            //{
+            //    gameObject.SetActive(false);
+            //}
         }
     }
 }

@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource src;
     public AudioClip hurt;
     public AudioClip pickUp;
+    public GameObject arrow;
 
     // Start is called before the first frame update
     void Start()
@@ -174,6 +175,7 @@ public class PlayerController : MonoBehaviour
             Singleton.Instance.SetWeapon(collision.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            arrow.SetActive(false);
         }
 
     }
