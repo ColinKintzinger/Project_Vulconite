@@ -708,7 +708,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -807,7 +807,8 @@ MonoBehaviour:
   src: {fileID: 1708855049}
   menu: {fileID: 8300000, guid: 9b22a9b6a98cc6549822bba981614305, type: 3}
   regular: {fileID: 8300000, guid: d2094269857e2534db0e4497f7be5418, type: 3}
-  finalBoss: {fileID: 8300000, guid: 225440f01ba9945439697ccc33e26c12, type: 3}
+  finalBoss: {fileID: 8300000, guid: 9f961d4b7f458d04c85d8571f1f3b293, type: 3}
+  sunset: {fileID: 8300000, guid: 17c77e4286eefde4094c5bba3ae5dbbf, type: 3}
 --- !u!4 &1708855051
 Transform:
   m_ObjectHideFlags: 0
