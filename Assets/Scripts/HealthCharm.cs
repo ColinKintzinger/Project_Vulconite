@@ -19,8 +19,8 @@ public class HealthCharm : Charm
     public override void ApplyBuff(PlayerStats playerStats)
     {
         //base.applyBuff();
-        float randomHealthBuff = Random.Range(0.15f, 0.45f); // More forgiving
-        playerStats.health += (playerStats.health * randomHealthBuff);
+        float randomHealthBuff = Random.Range(0.15f, 0.35f); // More forgiving
+        playerStats.health += (playerStats.GetMaxHealth() * randomHealthBuff);
 
         if (playerStats.health >= 100.00f)
         {

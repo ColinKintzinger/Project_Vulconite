@@ -54,8 +54,12 @@ public class MusicSingleton : MonoBehaviour
 
         else if (currentScene.name == "Win Screen")
         {
-            src.clip = sunset;
-            src.Play();
+            if (isPlaying != 4)
+            {
+                src.clip = sunset;
+                src.Play();
+            }
+            isPlaying = 4;
         }
 
         else
