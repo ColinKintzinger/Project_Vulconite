@@ -128,6 +128,10 @@ public class BossFightDirections : MonoBehaviour
             {
                 Vector3 dir = animationDirection(queen.transform.position, player.transform.position);
                 //
+                anim.SetFloat("Horizontal", dir.x);
+                anim.SetFloat("Verticle", dir.y);
+                anim.SetTrigger("Blasting");
+                anim.ResetTrigger("Blasting");
                 lastAttack = whichAttack;
                 yield return new WaitForSeconds(1.5f - speedUp);
                 melee.BlastIt();
