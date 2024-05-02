@@ -23,29 +23,33 @@ public class SceneTransition : MonoBehaviour
     private float delay = 1.0f;
     public GameObject sound;
     private bool isPlaying = false;
+    private GameObject weapon;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        weapon = GameObject.FindGameObjectWithTag("Weapon");
     }
 
     // Update is called once per frame
     void Update()
     {
         // Checks for current enemies on scene
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && weaponPickup())
         {
-            //active = true;
-            if (!isPlaying)
+            if (!weapon.GetComponent<BoxCollider2D>().enabled)
             {
-                Instantiate(sound);
-                isPlaying = true;
+                //active = true;
+                if (!isPlaying)
+                {
+                    Instantiate(sound);
+                    isPlaying = true;
+                }
+                animator.SetBool("active", true);
+                Invoke("ActivateDoor", delay);
             }
-            animator.SetBool("active", true);
-            Invoke("ActivateDoor", delay);
         }
-
     }
     // Checks when player collides with door and enemies are dead
     private void OnCollisionEnter2D(Collision2D collision)
@@ -65,5 +69,10 @@ public class SceneTransition : MonoBehaviour
     public bool GetActive()
     {
         return active;
+    }
+
+    public bool weaponPickup()
+    {
+        return true;
     }
 }
