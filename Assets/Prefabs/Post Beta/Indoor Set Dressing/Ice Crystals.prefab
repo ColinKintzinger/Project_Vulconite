@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4930352131443576688}
   - component: {fileID: 380493070083453702}
-  - component: {fileID: -8810947081980753839}
+  - component: {fileID: 7809738736644456364}
   m_Layer: 10
   m_Name: Ice Crystals
   m_TagString: Obsticle
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-8810947081980753839
-BoxCollider2D:
+--- !u!60 &7809738736644456364
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03697145, y: 0.08318555}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -127,6 +127,28 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.2042289, y: 1.148772}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.24470079, y: -0.15115166}
+      - {x: 0.17295066, y: -0.10703514}
+      - {x: 0.1531041, y: 0.28078872}
+      - {x: 0.058967188, y: 0.56418025}
+      - {x: 0.005410541, y: 0.6649629}
+      - {x: -0.038229518, y: 0.6666188}
+      - {x: -0.11433244, y: 0.4990051}
+      - {x: -0.1725895, y: 0.33149394}
+      - {x: -0.17701066, y: 0.076698884}
+      - {x: -0.43274722, y: 0.13409948}
+      - {x: -0.60585654, y: 0.13351634}
+      - {x: -0.605168, y: -0.15931937}
+      - {x: -0.45760122, y: -0.3791656}
+      - {x: -0.5693648, y: -0.5258934}
+      - {x: -0.5701657, y: -0.6035063}
+      - {x: -0.4843033, y: -0.75695086}
+      - {x: 0.5153427, y: -0.7554572}
+      - {x: 0.54680324, y: -0.69960654}
+      - {x: 0.48150173, y: -0.5418516}
+      - {x: 0.6666188, y: -0.34528682}
+      - {x: 0.6648811, y: -0.02261886}
+      - {x: 0.4982623, y: -0.01398775}
+  m_UseDelaunayMesh: 0
