@@ -2212,6 +2212,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 516917069}
+    - target: {fileID: 6906354741713731337, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800329231618160572, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1026465968158287693, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
     - {fileID: 5873541249523419854, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}

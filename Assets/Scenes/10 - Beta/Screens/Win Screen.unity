@@ -546,8 +546,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTopBound: 0
+  creditsBound: -23.8
   cameraBotBound: -43.7
   speed: 2
+  viewSpeed: 1
   timer: 4
 --- !u!1 &1500753666
 GameObject:

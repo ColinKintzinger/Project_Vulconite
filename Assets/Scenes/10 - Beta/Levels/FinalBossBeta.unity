@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Health Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 4060010940684299874, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4522557879760161456, guid: 101cf2a6cf17fe646970ed10a71af264, type: 3}
       propertyPath: boss
       value: 
@@ -324,6 +328,18 @@ PrefabInstance:
     - target: {fileID: 6147503287418655890, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
       propertyPath: BottomBound
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906354741713731337, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051872080127350399, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800329231618160572, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1026465968158287693, guid: bf6fdb54a3e6e1d428187a1a0abe00b4, type: 3}
